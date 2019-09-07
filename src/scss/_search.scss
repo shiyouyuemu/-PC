@@ -1,0 +1,30 @@
+#search{background: #fff;}
+.search_cont{height: 134px;}
+.search_l{float: left;}
+.search_l a{display: block;float: left;margin: 15px;}
+.search_c{width: 620px;height: 40px;float: left;margin-top: 46px;margin-left: 140px;}
+.search_box{float: left;height: 34px;width: 494px;border: 3px solid $color_Basics;}
+.search_btn{height: 40px;width:120px;background: $color_Basics;border: none;color: #fff;font-size: 18px;line-height: 40px;}
+.search_box select{float: left; width: 57px;height: 34px;text-align: center;color: #000;font-size: 12px;padding-left: 10px;background: #f1f1f1;border: 0px;border-right: 1px solid #e1e1e1;}
+.search_text{display: block;float: left; height: 34px;font-size: 16px;width: 400px; padding-left: 10px;}
+.search_hotword{width: 100%;float: left;margin-top: 13px;line-height: 12px;height: 12px;}
+.search_hotword a{margin-right: 8px;font-size: 12px;line-height: 12px;color: #333333;}
+.search_hotword a:hover{color: $color_Basics; }
+.search_r{float: right;margin-top: 18px;}
+.search_r span{text-align: center;color: $color_Basics;font-size: 12px;width: 100%;display: block;}
+.submenu_cont{height: 39px;}
+/*submenu*/
+.sub_box_left,.sub_box_center{float: left;}
+.sub_box_left{width: 180px;padding-left: 10px;font-size: 14px; height: 100%;background: $color_Basics;line-height: 39px;color: #fff;}
+.sub_box_center{padding-left: 30px;line-height: 39px;}
+.sub_box_center li{float: left;margin-right: 29px;}
+.sub_box_center li a{font-size: 18px;color: #333333;font-weight: bold;}
+.sub_box_right{float:right;width: 139px;line-height: 39px;height: 39px;position: relative;}
+.cartbox{height: 18px;width: 139px;line-height: 18px; display: block;font-size: 12px;position: absolute;top:50%;margin-top: -9px;}
+.cartbox_leftwall{background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_left.png?__spriter")no-repeat;width: 8px;display: block;float: left;height: 18px;}
+.cartbox_rightwall{background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_right.png?__spriter")no-repeat;width: 8px;display: block;float: right;height: 18px;}
+.cartbox_txt{float: left;height: 18px;line-height: 18px;}
+
+
+
+

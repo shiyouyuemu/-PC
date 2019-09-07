@@ -1,0 +1,27 @@
+/*header*/
+#header{background: #f1f1f1;border-bottom: 1px solid #e1e1e1;}
+.header_cont{height: 40px;}
+.header_left{float: left;}
+.header_left span{color: #f01e1e;font-size: 12px;float: left;}
+.header_left a{color: #6c6c6c;font-size: 12px;display: block;float: left;margin-left: 20px;}
+.header_left a,.header_left span,.header_right a{line-height: 40px;height: 40px;}
+.header_right{float: right;}
+.header_right a{color: #6c6c6c;font-size: 12px;float: left;margin-right: 20px;}
+.header_right a b{color: #f01e1e;font-weight: bold;}
+.header_right .header_wb{margin-right: 11px; margin-top: 8px;display: block;width: 62px;height: 22px; float: right;}
+.header_wbcont{border-radius: 2px; display: block; background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -63px 0;width: 62px;height: 22px;float: left;}
+.header_wbcont i{float: left; width: 16px;height: 16px; margin:2px 6px 2px 2px; background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -190px 2px;} 
+.header_wbcont span{line-height: 22px;height: 22px;float: left;color: #fff;}
+.header_right .icon-gwc{color: #ed3f3f;font-size: 14px;}
+.header_wb:hover .header_wbcont span{opacity: 0.9;}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+module.exports={
+    paths:{
+        "javascript":"./srcjavascripts/",
+        "style":"./src/css/",
+        "html":"./src/"
+    },
+    proxyList:{
+        "dt":"https://www.duitang.com/napi/index/hot/"
+    }
+}

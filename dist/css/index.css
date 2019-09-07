@@ -1,0 +1,274 @@
+/*common*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+ul, li, ol {
+  list-style: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+a, u {
+  text-decoration: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+input {
+  outline: none;
+  border: 0;
+  background: none; }
+
+.clear-fix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clear-fix {
+  zoom: 1; }
+
+.hide {
+  display: none; }
+
+/*public*/
+.header_cont, .search_cont, .submenu_cont {
+  width: 1200px;
+  margin: 0 auto; }
+
+/*header*/
+/*header*/
+#header {
+  background: #f1f1f1;
+  border-bottom: 1px solid #e1e1e1; }
+
+.header_cont {
+  height: 40px; }
+
+.header_left {
+  float: left; }
+
+.header_left span {
+  color: #f01e1e;
+  font-size: 12px;
+  float: left; }
+
+.header_left a {
+  color: #6c6c6c;
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin-left: 20px; }
+
+.header_left a, .header_left span, .header_right a {
+  line-height: 40px;
+  height: 40px; }
+
+.header_right {
+  float: right; }
+
+.header_right a {
+  color: #6c6c6c;
+  font-size: 12px;
+  float: left;
+  margin-right: 20px; }
+
+.header_right a b {
+  color: #f01e1e;
+  font-weight: bold; }
+
+.header_right .header_wb {
+  margin-right: 11px;
+  margin-top: 8px;
+  display: block;
+  width: 62px;
+  height: 22px;
+  float: right; }
+
+.header_wbcont {
+  border-radius: 2px;
+  display: block;
+  background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -63px 0;
+  width: 62px;
+  height: 22px;
+  float: left; }
+
+.header_wbcont i {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 2px 6px 2px 2px;
+  background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -190px 2px; }
+
+.header_wbcont span {
+  line-height: 22px;
+  height: 22px;
+  float: left;
+  color: #fff; }
+
+.header_right .icon-gwc {
+  color: #ed3f3f;
+  font-size: 14px; }
+
+.header_wb:hover .header_wbcont span {
+  opacity: 0.9; }
+
+/*search*/
+#search {
+  background: #fff; }
+
+.search_cont {
+  height: 134px; }
+
+.search_l {
+  float: left; }
+
+.search_l a {
+  display: block;
+  float: left;
+  margin: 15px; }
+
+.search_c {
+  width: 620px;
+  height: 40px;
+  float: left;
+  margin-top: 46px;
+  margin-left: 140px; }
+
+.search_box {
+  float: left;
+  height: 34px;
+  width: 494px;
+  border: 3px solid #ed3f3f; }
+
+.search_btn {
+  height: 40px;
+  width: 120px;
+  background: #ed3f3f;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 40px; }
+
+.search_box select {
+  float: left;
+  width: 57px;
+  height: 34px;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  padding-left: 10px;
+  background: #f1f1f1;
+  border: 0px;
+  border-right: 1px solid #e1e1e1; }
+
+.search_text {
+  display: block;
+  float: left;
+  height: 34px;
+  font-size: 16px;
+  width: 400px;
+  padding-left: 10px; }
+
+.search_hotword {
+  width: 100%;
+  float: left;
+  margin-top: 13px;
+  line-height: 12px;
+  height: 12px; }
+
+.search_hotword a {
+  margin-right: 8px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333; }
+
+.search_hotword a:hover {
+  color: #ed3f3f; }
+
+.search_r {
+  float: right;
+  margin-top: 18px; }
+
+.search_r span {
+  text-align: center;
+  color: #ed3f3f;
+  font-size: 12px;
+  width: 100%;
+  display: block; }
+
+.submenu_cont {
+  height: 39px; }
+
+/*submenu*/
+.sub_box_left, .sub_box_center {
+  float: left; }
+
+.sub_box_left {
+  width: 180px;
+  padding-left: 10px;
+  font-size: 14px;
+  height: 100%;
+  background: #ed3f3f;
+  line-height: 39px;
+  color: #fff; }
+
+.sub_box_center {
+  padding-left: 30px;
+  line-height: 39px; }
+
+.sub_box_center li {
+  float: left;
+  margin-right: 29px; }
+
+.sub_box_center li a {
+  font-size: 18px;
+  color: #333333;
+  font-weight: bold; }
+
+.sub_box_right {
+  float: right;
+  width: 139px;
+  line-height: 39px;
+  height: 39px;
+  position: relative; }
+
+.cartbox {
+  height: 18px;
+  width: 139px;
+  line-height: 18px;
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  margin-top: -9px; }
+
+.cartbox_leftwall {
+  background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_left.png?__spriter") no-repeat;
+  width: 8px;
+  display: block;
+  float: left;
+  height: 18px; }
+
+.cartbox_rightwall {
+  background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_right.png?__spriter") no-repeat;
+  width: 8px;
+  display: block;
+  float: right;
+  height: 18px; }
+
+.cartbox_txt {
+  float: left;
+  height: 18px;
+  line-height: 18px; }
