@@ -1,14 +1,93 @@
-html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin:0;padding:0;}
-h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
-ul,li,ol{list-style:none;}
-em,i{font-style: normal}
-b,strong{font-weight: normal}
-a,u{text-decoration: none}
-img{border:0;display:block;}
-input{outline:none;border:0;background:none;}
-.clear-fix:after{content:'.';clear:both;display:block;height:0;overflow: hidden;visibility: hidden;}
-.clear-fix{zoom:1}
-.hide{display: none;}
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal
+}
+
+b,
+strong {
+    font-weight: normal
+}
+
+a,
+u {
+    text-decoration: none
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+input {
+    outline: none;
+    border: 0;
+    background: none;
+}
+
+.clear-fix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clear-fix {
+    zoom: 1
+}
+
+.hide {
+    display: none;
+}
 
 /*public*/
-.header_cont,.search_cont,.submenu_cont{width: 1200px;margin: 0 auto;}
+.header_cont,
+.search_cont,
+.submenu_cont,
+.banner_cont,
+.recommend_cont,
+.attire_cont {
+    width: 1200px;
+    margin: 0 auto;
+}

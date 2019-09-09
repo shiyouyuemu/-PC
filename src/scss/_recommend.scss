@@ -1,0 +1,125 @@
+/*http://www.cycang.com/index.php?c=page&a=page&nums=8&chid=5&start=50*/
+
+.recommend_cont{
+    height: 1377px;
+    background: #fff;
+    margin-top: 30px;
+    .recommend_bar{
+        display: block;
+        height: 2px;
+        width: 50%;
+        background: $color_Basics;
+    }
+    .recommend_btn{
+        width: 100%;
+        height: 92px;
+        span{
+            width: 2px;
+            height: 30px;
+            background: $color_Black;
+            float: left;
+            margin-top: 29px;
+        }
+        .rbtn{
+            text-align: center;
+            display: block;
+            float: left;
+            width: 599px;
+
+            h3{
+                font-size: 24px;
+                line-height: 24px;
+                color: #6c6c6c;;
+                padding-top:20px; 
+                cursor: pointer;
+            }
+            a{
+                text-align: left;
+                display: block;
+                font-weight: bold;
+                width: 57px;
+                line-height: 16px;
+                height: 16px;
+                margin: 0 auto;
+                font-size: 16px;
+                color:#6c6c6c;
+                margin-top: 10px;
+            }
+            a:after{
+                content: "";
+                display: inline-block;
+                width: 15px;
+                margin-left: 5px;
+                margin-bottom: 1px;
+                height: 10px;
+                background: url("http://www.cycang.com/Public/build/img/shop/index/floor_more.png?__spriter")no-repeat center;
+            }
+        }
+        .rbtn.active{
+            h3{
+                color: $color_Black;
+            }
+            a{
+                color:$color_Basics;
+            }
+            a:after{
+                background: url("http://www.cycang.com/Public/build/img/shop/index/floor_more_on.png?__spriter")no-repeat center;
+            }
+        }
+    }
+    .recommend_boxList{
+        padding-left: 15px;
+        
+        li{
+            height: 306px;
+            width: 226px;
+            background: #f1f1f1;
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+
+            img{
+                height: 226px;
+                width: 100%;
+            }
+            dd{
+                height: 68px;
+                padding-top: 12px;
+                position: relative;
+                h3{
+                    display: block;
+                    margin:0px 10px;
+                    font-size: 12px;
+                    color: $color_Black;
+                }
+                span{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 13px;
+                    color: $color_Basics;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

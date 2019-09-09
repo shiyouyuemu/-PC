@@ -1,22 +1,51 @@
 /*common*/
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input {
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 16px;
   font-weight: normal; }
 
-ul, li, ol {
+ul,
+li,
+ol {
   list-style: none; }
 
-em, i {
+em,
+i {
   font-style: normal; }
 
-b, strong {
+b,
+strong {
   font-weight: normal; }
 
-a, u {
+a,
+u {
   text-decoration: none; }
 
 img {
@@ -43,232 +72,412 @@ input {
   display: none; }
 
 /*public*/
-.header_cont, .search_cont, .submenu_cont {
+.header_cont,
+.search_cont,
+.submenu_cont,
+.banner_cont,
+.recommend_cont,
+.attire_cont {
   width: 1200px;
   margin: 0 auto; }
 
-/*header*/
-/*header*/
-#header {
-  background: #f1f1f1;
-  border-bottom: 1px solid #e1e1e1; }
-
-.header_cont {
-  height: 40px; }
-
-.header_left {
-  float: left; }
-
-.header_left span {
-  color: #f01e1e;
-  font-size: 12px;
-  float: left; }
-
-.header_left a {
-  color: #6c6c6c;
-  font-size: 12px;
-  display: block;
-  float: left;
-  margin-left: 20px; }
-
-.header_left a, .header_left span, .header_right a {
-  line-height: 40px;
-  height: 40px; }
-
-.header_right {
-  float: right; }
-
-.header_right a {
-  color: #6c6c6c;
-  font-size: 12px;
-  float: left;
-  margin-right: 20px; }
-
-.header_right a b {
-  color: #f01e1e;
-  font-weight: bold; }
-
-.header_right .header_wb {
-  margin-right: 11px;
-  margin-top: 8px;
-  display: block;
-  width: 62px;
-  height: 22px;
-  float: right; }
-
-.header_wbcont {
-  border-radius: 2px;
-  display: block;
-  background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -63px 0;
-  width: 62px;
-  height: 22px;
-  float: left; }
-
-.header_wbcont i {
-  float: left;
-  width: 16px;
-  height: 16px;
-  margin: 2px 6px 2px 2px;
-  background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -190px 2px; }
-
-.header_wbcont span {
-  line-height: 22px;
-  height: 22px;
-  float: left;
-  color: #fff; }
-
-.header_right .icon-gwc {
-  color: #ed3f3f;
-  font-size: 14px; }
-
-.header_wb:hover .header_wbcont span {
-  opacity: 0.9; }
-
-/*search*/
-#search {
-  background: #fff; }
-
-.search_cont {
-  height: 134px; }
-
-.search_l {
-  float: left; }
-
-.search_l a {
-  display: block;
-  float: left;
-  margin: 15px; }
-
-.search_c {
-  width: 620px;
-  height: 40px;
-  float: left;
-  margin-top: 46px;
-  margin-left: 140px; }
-
-.search_box {
-  float: left;
-  height: 34px;
-  width: 494px;
-  border: 3px solid #ed3f3f; }
-
-.search_btn {
-  height: 40px;
-  width: 120px;
-  background: #ed3f3f;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  line-height: 40px; }
-
-.search_box select {
-  float: left;
-  width: 57px;
-  height: 34px;
-  text-align: center;
-  color: #000;
-  font-size: 12px;
-  padding-left: 10px;
-  background: #f1f1f1;
-  border: 0px;
-  border-right: 1px solid #e1e1e1; }
-
-.search_text {
-  display: block;
-  float: left;
-  height: 34px;
-  font-size: 16px;
-  width: 400px;
-  padding-left: 10px; }
-
-.search_hotword {
-  width: 100%;
-  float: left;
-  margin-top: 13px;
-  line-height: 12px;
-  height: 12px; }
-
-.search_hotword a {
-  margin-right: 8px;
-  font-size: 12px;
-  line-height: 12px;
-  color: #333333; }
-
-.search_hotword a:hover {
-  color: #ed3f3f; }
-
-.search_r {
-  float: right;
-  margin-top: 18px; }
-
-.search_r span {
-  text-align: center;
-  color: #ed3f3f;
-  font-size: 12px;
-  width: 100%;
-  display: block; }
-
-.submenu_cont {
-  height: 39px; }
-
-/*submenu*/
-.sub_box_left, .sub_box_center {
-  float: left; }
-
-.sub_box_left {
-  width: 180px;
-  padding-left: 10px;
-  font-size: 14px;
-  height: 100%;
-  background: #ed3f3f;
-  line-height: 39px;
-  color: #fff; }
-
-.sub_box_center {
-  padding-left: 30px;
-  line-height: 39px; }
-
-.sub_box_center li {
-  float: left;
-  margin-right: 29px; }
-
-.sub_box_center li a {
-  font-size: 18px;
-  color: #333333;
-  font-weight: bold; }
-
-.sub_box_right {
-  float: right;
-  width: 139px;
-  line-height: 39px;
-  height: 39px;
-  position: relative; }
-
-.cartbox {
-  height: 18px;
-  width: 139px;
-  line-height: 18px;
-  display: block;
-  font-size: 12px;
-  position: absolute;
-  top: 50%;
-  margin-top: -9px; }
-
-.cartbox_leftwall {
-  background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_left.png?__spriter") no-repeat;
-  width: 8px;
-  display: block;
-  float: left;
-  height: 18px; }
-
-.cartbox_rightwall {
-  background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_right.png?__spriter") no-repeat;
-  width: 8px;
-  display: block;
-  float: right;
-  height: 18px; }
-
-.cartbox_txt {
-  float: left;
-  height: 18px;
-  line-height: 18px; }
+/*body*/
+body {
+  background: url("http://s1.cycangcdn.com/img/bg.jpg") no-repeat 50% center fixed;
+  /*header*/
+  /*header*/
+  /*search*/
+  /*submenu*/
+  /*banner*/
+  /*recommend*/
+  /*http://www.cycang.com/index.php?c=page&a=page&nums=8&chid=5&start=50*/
+  /*attire*/ }
+  body #header {
+    background: #f1f1f1;
+    border-bottom: 1px solid #e1e1e1; }
+  body .header_cont {
+    height: 40px; }
+  body .header_left {
+    float: left; }
+  body .header_left span {
+    color: #f01e1e;
+    font-size: 12px;
+    float: left; }
+  body .header_left a {
+    color: #6c6c6c;
+    font-size: 12px;
+    display: block;
+    float: left;
+    margin-left: 20px; }
+  body .header_left a,
+  body .header_left span,
+  body .header_right a {
+    line-height: 40px;
+    height: 40px; }
+  body .header_right {
+    float: right; }
+  body .header_right a {
+    color: #6c6c6c;
+    font-size: 12px;
+    float: left;
+    margin-right: 20px; }
+  body .header_right a b {
+    color: #f01e1e;
+    font-weight: bold; }
+  body .header_right .header_wb {
+    margin-right: 11px;
+    margin-top: 8px;
+    display: block;
+    width: 62px;
+    height: 22px;
+    float: right; }
+  body .header_wbcont {
+    border-radius: 2px;
+    display: block;
+    background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -63px 0;
+    width: 62px;
+    height: 22px;
+    float: left; }
+  body .header_wbcont i {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 2px 6px 2px 2px;
+    background: url("https://img.t.sinajs.cn/t4/appstyle/widget/images/followButton/bg_flbtn.png?id=1367910055834") -190px 2px; }
+  body .header_wbcont span {
+    line-height: 22px;
+    height: 22px;
+    float: left;
+    color: #fff; }
+  body .header_right .icon-gwc {
+    color: #ed3f3f;
+    font-size: 14px; }
+  body .header_wb:hover .header_wbcont span {
+    opacity: 0.9; }
+  body #search {
+    background: #fff; }
+  body .search_cont {
+    height: 134px; }
+  body .search_l {
+    float: left; }
+  body .search_l a {
+    display: block;
+    float: left;
+    margin: 15px; }
+  body .search_c {
+    width: 620px;
+    height: 40px;
+    float: left;
+    margin-top: 46px;
+    margin-left: 140px; }
+  body .search_box {
+    float: left;
+    height: 34px;
+    width: 494px;
+    border: 3px solid #ed3f3f; }
+  body .search_btn {
+    height: 40px;
+    width: 120px;
+    background: #ed3f3f;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px; }
+  body .search_box select {
+    float: left;
+    width: 57px;
+    height: 34px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    padding-left: 10px;
+    background: #f1f1f1;
+    border: 0px;
+    border-right: 1px solid #e1e1e1; }
+  body .search_text {
+    display: block;
+    float: left;
+    height: 34px;
+    font-size: 16px;
+    width: 400px;
+    padding-left: 10px; }
+  body .search_hotword {
+    width: 100%;
+    float: left;
+    margin-top: 13px;
+    line-height: 12px;
+    height: 12px; }
+  body .search_hotword a {
+    margin-right: 8px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #333333; }
+  body .search_hotword a:hover {
+    color: #ed3f3f; }
+  body .search_r {
+    float: right;
+    margin-top: 18px; }
+  body .search_r span {
+    text-align: center;
+    color: #ed3f3f;
+    font-size: 12px;
+    width: 100%;
+    display: block; }
+  body .submenu_cont {
+    height: 39px; }
+  body .sub_box_left,
+  body .sub_box_center {
+    float: left; }
+  body .sub_box_left {
+    width: 180px;
+    padding-left: 10px;
+    font-size: 14px;
+    height: 100%;
+    background: #ed3f3f;
+    line-height: 39px;
+    color: #fff; }
+  body .sub_box_center {
+    padding-left: 30px;
+    line-height: 39px; }
+  body .sub_box_center li {
+    float: left;
+    margin-right: 29px; }
+  body .sub_box_center li a {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold; }
+  body .sub_box_right {
+    float: right;
+    width: 139px;
+    line-height: 39px;
+    height: 39px;
+    position: relative; }
+  body .cartbox {
+    color: #ed3f3f;
+    height: 18px;
+    width: 139px;
+    line-height: 18px;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px; }
+  body .cartbox_leftwall {
+    background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_left.png?__spriter") no-repeat;
+    width: 8px;
+    display: block;
+    float: left;
+    height: 18px; }
+  body .cartbox_rightwall {
+    background: url("http://www.cycang.com/Public/build/img/shop/index/bkt_right.png?__spriter") no-repeat;
+    width: 8px;
+    display: block;
+    float: right;
+    height: 18px; }
+  body .cartbox_txt {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 0px 6px 0px 10px;
+    color: #333; }
+  body .cartbox .icon-gwc {
+    float: left;
+    margin-left: 16px; }
+  body .cartbox em {
+    font-weight: bold; }
+  body .banner_cont {
+    margin-top: 12px;
+    height: 310px;
+    position: relative; }
+    body .banner_cont .banner_list {
+      position: absolute;
+      top: -12px;
+      width: 190px;
+      background: #fff;
+      height: 322px; }
+      body .banner_cont .banner_list li {
+        height: 44px;
+        line-height: 44px;
+        padding: 0px 10px 0px 10px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #ed3f3f;
+        border-left: 1px solid #ed3f3f; }
+        body .banner_cont .banner_list li a {
+          display: block;
+          font-size: 14px;
+          font-weight: bold;
+          width: 100%;
+          height: 100%;
+          color: #333333; }
+        body .banner_cont .banner_list li a::after {
+          content: "";
+          width: 7px;
+          height: 100%;
+          float: right;
+          background: url("http://www.cycang.com/Public/build/img/shop/index/cat_more.png?__spriter") no-repeat center; }
+        body .banner_cont .banner_list li .banner_submenu {
+          display: none;
+          z-index: 999;
+          width: 805px;
+          height: 320px;
+          border-top: 1px solid #ed3f3f;
+          border-bottom: 1px solid #ed3f3f;
+          border-right: 1px solid #ed3f3f;
+          background: #fff;
+          position: absolute;
+          top: 0px;
+          left: 190px;
+          padding-left: 34px; }
+          body .banner_cont .banner_list li .banner_submenu .sub_title {
+            height: 46px;
+            line-height: 46px;
+            font-size: 16px;
+            color: #6c6c6c; }
+          body .banner_cont .banner_list li .banner_submenu a::after {
+            content: "";
+            background: none; }
+          body .banner_cont .banner_list li .banner_submenu .sub_list {
+            width: 770px;
+            border-top: 1px solid #e1e1e1;
+            padding: 12px 0px; }
+            body .banner_cont .banner_list li .banner_submenu .sub_list a {
+              font-size: 12px;
+              color: #9d9d9d;
+              line-height: 12px;
+              width: auto;
+              float: left;
+              margin-right: 20px; }
+            body .banner_cont .banner_list li .banner_submenu .sub_list a:hover {
+              color: #ed3f3f; }
+            body .banner_cont .banner_list li .banner_submenu .sub_list a::after {
+              content: "";
+              background: none; }
+      body .banner_cont .banner_list li:hover .banner_submenu {
+        display: block; }
+      body .banner_cont .banner_list li:first-of-type {
+        border-top: 1px solid #ed3f3f; }
+      body .banner_cont .banner_list li:last-of-type {
+        border-bottom: 1px solid #ed3f3f; }
+      body .banner_cont .banner_list li:hover {
+        border-top: 1px solid #ed3f3f;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #ed3f3f; }
+    body .banner_cont .banner_center {
+      float: left;
+      margin-left: 200px;
+      width: 830px;
+      height: 310px;
+      overflow: hidden; }
+      body .banner_cont .banner_center .wrapper {
+        height: 310px;
+        position: relative; }
+        body .banner_cont .banner_center .wrapper .slide {
+          display: block;
+          position: absolute;
+          top: 0px;
+          width: 830px;
+          height: 310px;
+          background: url("http://b.cycangcdn.com/1554280243497.png");
+          background-position-x: -550px; }
+    body .banner_cont .banner_advertisement {
+      height: 310px;
+      float: left;
+      width: 160px;
+      margin-left: 10px; }
+      body .banner_cont .banner_advertisement a {
+        display: block;
+        width: 160px;
+        height: 150px; }
+      body .banner_cont .banner_advertisement a:last-of-type {
+        margin-top: 10px; }
+  body .recommend_cont {
+    height: 1377px;
+    background: #fff;
+    margin-top: 30px; }
+    body .recommend_cont .recommend_bar {
+      display: block;
+      height: 2px;
+      width: 50%;
+      background: #ed3f3f; }
+    body .recommend_cont .recommend_btn {
+      width: 100%;
+      height: 92px; }
+      body .recommend_cont .recommend_btn span {
+        width: 2px;
+        height: 30px;
+        background: #333333;
+        float: left;
+        margin-top: 29px; }
+      body .recommend_cont .recommend_btn .rbtn {
+        text-align: center;
+        display: block;
+        float: left;
+        width: 599px; }
+        body .recommend_cont .recommend_btn .rbtn h3 {
+          font-size: 24px;
+          line-height: 24px;
+          color: #6c6c6c;
+          padding-top: 20px;
+          cursor: pointer; }
+        body .recommend_cont .recommend_btn .rbtn a {
+          text-align: left;
+          display: block;
+          font-weight: bold;
+          width: 57px;
+          line-height: 16px;
+          height: 16px;
+          margin: 0 auto;
+          font-size: 16px;
+          color: #6c6c6c;
+          margin-top: 10px; }
+        body .recommend_cont .recommend_btn .rbtn a:after {
+          content: "";
+          display: inline-block;
+          width: 15px;
+          margin-left: 5px;
+          margin-bottom: 1px;
+          height: 10px;
+          background: url("http://www.cycang.com/Public/build/img/shop/index/floor_more.png?__spriter") no-repeat center; }
+      body .recommend_cont .recommend_btn .rbtn.active h3 {
+        color: #333333; }
+      body .recommend_cont .recommend_btn .rbtn.active a {
+        color: #ed3f3f; }
+      body .recommend_cont .recommend_btn .rbtn.active a:after {
+        background: url("http://www.cycang.com/Public/build/img/shop/index/floor_more_on.png?__spriter") no-repeat center; }
+    body .recommend_cont .recommend_boxList {
+      padding-left: 15px; }
+      body .recommend_cont .recommend_boxList li {
+        height: 306px;
+        width: 226px;
+        background: #f1f1f1;
+        float: left;
+        margin-right: 10px;
+        margin-top: 10px; }
+        body .recommend_cont .recommend_boxList li img {
+          height: 226px;
+          width: 100%; }
+        body .recommend_cont .recommend_boxList li dd {
+          height: 68px;
+          padding-top: 12px;
+          position: relative; }
+          body .recommend_cont .recommend_boxList li dd h3 {
+            display: block;
+            margin: 0px 10px;
+            font-size: 12px;
+            color: #333333; }
+          body .recommend_cont .recommend_boxList li dd span {
+            display: block;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 13px;
+            color: #ed3f3f;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 16px; }
+  body .attire_cont {
+    height: 730px;
+    background: #fff;
+    margin-top: 30px; }

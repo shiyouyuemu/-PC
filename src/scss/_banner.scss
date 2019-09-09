@@ -1,0 +1,133 @@
+.banner_cont {
+    margin-top: 12px;
+    height: 310px;
+    position: relative;
+
+    .banner_list {
+        position: absolute;
+        top: -12px;
+        width: 190px;
+        background: #fff;
+        height: 322px;
+        li{
+            height: 44px;
+            line-height: 44px;
+            padding: 0px 10px 0px 10px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid $color_Basics;
+            border-left: 1px solid $color_Basics;
+            a{
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                width: 100%;
+                height: 100%;
+                color:$color_Black;
+            }
+            a::after{
+                content: "";
+                width: 7px;
+                height: 100%;
+                float:right;
+                background: url("http://www.cycang.com/Public/build/img/shop/index/cat_more.png?__spriter")no-repeat center;
+            }
+            .banner_submenu{
+                display: none;
+                z-index: 999;
+                width: 805px;
+                height: 320px;
+                border-top: 1px solid $color_Basics;
+                border-bottom: 1px solid $color_Basics;
+                border-right: 1px solid $color_Basics;
+                background: #fff;
+                position: absolute;
+                top: 0px;
+                left: 190px;
+                padding-left: 34px;
+
+                .sub_title{
+                    height: 46px;
+                    line-height: 46px;
+                    font-size: 16px;
+                    color: #6c6c6c;
+                }
+                a::after{
+                    content: "";
+                    background: none;
+                }
+                .sub_list{
+                    width: 770px;
+                    border-top: 1px solid #e1e1e1;
+                    padding: 12px 0px;
+
+                    a{
+                        font-size: 12px;
+                        color: #9d9d9d;
+                        line-height: 12px;
+                        width: auto;
+                        float: left;
+                        margin-right: 20px;
+                        
+                    }
+                    a:hover{
+                        color: $color_Basics;
+                    }
+                    a::after{
+                        content: "";
+                        background: none;
+                    }
+                }
+
+            }
+        }
+        li:hover .banner_submenu{
+            display: block;
+        }
+        li:first-of-type{
+            border-top: 1px solid $color_Basics;
+        }
+        li:last-of-type{
+            border-bottom: 1px solid $color_Basics;
+        }
+        li:hover{
+            border-top: 1px solid $color_Basics;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid $color_Basics;
+        }
+    }
+    .banner_center{
+        float: left;
+        margin-left: 200px;
+        width: 830px;
+        height: 310px;
+        overflow: hidden;
+        .wrapper{
+            height: 310px;
+            position: relative;
+            .slide{
+                display: block;
+                position: absolute;
+                top: 0px;
+                width: 830px;
+                height: 310px;
+                background: url("http://b.cycangcdn.com/1554280243497.png");
+                background-position-x: -550px;
+            }
+        }
+    }
+    .banner_advertisement{
+        height: 310px;
+        float: left;
+        width: 160px;
+        margin-left: 10px;
+        a{
+            display: block;
+            width: 160px;
+            height: 150px;
+        }
+        a:last-of-type{
+            margin-top: 10px;
+        }
+    }
+}

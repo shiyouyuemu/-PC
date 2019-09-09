@@ -1,25 +1,26 @@
 @import "./variable";
+
 /*common*/
 
 @import "./common";
 
-
-/*header*/
-@import "./header";
-
-/*search*/
-@import "./search";
+/*body*/
+body {
+    background: url("http://s1.cycangcdn.com/img/bg.jpg")no-repeat 50% center fixed;
 
 
+    /*header*/
+    @import "./header";
 
+    /*search*/
+    @import "./search";
 
+    /*banner*/
+    @import "./banner";
 
+    /*recommend*/
+    @import "./recommend";
 
-
-
-
-
-
-
-
-
+    /*attire*/
+    @import "./attire";
+}

@@ -73,7 +73,7 @@ function css(done){
 async function scss(){
       await gulp.src([paths.scss + "*.scss"])
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest(distPaths.scss))
+      .pipe(gulp.dest(distPaths.style))
       .pipe(connect.reload())
 
 }
