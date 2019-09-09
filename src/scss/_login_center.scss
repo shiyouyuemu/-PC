@@ -1,20 +1,206 @@
-.login_center{
+.login_center {
     height: 670px;
     width: 100%;
     background: url("http://www.cycang.com/Public/build/img/i/login/login_bg.jpg");
 
-    .center_cont{
+    .center_cont {
         width: 1040px;
         margin: 0 auto;
         overflow: hidden;
-        .login_box{
+
+        .login_box {
             float: right;
             width: 390px;
             height: 525px;
             margin: 70px 20px 0 0;
             opacity: 0.87;
-            box-shadow: 0 0 15px rgba(0,0,0,.3);
+            box-shadow: 0 0 15px rgba(0, 0, 0, .3);
             background: #fff;
+
+            .login_inputList {
+                padding: 0 45px;
+
+                li {
+                    margin-top: 20px;
+
+                    .login_icon {
+                        display: block;
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 4px 0 0 4px;
+                        float: left;
+                    }
+
+                    .login_input {
+                        font-size: 16px;
+                        display: block;
+                        height: 42px;
+                        width: 256px;
+                        border: 1px solid #d3d3d3;
+                        border-radius: 0 4px 4px 0;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        float: left;
+                    }
+                }
+
+                li:first-of-type {
+                    margin-top: 24px;
+
+                    p {
+                        font-size: 20px;
+                        color: $color_Black;
+                    }
+                }
+
+                li:nth-of-type(2) {
+                    margin-top: 24px;
+
+                    span {
+                        background: #d3d3d3 url("http://www.cycang.com/Public/build/img/i/login/user_icon.png")no-repeat 50%;
+                    }
+                }
+
+                li:nth-of-type(3) {
+                    span {
+                        background: #d3d3d3 url("http://www.cycang.com/Public/build/img/i/login/pwd_icon.png")no-repeat 50%;
+                    }
+                }
+
+                li:nth-of-type(4) {
+                    span {
+                        font-size: 16px;
+                        color: #666;
+                        line-height: 42px;
+                        float: left;
+                    }
+
+                    .login_input {
+                        float: left;
+                        width: 110px;
+                        margin-left: 18px;
+                        border-radius: 4px;
+                        box-sizing: border-box;
+                    }
+
+                    .verification {
+                        width: 98px;
+                        height: 41px;
+                        margin-left: 18px;
+                        float: left;
+                        background: #000;
+                    }
+                }
+
+                li:nth-of-type(5) {
+                    label {
+                        float: left;
+                        line-height: 16px;
+
+                        input {
+                            float: left;
+                        }
+
+                        span {
+                            float: left;
+                            font-size: 12px;
+                            color: #666;
+                            margin: -3px 0 0 10px;
+                        }
+                    }
+
+                    a {
+                        float: right;
+                        display: block;
+                        font-size: 12px;
+                        color: #666;
+                        margin: -3px 0 0 10px;
+                    }
+                }
+
+                li:nth-of-type(6) {
+                    a {
+                        line-height: 42px;
+                        font-weight: bold;
+                        border-radius: 4px;
+                        height: 42px;
+                        text-align: center;
+                        float: left;
+                        box-sizing: border-box;
+                    }
+
+                    .login_login {
+                        width: 160px;
+                        background: $color_Basics;
+                        color: #fff;
+                    }
+
+                    .login_register {
+
+                        margin-left: 14px;
+                        display: block;
+                        background: #fff;
+                        width: 126px;
+                        color: #3c3c3c;
+                        border: 1px solid #ed3f3f;
+                    }
+                }
+
+                .login_onekey {
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #666;
+                    span:first-of-type{
+                        font-size: 16px;
+                        margin: 0px;
+                    }
+                    span {
+                        float: left;
+                        margin-left:7px; 
+                        a {
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #666;
+                            .login_icon{
+                                width: 18px;
+                                height: 14px;
+                                margin: 0 5px;
+                            }
+                            .login_wb{
+                                background:url("http://www.cycang.com/Public/build/img/i/login/weibo_icon.png?__spriter");
+                            }
+                            .login_qq{
+                                background: url("http://www.cycang.com/Public/build/img/i/login/qq_icon.png?__spriter")no-repeat;
+                            }
+                            .login_wx{
+                                background:url("http://www.cycang.com/Public/build/img/i/login/wechat_icon.png?__spriter")no-repeat;
+                            }
+                        }
+                    }
+                }
+                .login_line{
+                    width: 390px;
+                    height: 1px;
+                    background-color: #ccc;
+                    margin: 24px 0 24px -45px;
+                }
+                .login_last{
+                    span{
+                        font-size: 14px;
+                        color: #666;
+                    }
+                }
+            }
+
         }
     }
+}
+p.copy_cont{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+    text-align: center;
+    border:0px;
 }

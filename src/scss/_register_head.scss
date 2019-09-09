@@ -1,0 +1,27 @@
+.register_head{
+    width: 1040px;
+    margin: 0 auto;
+    height: 90px;
+    a{
+        float: left;
+        img{
+            margin: 20px 0 0 5px;
+        }
+    }
+    .register_line{
+        float: left;
+        width: 1px;
+        height: 29px;
+        background: #333;
+        margin: 50px 18px 0;
+    }
+    h1{
+        float: left;
+        margin-top: 50px;
+        font-size: 22px;
+        color: $color_Black;
+    }
+}
+
+
+

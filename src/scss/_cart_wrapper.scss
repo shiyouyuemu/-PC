@@ -1,0 +1,170 @@
+#wrapper {
+
+    /*无物品*/
+    .wrapper_cont {
+        width: 470px;
+        margin: 200px auto;
+
+        img {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .cont_right {
+            float: left;
+            margin-left: 10px;
+
+            p {
+                margin: 23px 0 15px;
+                font-size: 14px;
+                color: $color_Black;
+                line-height: 14px;
+            }
+
+            a {
+                display: block;
+                border: 2px solid #ed3f3f;
+                border-radius: 8px;
+                height: 28px;
+                width: 80px;
+                box-sizing: border-box;
+                line-height: 24px;
+                text-align: center;
+                color: #ed3f3f;
+
+            }
+        }
+    }
+
+    .wrapper_last {
+        padding: 0 29px;
+        width: 1040px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 22px;
+            text-align: center;
+            color: #777;
+            margin-bottom: 20px;
+
+            hr {
+                margin: 0 9px;
+                width: 150px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        .wrapper_list {
+            width: 980px;
+            height: 265px;
+            position: relative;
+            margin: 0 auto;
+
+            .wrapper {
+                min-width: 980px;
+                height: 100%;
+                position: absolute;
+
+                .slide {
+                    float: left;
+
+                    dl {
+                        float: left;
+                        margin-right: 10px;
+                        width: 188px;
+                        background: #f1f1f1;
+
+                        a {
+                            display: block;
+                            font-size: 12px;
+
+                            dt {
+                                img {
+                                    width: 100%;
+                                }
+
+                            }
+
+                            dd {
+                                padding: 3px 5px;
+                                color: $color_Black;
+
+                                h3 {
+                                    line-height: 1.3em;
+                                    height: 2.6em;
+                                    margin: 3px 0 8px;
+                                    font-size: 12px;
+                                }
+
+                                p {
+                                    font-size: 20px;
+                                    color: #ed3f3f;
+                                }
+
+                            }
+                        }
+                    }
+
+                    dl:last-of-type {
+                        margin: 0px;
+                    }
+                }
+
+            }
+
+            .next,
+            .prev {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 50px;
+                font-size: 0;
+                height: 100%;
+            }
+
+            .next {
+                right: -50px;
+                background: url("http://www.cycang.com/Public/build/img/arrow.png")no-repeat -92px -15px;
+            }
+
+            .prev {
+                left: -50px;
+                background: url("http://www.cycang.com/Public/build/img/arrow.png")no-repeat -15px -15px;
+            }
+        }
+    }
+
+
+    /*有物品*/
+    .wrapper_settlement {
+        padding: 20px 0px 50px;
+
+        .set_cont {
+            width: 1035px;
+            margin: 0 auto;
+
+            .set_logo {
+                padding: 30px 50px;
+
+                .logo {
+                    width: 82px;
+                    height: 82px;
+                }
+
+                div {
+                    float: left;
+                }
+
+                .hrr {
+                    width: 120px;
+                    border: 1px solid #ed3f3f;
+                    margin-top: 50px;
+                    margin: 51px 88px 0;
+                }
+            }
+        }
+    }
+
+}

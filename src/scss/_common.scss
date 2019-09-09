@@ -81,6 +81,10 @@ input {
     display: none;
 }
 
+input{
+    box-sizing: border-box;
+}
+
 /*public*/
 .header_cont,
 .search_cont,
@@ -198,3 +202,4 @@ input {
         border-color: #ed3f3f;
     }
 }
+

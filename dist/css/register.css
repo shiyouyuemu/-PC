@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/*common*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+ul,
+li,
+ol {
+  list-style: none; }
+
+em,
+i {
+  font-style: normal; }
+
+b,
+strong {
+  font-weight: normal; }
+
+a,
+u {
+  text-decoration: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+input {
+  outline: none;
+  border: 0;
+  background: none; }
+
+.clear-fix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clear-fix {
+  zoom: 1; }
+
+.hide {
+  display: none; }
+
+input {
+  box-sizing: border-box; }
+
+/*public*/
+.header_cont,
+.search_cont,
+.submenu_cont,
+.banner_cont,
+.recommend_cont,
+.attire_cont,
+.friend_cont,
+.guess_cont,
+.footer_cont {
+  width: 1200px;
+  margin: 0 auto; }
+
+/*列表项*/
+.boxList {
+  margin-left: 15px; }
+  .boxList .boxList_first {
+    display: block;
+    float: left;
+    height: 306px;
+    width: 462px;
+    margin-right: 9px;
+    border: 1px solid #fff; }
+    .boxList .boxList_first img {
+      width: 100%;
+      height: 100%; }
+  .boxList .boxList_first:hover {
+    transform: translateZ(0);
+    transition: all .7s;
+    border-color: #ed3f3f; }
+  .boxList li {
+    height: 306px;
+    width: 226px;
+    background: #f1f1f1;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #fff; }
+    .boxList li img {
+      height: 226px;
+      width: 100%; }
+    .boxList li dd {
+      height: 68px;
+      padding-top: 12px;
+      position: relative; }
+      .boxList li dd h3 {
+        display: block;
+        margin: 0px 10px;
+        font-size: 12px;
+        color: #333333; }
+      .boxList li dd .price_discount {
+        width: 206px;
+        position: absolute;
+        bottom: 13px;
+        vertical-align: bottom;
+        padding: 0 10px; }
+        .boxList li dd .price_discount span {
+          width: auto;
+          display: block;
+          float: left;
+          position: static; }
+        .boxList li dd .price_discount span:first-of-type {
+          font-size: 12px;
+          line-height: 21px;
+          vertical-align: bottom; }
+        .boxList li dd .price_discount span:last-of-type {
+          font-size: 16px;
+          line-height: 21px;
+          vertical-align: bottom; }
+        .boxList li dd .price_discount del {
+          color: #6c6c6c;
+          font-size: 16px;
+          float: right;
+          vertical-align: bottom; }
+      .boxList li dd span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 13px;
+        color: #ed3f3f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px; }
+  .boxList li:hover {
+    transform: translateZ(0);
+    transition: all .7s;
+    border-color: #ed3f3f; }
+
+/*head*/
+.register_head {
+  width: 1040px;
+  margin: 0 auto;
+  height: 90px; }
+  .register_head a {
+    float: left; }
+    .register_head a img {
+      margin: 20px 0 0 5px; }
+  .register_head .register_line {
+    float: left;
+    width: 1px;
+    height: 29px;
+    background: #333;
+    margin: 50px 18px 0; }
+  .register_head h1 {
+    float: left;
+    margin-top: 50px;
+    font-size: 22px;
+    color: #333333; }
+
+/*cont*/
+.register_cont {
+  height: 670px;
+  width: 100%;
+  background: url("http://www.cycang.com/Public/build/img/i/register/reg_bg.png"); }
+  .register_cont .register_ccont {
+    width: 1040px;
+    margin: 0 auto; }
+    .register_cont .register_ccont .register_list {
+      padding: 120px 0 0 35px;
+      width: 400px; }
+      .register_cont .register_ccont .register_list li span {
+        float: right;
+        line-height: 40px;
+        font-size: 17px;
+        color: #666; }
+      .register_cont .register_ccont .register_list li .login_input {
+        font-size: 16px;
+        display: block;
+        height: 42px;
+        width: 256px;
+        border: 1px solid #d3d3d3;
+        border-radius: 0 4px 4px 0;
+        padding: 10px;
+        box-sizing: border-box;
+        float: left; }
+      .register_cont .register_ccont .register_list li .tel {
+        background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_ph.png") no-repeat 278px 7px; }
+      .register_cont .register_ccont .register_list li .pwd {
+        background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px; }
+      .register_cont .register_ccont .register_list li .rpwd {
+        background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px; }
+      .register_cont .register_ccont .register_list li .list_input {
+        float: right;
+        display: block;
+        height: 40px;
+        width: 300px;
+        border: 1px solid #d3d3d3;
+        border-radius: 4px 4px 4px 4px;
+        font-size: 16px;
+        padding: 10px;
+        margin: 0 0 20px 10px; }
+      .register_cont .register_ccont .register_list li .register_check {
+        width: 300px;
+        height: 40px !important;
+        float: right;
+        border-radius: 4px;
+        margin: 0 0 20px 10px; }
+      .register_cont .register_ccont .register_list li:nth-of-type(5) {
+        padding-bottom: 20px; }
+        .register_cont .register_ccont .register_list li:nth-of-type(5) .cnum {
+          color: #666;
+          line-height: 42px;
+          float: right; }
+        .register_cont .register_ccont .register_list li:nth-of-type(5) .login_input {
+          background: #fff;
+          float: right;
+          width: 110px;
+          margin-left: 18px;
+          margin-right: 75px;
+          border-radius: 4px;
+          box-sizing: border-box; }
+        .register_cont .register_ccont .register_list li:nth-of-type(5) .verification {
+          width: 98px;
+          height: 41px;
+          margin-left: 18px;
+          float: right;
+          background: #000; }
+      .register_cont .register_ccont .register_list li:nth-of-type(6) {
+        margin: 0 0 24px 98px;
+        font-size: 13px; }
+        .register_cont .register_ccont .register_list li:nth-of-type(6) input {
+          margin: 1px 7px 0 0; }
+        .register_cont .register_ccont .register_list li:nth-of-type(6) a {
+          font-size: 12px;
+          color: #ed3f3f; }
+      .register_cont .register_ccont .register_list li:nth-of-type(7) a {
+        line-height: 42px;
+        font-weight: bold;
+        border-radius: 4px;
+        height: 42px;
+        text-align: center;
+        float: left;
+        box-sizing: border-box; }
+      .register_cont .register_ccont .register_list li:nth-of-type(7) .login_register {
+        margin-left: 100px;
+        width: 160px;
+        background: #ed3f3f;
+        color: #fff; }
+      .register_cont .register_ccont .register_list li:nth-of-type(7) .login_login {
+        margin-left: 14px;
+        display: block;
+        background: #fff;
+        width: 126px;
+        color: #3c3c3c;
+        border: 1px solid #ed3f3f; }
+      .register_cont .register_ccont .register_list .login_onekey {
+        font-size: 12px;
+        color: #666;
+        margin: 15px 0 0 96px; }
+        .register_cont .register_ccont .register_list .login_onekey span:first-of-type {
+          margin: 0px; }
+        .register_cont .register_ccont .register_list .login_onekey span {
+          font-size: 12px;
+          float: left;
+          line-height: 40px; }
+          .register_cont .register_ccont .register_list .login_onekey span a {
+            font-size: 12px;
+            color: #666; }
+            .register_cont .register_ccont .register_list .login_onekey span a .login_icon {
+              width: 18px;
+              height: 14px;
+              margin: 14px 3px 0 5px;
+              float: left; }
+            .register_cont .register_ccont .register_list .login_onekey span a .login_wb {
+              background: url("http://www.cycang.com/Public/build/img/i/login/weibo_icon.png?__spriter"); }
+            .register_cont .register_ccont .register_list .login_onekey span a .login_qq {
+              background: url("http://www.cycang.com/Public/build/img/i/login/qq_icon.png?__spriter") no-repeat; }
+            .register_cont .register_ccont .register_list .login_onekey span a .login_wx {
+              background: url("http://www.cycang.com/Public/build/img/i/login/wechat_icon.png?__spriter") no-repeat; }
+
+p.copy_cont {
+  border-top: 1px solid #fcfcfc;
+  padding: 40px 0 10px;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 20px;
+  text-align: center;
+  border: 0px; }
+  p.copy_cont a {
+    color: #333333; }

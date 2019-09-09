@@ -1,0 +1,192 @@
+.register_cont {
+    height: 670px;
+    width: 100%;
+    background: url("http://www.cycang.com/Public/build/img/i/register/reg_bg.png");
+
+    .register_ccont {
+        width: 1040px;
+        margin: 0 auto;
+
+        .register_list {
+            padding: 120px 0 0 35px;
+            width: 400px;
+
+            li {
+                span {
+                    float: right;
+                    line-height: 40px;
+                    font-size: 17px;
+                    color: #666;
+                }
+
+                .login_input {
+                    font-size: 16px;
+                    display: block;
+                    height: 42px;
+                    width: 256px;
+                    border: 1px solid #d3d3d3;
+                    border-radius: 0 4px 4px 0;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    float: left;
+                }
+
+                .tel {
+                    background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_ph.png") no-repeat 278px 7px;
+                }
+
+                .pwd {
+                    background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px;
+                }
+
+                .rpwd {
+                    background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px;
+                }
+
+                .list_input {
+                    float: right;
+                    display: block;
+                    height: 40px;
+                    width: 300px;
+                    border: 1px solid #d3d3d3;
+                    border-radius: 4px 4px 4px 4px;
+                    font-size: 16px;
+                    padding: 10px;
+                    margin: 0 0 20px 10px;
+                }
+
+                .register_check {
+                    width: 300px;
+                    height: 40px !important;
+                    float: right;
+                    border-radius: 4px;
+                    margin: 0 0 20px 10px;
+                }
+            }
+
+            li:nth-of-type(5) {
+                padding-bottom: 20px;
+
+                .cnum {
+                    color: #666;
+                    line-height: 42px;
+                    float: right;
+                }
+
+                .login_input {
+                    background: #fff;
+                    float: right;
+                    width: 110px;
+                    margin-left: 18px;
+                    margin-right: 75px;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+
+                .verification {
+                    width: 98px;
+                    height: 41px;
+                    margin-left: 18px;
+                    float: right;
+                    background: #000;
+                }
+            }
+
+            li:nth-of-type(6) {
+                margin: 0 0 24px 98px;
+                font-size: 13px;
+
+                input {
+                    margin: 1px 7px 0 0;
+                }
+
+                a {
+                    font-size: 12px;
+                    color: $color_Basics;
+                }
+            }
+
+            li:nth-of-type(7) {
+                a {
+                    line-height: 42px;
+                    font-weight: bold;
+                    border-radius: 4px;
+                    height: 42px;
+                    text-align: center;
+                    float: left;
+                    box-sizing: border-box;
+                }
+
+                .login_register {
+                    margin-left: 100px;
+                    width: 160px;
+                    background: $color_Basics;
+                    color: #fff;
+                }
+
+                .login_login {
+
+                    margin-left: 14px;
+                    display: block;
+                    background: #fff;
+                    width: 126px;
+                    color: #3c3c3c;
+                    border: 1px solid #ed3f3f;
+                }
+            }
+
+            .login_onekey {
+                font-size: 12px;
+                
+                color: #666;
+                margin: 15px 0 0 96px;
+                span:first-of-type {
+                   
+                    margin: 0px;
+                }
+
+                span {
+                    font-size: 12px;
+                    float: left;
+                    line-height: 40px;
+                    a {
+                        font-size: 12px;
+                        
+                        color: #666;
+
+                        .login_icon {
+                            width: 18px;
+                            height: 14px;
+                            margin: 14px 3px 0 5px;
+                            float: left;
+                        }
+
+                        .login_wb {
+                            background: url("http://www.cycang.com/Public/build/img/i/login/weibo_icon.png?__spriter");
+                        }
+
+                        .login_qq {
+                            background: url("http://www.cycang.com/Public/build/img/i/login/qq_icon.png?__spriter")no-repeat;
+                        }
+
+                        .login_wx {
+                            background: url("http://www.cycang.com/Public/build/img/i/login/wechat_icon.png?__spriter")no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+p.copy_cont{
+    border-top: 1px solid #fcfcfc;
+    padding: 40px 0 10px;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+    text-align: center;
+    border:0px;
+    a{
+        color: $color_Black;
+    }
+}

@@ -1,0 +1,25 @@
+@import "./variable";
+/*common*/
+@import "./common";
+
+/*head*/
+@import "./common_head";
+
+/*wrapper*/
+@import "./cart_wrapper";
+
+
+/*footer*/
+@import "./footer";
+
+.footer_cont{
+    width: 1040px;
+    background: #fff;
+}
+
+/*copy*/
+@import "./copy";
+.copy_cont{
+    margin: 0 auto;
+    width: 1040px;
+}
