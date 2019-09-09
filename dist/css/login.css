@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/*common*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal; }
+
+ul,
+li,
+ol {
+  list-style: none; }
+
+em,
+i {
+  font-style: normal; }
+
+b,
+strong {
+  font-weight: normal; }
+
+a,
+u {
+  text-decoration: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+input {
+  outline: none;
+  border: 0;
+  background: none; }
+
+.clear-fix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clear-fix {
+  zoom: 1; }
+
+.hide {
+  display: none; }
+
+/*public*/
+.header_cont,
+.search_cont,
+.submenu_cont,
+.banner_cont,
+.recommend_cont,
+.attire_cont,
+.friend_cont,
+.guess_cont,
+.footer_cont {
+  width: 1200px;
+  margin: 0 auto; }
+
+/*列表项*/
+.boxList {
+  margin-left: 15px; }
+  .boxList .boxList_first {
+    display: block;
+    float: left;
+    height: 306px;
+    width: 462px;
+    margin-right: 9px;
+    border: 1px solid #fff; }
+    .boxList .boxList_first img {
+      width: 100%;
+      height: 100%; }
+  .boxList .boxList_first:hover {
+    transform: translateZ(0);
+    transition: all .7s;
+    border-color: #ed3f3f; }
+  .boxList li {
+    height: 306px;
+    width: 226px;
+    background: #f1f1f1;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #fff; }
+    .boxList li img {
+      height: 226px;
+      width: 100%; }
+    .boxList li dd {
+      height: 68px;
+      padding-top: 12px;
+      position: relative; }
+      .boxList li dd h3 {
+        display: block;
+        margin: 0px 10px;
+        font-size: 12px;
+        color: #333333; }
+      .boxList li dd .price_discount {
+        width: 206px;
+        position: absolute;
+        bottom: 13px;
+        vertical-align: bottom;
+        padding: 0 10px; }
+        .boxList li dd .price_discount span {
+          width: auto;
+          display: block;
+          float: left;
+          position: static; }
+        .boxList li dd .price_discount span:first-of-type {
+          font-size: 12px;
+          line-height: 21px;
+          vertical-align: bottom; }
+        .boxList li dd .price_discount span:last-of-type {
+          font-size: 16px;
+          line-height: 21px;
+          vertical-align: bottom; }
+        .boxList li dd .price_discount del {
+          color: #6c6c6c;
+          font-size: 16px;
+          float: right;
+          vertical-align: bottom; }
+      .boxList li dd span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 13px;
+        color: #ed3f3f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px; }
+  .boxList li:hover {
+    transform: translateZ(0);
+    transition: all .7s;
+    border-color: #ed3f3f; }
+
+/*login_top*/
+.login_top {
+  margin: 0 auto;
+  width: 1040px;
+  height: 90px; }
+  .login_top a {
+    display: block;
+    float: left;
+    margin: 15px 0 0 20px; }
+    .login_top a img {
+      width: 70px; }
+  .login_top span {
+    float: right;
+    line-height: 90px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #333333; }
+
+/*login_center*/
+.login_center {
+  height: 670px;
+  width: 100%;
+  background: url("http://www.cycang.com/Public/build/img/i/login/login_bg.jpg"); }
+  .login_center .center_cont {
+    width: 1040px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .login_center .center_cont .login_box {
+      float: right;
+      width: 390px;
+      height: 525px;
+      margin: 70px 20px 0 0;
+      opacity: 0.87;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      background: #fff; }

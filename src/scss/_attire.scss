@@ -1,16 +1,88 @@
-.attire_cont{
+.attire_cont {
     height: 730px;
     background: #fff;
     margin-top: 30px;
+
+    .attire_title {
+        height: 76px;
+
+        .title_left {
+            float: left;
+            width: 400px;
+            height: 100%;
+
+            img {
+                width: 36px;
+                height: 36px;
+                margin: 20px 10px 20px 15px;
+                float: left;
+            }
+
+            span {
+                font-size: 24px;
+                line-height: 76px;
+                display: block;
+                float: left;
+            }
+        }
+
+        a {
+            float: right;
+            color: $color_Black;
+            margin-top:28px;
+        }
+        .title_center:hover:before{
+            transform:rotate(180deg);
+        }
+        .title_center {
+            margin-right:20px;
+            display: block;
+            line-height: 20px;
+            border: 2px solid #333;
+            border-radius: 12px;
+            padding: 0 15px 0 30px;
+            font-size: 14px;
+            position: relative;
+        }
+        .title_center:before{
+                transform: translateZ(0);
+                transition: all .3s;
+                content: "";
+                position: absolute;
+                width: 14px;
+                height: 12px;
+                background-image: url("http://www.cycang.com/Public/build/img/shop/index/floor_change.png?__spriter");
+                top: 4px;
+                left: 11px;
+        }
+        .title_right {
+            margin-right:15px;
+            line-height: 20px;
+            border: 2px solid #333;
+            border-radius: 12px;
+            font-size: 14px;
+            position: relative;
+            padding: 0 25px 0 16px;
+        }
+        .title_right:after{
+            transform: translateZ(0);
+            transition: all .3s;
+            content: "";
+            position: absolute;
+            width: 13px;
+            height: 10px;
+            background-image: url("http://www.cycang.com/Public/build/img/shop/index/floor_more.png?__spriter");
+            top: 5px;
+            right: 11px;
+        }
+        .title_right:hover:after{
+            transform: translateX(3px);
+        }
+    }
+    .title_boxList{
+        overflow: hidden;
+        display: block;
+        width: 1186px;
+        padding-bottom: 20px;  
+    }
 }
-
-
-
-
-
-
-
-
-
-
-

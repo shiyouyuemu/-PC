@@ -1,0 +1,20 @@
+.login_center{
+    height: 670px;
+    width: 100%;
+    background: url("http://www.cycang.com/Public/build/img/i/login/login_bg.jpg");
+
+    .center_cont{
+        width: 1040px;
+        margin: 0 auto;
+        overflow: hidden;
+        .login_box{
+            float: right;
+            width: 390px;
+            height: 525px;
+            margin: 70px 20px 0 0;
+            opacity: 0.87;
+            box-shadow: 0 0 15px rgba(0,0,0,.3);
+            background: #fff;
+        }
+    }
+}

@@ -87,7 +87,114 @@ input {
 .submenu_cont,
 .banner_cont,
 .recommend_cont,
-.attire_cont {
+.attire_cont,
+.friend_cont,
+.guess_cont,
+.footer_cont {
     width: 1200px;
     margin: 0 auto;
+}
+
+/*列表项*/
+
+.boxList {
+    margin-left: 15px;
+
+    .boxList_first {
+        display: block;
+        float: left;
+        height: 306px;
+        width: 462px;
+        margin-right: 9px;
+        border: 1px solid #fff;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .boxList_first:hover {
+        transform: translateZ(0);
+        transition: all .7s;
+        border-color: #ed3f3f;
+    }
+
+    li {
+        height: 306px;
+        width: 226px;
+        background: #f1f1f1;
+        float: left;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        border: 1px solid #fff;
+
+        img {
+            height: 226px;
+            width: 100%;
+        }
+
+        dd {
+            height: 68px;
+            padding-top: 12px;
+            position: relative;
+
+            h3 {
+                display: block;
+                margin: 0px 10px;
+                font-size: 12px;
+                color: $color_Black;
+            }
+
+            .price_discount {
+                width: 206px;
+                position: absolute;
+                bottom: 13px;
+                vertical-align: bottom;
+                padding:0 10px;
+                span {
+                    width: auto;
+                    display: block;
+                    float: left;
+                    position: static;
+                    
+                }
+                span:first-of-type{
+                    font-size: 12px;
+                    line-height: 21px;
+                    vertical-align: bottom;
+                    
+                }
+                span:last-of-type{
+                    font-size: 16px;
+                    line-height: 21px;
+                    vertical-align: bottom;
+                }
+                del{
+                    color: #6c6c6c;
+                    font-size: 16px;
+                    float: right;
+                    vertical-align: bottom;
+                }
+            }
+
+            span {
+                display: block;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 13px;
+                color: $color_Basics;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    li:hover {
+        transform: translateZ(0);
+        transition: all .7s;
+        border-color: #ed3f3f;
+    }
 }

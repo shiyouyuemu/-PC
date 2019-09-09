@@ -1,0 +1,44 @@
+.guess_cont {
+    background-color: #fff;
+    margin-top: 30px;
+    overflow: hidden;
+
+    .guess_title {
+        height: 90px;
+        text-align: center;
+        overflow: hidden;
+
+        h2 {
+            font-size: 24px;
+            line-height: 24px;
+            margin: 20px auto 0;
+        }
+
+        h2:before {
+            content: "";
+            display: inline-block;
+            background-image: url("http://www.cycang.com/Public/build/img/shop/index/guess_title.png?__spriter");
+            width: 18px;
+            height: 18px;
+            margin: 0 15px;
+        }
+
+        h2:after {
+            content: "";
+            display: inline-block;
+            background-image: url("http://www.cycang.com/Public/build/img/shop/index/guess_title.png?__spriter");
+            width: 18px;
+            height: 18px;
+            margin: 0 15px;
+        }
+
+        h3 {
+            color: #6c6c6c;
+            margin: 10px 0 20px;
+            font-size: 14px;
+        }
+    }
+    .boxList{
+        padding-bottom:20px; 
+    }
+}

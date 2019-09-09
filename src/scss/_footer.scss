@@ -1,0 +1,102 @@
+.footer_cont {
+    margin-top: 50px;
+    border-top: 1px solid #e1e1e1;
+    background: #f1f1f1;
+
+    .footer_ccont {
+        width: 1040px;
+        margin: 0 auto;
+        padding: 30px 0 25px;
+
+        .footer_left {
+            float: left;
+
+            dl {
+                float: left;
+                margin-right: 40px;
+
+                dt {
+                    font-size: 16px;
+                    margin-bottom: 13px;
+                    color: rgb(108, 108, 108);
+                }
+
+                dd {
+                    a {
+                        font-size: 12px;
+                        line-height: 21px;
+                        color: #6c6c6c;
+                    }
+
+                    a:hover {
+                        color: $color_Basics;
+                    }
+                }
+            }
+        }
+
+        .footer_right {
+            width: 400px;
+            border-left: 1px solid rgb(225, 225, 225);
+            overflow: hidden;
+            float: left;
+            li {
+                padding-left: 40px;
+                margin: 0 0 10px;
+                line-height: 21px;
+                color: rgb(108, 108, 108);
+                float: left;
+                font-size: 12px;
+
+                img {
+                    display: block;
+                    width: 160px;
+                    height: 86px;
+                    margin-bottom: 8px;
+                }
+
+                .li_center {
+                    text-align: center;
+                    color: $color_Basics;
+                    font-size: 12px;
+                    width: 160px;
+                }
+
+                .footer_wechat,
+                .footer_weibo {
+                    width: 80px;
+                    display: block;
+                    height: 28px;
+                    margin-bottom: 6px;
+                }
+
+                .footer_weibo {
+                    background: url("http://www.cycang.com/Public/build/img/shop/weibo_foot.png");
+                }
+
+                .footer_wechat {
+                    background: url("http://www.cycang.com/Public/build/img/shop/wechat_foot.png")no-repeat;
+                }
+            }
+        }
+
+        .footer_friend {
+            float: left;
+
+            dd {
+                float: left;
+                font-size: 12px;
+                line-height: 21px;
+                color: #6c6c6c;
+                margin-right: 10px;
+                a{
+                    color: #6c6c6c;
+                }
+                a:hover{
+                    color: $color_Basics;
+                }
+            }
+            
+        }
+    }
+}

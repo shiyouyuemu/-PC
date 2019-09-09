@@ -1,0 +1,23 @@
+.copy_cont{
+    text-align: center;
+    line-height: 72px;
+    color: rgb(108, 108, 108);
+    border-top: 1px solid rgb(225, 225, 225);
+    font-size: 12px;
+    a{
+        color: $color_Black;
+    }
+}
+
+.go_top{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    width: 56px;
+    height: 90px;
+    z-index: 2;
+    cursor: pointer;
+    background: url("http://www.cycang.com/Public/build/img/shop/to_top.png");
+}
+
+
