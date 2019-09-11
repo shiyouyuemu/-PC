@@ -30,15 +30,16 @@
                     <li>
                         <label for="login_pwd" class="clear-fix">
                             <span class="login_icon"></span>
-                            <input type="text" id="login_pwd" class="login_input" placeholder="密码">
+                            <input type="password" id="login_pwd" class="login_input" placeholder="密码">
                         </label>
                     </li>
-                    <li>
-                        <label for="login_ver" class="clear-fix">
-                                <span class="">验证码:</span>
-                                <input type="text" id="login_ver" class="login_input" placeholder="验证码">  
-                                <div class="verification"></div>  
+                    <li class="clear-fix">
+                        <label for="login_ver">
+                            <span class="">验证码:</span>
+                            <input type="text" id="login_ver" class="login_input" placeholder="验证码">
                         </label>
+                            <div class="verification" onselectstart="return false;" id="login_random"></div>
+                       
                     </li>
                     <li class="clear-fix">
                         <label for="ifcheck">
@@ -48,8 +49,8 @@
                         <a href="">忘记密码?&nbsp; </a>
                     </li>
                     <li class="clear-fix">
-                        <a href="" class="login_login">登&nbsp;录</a>
-                        <a href="" class="login_register">快速注册</a>
+                        <a href="javascripts:void(0);" class="login_login" id="login">登&nbsp;录</a>
+                        <a href="./register.html" class="login_register">快速注册</a>
                     </li>
                     <li class="clear-fix login_onekey">
                         <span>一键登录:</span>
@@ -67,7 +68,7 @@
                         </span>
                         <span>
                             <a href="">
-                                    <div class="login_icon login_wx"></div>
+                                <div class="login_icon login_wx"></div>
                                 微信
                             </a>
                         </span>
@@ -83,9 +84,15 @@
         </div>
     </div>
     <p class="copy_cont">
-            ICP © 2015 广州脑动网络科技有限公司 版权所有（备案号：
-            <a href="">粤ICP备15028368号</a>)
+        ICP © 2015 广州脑动网络科技有限公司 版权所有（备案号：
+        <a href="">粤ICP备15028368号</a>)
     </p>
 </body>
+<script src="./javascripts/require.js"></script>
+<script>
+    require(["./javascripts/require.config"], function () {
+        require(["main"]);
+    });
+</script>
 
 </html>

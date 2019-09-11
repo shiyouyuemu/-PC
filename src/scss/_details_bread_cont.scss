@@ -1,0 +1,29 @@
+.bread_cont{
+    width: 1040px;
+    margin: 20px auto;
+    a:first-of-type{
+        font-weight: bold;
+    }
+    a,span{
+        line-height: 30px;
+        
+        font-size: 12px;
+        color: #666;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    a:hover,span:hover{
+        color: $color_Basics;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

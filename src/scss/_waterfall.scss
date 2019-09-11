@@ -1,0 +1,53 @@
+.waterfall {
+    width: 1040px;
+    margin: 20px auto;
+
+    .waterfall_cont {
+        width: 103%;
+
+        li {
+            float: left;
+
+            a {
+                display: block;
+                width: 250px;
+                height: 363px;
+                border: 1px solid #ebebeb;
+                margin: 0 10px 10px 0;
+
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+
+                div {
+                    box-sizing: border-box;
+                    width: 250px;
+                    min-height: 96px;
+                    margin-top: -4px;
+                    padding: 0px 10px;
+                    background: #fff;
+
+                    P:first-of-type {
+                        text-align: left;
+                        padding-top: 10px;
+                        height: 3em;
+                        line-height: 1.5em;
+                        overflow: hidden;
+                        font-size: 12px;
+                    }
+                    p:last-of-type{
+                        margin-top: 8px;
+                        color: red;
+                        font-size: 16px;
+                        text-align: left;
+                    }
+                }
+            }
+            a:hover{
+                border: 1px solid #dc5c95;
+                box-shadow: 0 5px 10px rgba(67,72,84,.3);
+            }
+        }
+    }
+}

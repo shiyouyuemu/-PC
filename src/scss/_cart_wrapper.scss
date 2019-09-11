@@ -164,7 +164,372 @@
                     margin: 51px 88px 0;
                 }
             }
+
+            .set_address {
+                margin-bottom: 8px;
+                width: 100%;
+                font-size: 12px;
+
+                .address_cont {
+                    padding-right: 100px;
+                    margin-bottom: 8px;
+                    text-align: right;
+
+                    .address_text {
+                        position: absolute;
+                        display: inline-block;
+                        vertical-align: middle;
+                        border: 1px solid #c4bebe;
+                        background-color: #fff;
+                        padding: 0 3px 0 8px;
+                        line-height: 20px;
+                        cursor: pointer;
+                        z-index: 3;
+
+                        .address_value {
+                            text-align: right;
+                            line-height: 20px;
+                        }
+
+                        .address_icon {
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            background: url("http://www.cycang.com/Public/build/img/arrow2.png") no-repeat 50%;
+                            background-size: 20px;
+                            vertical-align: bottom;
+                        }
+                    }
+                }
+            }
+
+            .set_table {
+                .table_td {
+                    padding: 12px;
+                    height: 104px;
+                    float: left;
+                    box-sizing: border-box;
+                }
+
+                .table_th_3 {
+                    width: 3%;
+                }
+
+                .table_th_37 {
+                    width: 37%;
+                }
+
+                .table_th_10 {
+                    width: 10%;
+                }
+
+                .table_th_20 {
+                    width: 20%;
+                }
+
+
+
+                .table_head {
+                    div {
+                        float: left;
+                    }
+
+                    border-radius: 6px;
+                    border: 2px solid #eee4e4;
+                    font-size: 12px;
+
+                    .table_allbtn {
+                        box-sizing: border-box;
+                        width: 7%;
+                        padding: 12px;
+                        padding-left: 14px;
+                        padding-right: 8px;
+                        float: left;
+
+                        .allbtn_cont {
+                            float: left;
+                            height: 18px;
+                            padding-right: 10px;
+
+                            i {
+                                display: block;
+                                cursor: pointer;
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 5px;
+                                border: 2px solid #c4bebe;
+
+                                input {
+                                    opacity: 0;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            i.on {
+                                background-color: #ed3f3f;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: 0 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .table_mes {
+                        box-sizing: border-box;
+                        width: 33%;
+                        padding: 12px;
+                        padding-left: 60px;
+                    }
+
+                    .table_li {
+                        box-sizing: border-box;
+                        padding: 12px;
+                        width: 10%;
+
+                    }
+
+                    .table_prc {
+                        text-align: center;
+                    }
+
+                    .table_num {
+                        box-sizing: border-box;
+                        width: 20%;
+                        padding: 12px;
+                        text-align: center;
+                    }
+                }
+
+                .table_cont {
+                    color: $color_Black;
+                    font-size: 12px;
+
+                    .table_items {
+                        .table_type {
+                            font-size: 14px;
+                            height: 32px;
+                            overflow: hidden;
+                            font-size: 12px;
+
+                            .table_type_left {
+                                float: left;
+                                width: 400px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                padding: 12px 12px 6px 0;
+                                color: #333;
+
+                                .table_allbtn {
+                                    margin-right: 8px;
+                                }
+
+                                a {
+                                    span {
+                                        color: $color_Basics;
+                                    }
+                                }
+
+                            }
+
+                            .table_type_right {
+                                box-sizing: border-box;
+                                padding: 12px 12px 6px 0;
+                                color: #333;
+                                font-size: 12px;
+                                float: right;
+
+                                #price,
+                                #freight {
+                                    color: #000;
+                                }
+                            }
+                        }
+
+                        .table_wrap {
+                            overflow: hidden;
+                            border: 1px solid #c4bebe;
+                            margin-bottom: 6px;
+
+                            .table_item {
+                                border-top: 1px solid #c4bebe;
+                                background: #fef4f4;
+                            }
+
+                            a {
+                                img {
+                                    display: block;
+                                    width: 80px;
+                                    height: 80px;
+                                    float: left;
+                                }
+                            }
+
+                            .title_name {
+                                display: block;
+                                width: 230px;
+                                float: left;
+                                margin: 10px;
+                                color: $color_Black;
+                                font-size: 12px;
+                            }
+
+                            .table_text {
+                                padding: 30px 20px;
+                            }
+
+                            .num_box {
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 100%;
+                                margin: 0;
+                                text-align: center;
+                                box-sizing: border-box;
+
+                                span {
+                                    line-height: 22px;
+                                    width: 24px;
+                                    height: 24px;
+                                    box-sizing: border-box;
+                                    border: 1px solid #c4bebe;
+                                    background: #eee;
+                                    cursor: pointer;
+                                    text-align: center;
+                                    display: inline-block;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                }
+
+                                input {
+                                    border: 1px solid #c4bebe;
+                                    padding: 5px 10px;
+                                    background: #fff;
+                                    border-left: none;
+                                    border-right: none;
+                                    line-height: 22px;
+                                    width: 40px;
+                                    height: 24px;
+                                    text-align: center;
+                                    vertical-align: middle;
+                                    box-sizing: border-box;
+                                    margin: 0px -4px;
+                                }
+                            }
+
+                            .table_sum {
+                                color: $color_Basics;
+                                font-weight: bold;
+                            }
+
+                            .table_del {
+                                cursor: pointer;
+                            }
+
+                            .table_item:first-of-type {
+                                border-top: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .set_allselect {
+                background: #fff;
+                border: 2px solid #eee4e4;
+                border-bottom: 0;
+                margin-top: 20px;
+                font-size: 12px;
+
+                .allselect_left {
+                    float: left;
+
+                    .table_allbtn {
+                        padding: 12px 20px 12px 16px;
+                        font-size: 12px;
+                    }
+
+                    a {
+                        float: left;
+                        margin-left: 15px;
+                        line-height: 42px;
+                        cursor: pointer;
+                        font-size: 12px;
+                        color: $color_Black;
+                    }
+                }
+
+                .allselect_right {
+                    float: right;
+                    margin-right: 20px;
+                    line-height: 36px;
+                }
+            }
+
+            .set_setup {
+                width: 100%;
+                background-color: #eee4e4;
+
+                .setup_right {
+                    float: right;
+                    line-height: 36px;
+
+                    span {
+                        color: #ed3f3f;
+                        font-size: 12px;
+                    }
+
+                    a {
+                        width: 140px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        text-align: center;
+                        display: inline-block;
+                        cursor: pointer;
+                        color: #fff;
+                        background: #ed3f3f;
+                        margin-left: 20px;
+                    }
+                }
+            }
         }
     }
+}
 
+.table_allbtn {
+    box-sizing: border-box;
+
+    padding-left: 14px;
+    padding-right: 8px;
+    float: left;
+
+    .allbtn_cont {
+        float: left;
+        height: 18px;
+        padding-right: 10px;
+
+        i {
+            display: block;
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            border-radius: 5px;
+            border: 2px solid #c4bebe;
+
+            input {
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+
+        i.on {
+            background-color: #ed3f3f;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            cursor: pointer;
+        }
+    }
 }

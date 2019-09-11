@@ -1,0 +1,55 @@
+.details_cont {
+    border: 1px solid #ccc;
+    border-top: 2px solid #ed3f3f;
+    width: 1040px;
+    margin: 0 auto;
+
+    .cont_tit {
+        padding: 20px 10px 0;
+        border-bottom: 1px solid #ccc;
+
+        span:first-of-type {
+            font-size: 14px;
+            float: left;
+        }
+
+        p {
+            float: right;
+            height: 40px;
+            position: relative;
+            cursor:pointer;
+            span:first-of-type {
+                display: block;
+                width: 22px;
+                height: 22px;
+                background: url("http://www.cycang.com/Public/build/img/shop/small_qr.png") no-repeat;
+                margin-top: -2px;
+                margin-right: 8px;
+            }
+
+            span:last-of-type {
+                display: none;
+                width: 130px;
+                height: 130px;
+                position: absolute;
+                left: 0;
+                top: 30px;
+                background: url("http://www.cycang.com/Public/build/img/shop/detail-qr.png") no-repeat;
+                background-size: contain;
+            }
+        }
+        p:hover span:last-of-type{
+            display: block;
+        }
+    }
+
+
+    .cont {
+        padding: 20px;
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

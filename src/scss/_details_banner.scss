@@ -1,0 +1,92 @@
+.banner_cont {
+    width: 1040px;
+    margin: 20px auto;
+    position: relative;
+
+    .title {
+        padding: 12px 0;
+        font-size: 14px;
+        background-image: url("http://www.cycang.com/Public/build/img/shop/reco_bg.jpg");
+        background-repeat: no-repeat;
+        background-color: #fff2f9;
+        margin-bottom: 20px;
+
+        span {
+            margin-left: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .cont {
+        width: 100%;
+        overflow: hidden;
+
+        .wrapper {
+            width: 4208px;
+
+            .slide {
+                float: left;
+                width: 248px;
+                margin-right: 13px;
+                border: 1px solid #ccc;
+
+                a {
+                    display: block;
+
+                    img {
+                        width: 248px;
+                        height: 248px;
+                    }
+
+                    .tit {
+                        padding: 10px;
+
+                        p:first-of-type {
+                            font-size: 12px;
+                            color: #e33;
+                            font-weight: bold;
+                        }
+
+                        p {
+                            color: $color_Black;
+                            font-size: 12px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: normal;
+                        }
+                    }
+                }
+                
+            }
+            .slide:hover{
+                border-radius: 5px;
+                box-shadow: 1px 1px 20px grey;
+            }
+            .slide:hover .tit{
+                background: $color_Basics;
+            }
+            .slide:hover .tit p{
+                color: #fff!important;
+            }
+        }
+    }
+    .prev,.next{
+        width: 48px;
+        height: 100px;
+        position: absolute;
+        top: 150px;
+        display: none;
+    }
+    .prev{
+        left: 1px;
+        background: url("http://www.cycang.com/Public/build/img/shop/left_arrow.png");
+    }
+    .next{
+
+        right: 1px;
+        background: url("http://www.cycang.com/Public/build/img/shop/right_arrow.png");
+    }
+}
+.banner_cont:hover .prev,.banner_cont:hover .next{
+    display: block;
+}

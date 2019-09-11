@@ -54,7 +54,7 @@ function javascript(done){
       gulp.src([paths.javascript + "*.js"])
       .pipe(gulp.dest(distPaths.javascript))
       .pipe(connect.reload())
-
+      console.log(1)
       done();
 }
 function html(done){

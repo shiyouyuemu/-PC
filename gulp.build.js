@@ -10,7 +10,7 @@ const cssmin = require('gulp-cssmin');
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 sass.compiler = require('node-sass');
-
+const del = require("del");
 const {paths} = require("./config/gulp.config");
 
 const distPaths = {};
@@ -24,12 +24,13 @@ for(let attr in paths){
 // 清空文件夹插件;
 
 async function handlerClean(){
-      await gulp.src( distPaths.javascript + "*.js")
-      .pipe(clean());
-      await gulp.src( distPaths.style + "*.css")
-      .pipe(clean());
-      await gulp.src( distPaths.html + "*.html")
-      .pipe(clean());
+      // await gulp.src( distPaths.javascript + "*.js")
+      // .pipe(clean());
+      // await gulp.src( distPaths.style + "*.css")
+      // .pipe(clean());
+      // await gulp.src( distPaths.html + "*.html")
+      // .pipe(clean());
+      await del(["./dist/"]);
 }
 
 async function scss(){
