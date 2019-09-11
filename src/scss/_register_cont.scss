@@ -12,6 +12,7 @@
             width: 400px;
 
             li {
+                position: relative;
                 span {
                     float: right;
                     line-height: 40px;
@@ -88,7 +89,11 @@
                     height: 41px;
                     margin-left: 18px;
                     float: right;
-                    background: #000;
+                    background: #ccc;
+                    text-align: center;
+                    line-height: 41px;
+                    font-size: 16px;
+                    font-weight: bold;
                 }
             }
 

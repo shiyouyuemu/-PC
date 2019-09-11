@@ -7,6 +7,10 @@
 
 const gulp = require("gulp");
 const connect = require("gulp-connect");
+//phpserver
+// const phpconnect=require("gulp-connect-php");
+// const browserSync = require('browser-sync');
+
 const proxy  = require("http-proxy-middleware");
 const { proxyList } = require("./config/gulp.config");
 const sass = require("gulp-sass");
@@ -44,10 +48,41 @@ async function hanlderConnect(){
                        )
                   }
                   return list;
+                  
             }
 
       })
 }
+
+//phpserver
+
+// gulp.task("php",function(done){
+//       gulp.src([paths.php + "*.php"])
+//       .pipe(gulp.dest(distPaths.php))
+//       done();
+// });
+     
+
+// gulp.task('connect-php', function(done) {
+//   connect.server({
+//      bin: 'E:/PHPTutorial/php/php-5.6.27-nts/php.exe',    //如果配置好php环境则不需要这一句，更换为你对应的php.exe文件
+//      ini: 'E:/PHPTutorial/php/php-5.6.27-nts/php.ini',  //如果配置好php环境则不需要这一句
+//     port: 3300,
+//     base: './dist/server',
+//     keepalive: true
+//   });
+//   done();
+// });
+
+// gulp.task('connect-sync', function(done) {
+//   browserSync({
+//     proxy: 'localhost:3300' , //监听127.0.0.1:3000下的内容
+//     startPath: "./dist/server/login.php"     
+//   });
+//   //gulp.watch('*.php').on('change', reload);
+//   gulp.watch(['./src/server/*.php'],gulp.series("php"));
+//   done();
+// });
 
 /* JavaScript 转存*/
 function javascript(done){
@@ -69,6 +104,7 @@ function css(done){
       .pipe(connect.reload())
       done();
 }
+
 
 async function scss(){
       await gulp.src([paths.scss + "*.scss"])

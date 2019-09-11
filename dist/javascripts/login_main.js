@@ -9,15 +9,13 @@ define([
         verification:"#login_ver",
         randomVerification:"#login_random"
     });
-    // $("login").login({
-    //     account:"login_acc",
-    //     password:"login_pwd"
-    // });
+    $("#login").login({
+        account:"#login_acc",
+        password:"#login_pwd",
+        cont:".login_box"
+    });
 });
 
-// require(["./javascripts/require.config"],function(){
-//     require(["main"]);
-// });
 
 
 

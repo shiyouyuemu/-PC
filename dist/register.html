@@ -22,31 +22,31 @@
     </div>
     <div class="register_cont">
         <div class="register_ccont">
-            <ul class="register_list">
+            <ul class="register_list" ifCom="false">
                 <li>
                     <label for="" class="clear-fix">
 
-                        <input type="text" class="list_input tel" placeholder="请输入手机号">
+                        <input type="text" class="list_input tel" id="register_acc" placeholder="请输入手机号">
                         <span>手机号 : &nbsp; </span>
                     </label>
                 </li>
                 <li>
                     <label for="" class="clear-fix">
 
-                        <input type="text" class="list_input pwd" placeholder="请输入您的密码">
+                        <input type="password" class="list_input pwd" id="register_pwd" placeholder="请输入您的密码">
                         <span>密码 : &nbsp; </span>
                     </label>
                 </li>
                 <li>
                     <label for="" class="clear-fix">
 
-                        <input type="text" class="list_input rpwd" placeholder="请再次输入密码">
+                        <input type="password" class="list_input rpwd" id="register_rpwd" placeholder="请再次输入密码">
                         <span>确认密码 : &nbsp; </span>
                     </label>
                 </li>
                 <li class="clear-fix">
 
-                    <div data-vid="5d761323fc650e04687aa5e2" class="register_check" style="width: 300px;height: 36px;">
+                    <div class="register_check" style="width: 300px;height: 36px;">
                         <div class="vaptcha-init-main">
                             <div class="vaptcha-init-loading">
                                 <a href="https://www.vaptcha.com" target="_blank">
@@ -59,9 +59,9 @@
                 </li>
                 <li>
                     <label for="login_ver" class="clear-fix">
-                        <div class="verification"></div>
+                        <div class="verification" id="register_rom"></div>
 
-                        <input type="text" id="login_ver" class="login_input" placeholder="验证码">
+                        <input type="text" class="login_input" id="register_ver" placeholder="验证码">
 
                         <span class="cnum">验证码 :</span>
                     </label>
@@ -74,8 +74,8 @@
                     <a href="">[用户协议]</a>
                 </li>
                 <li class="clear-fix">
-                    <a href="" class="login_register">注&nbsp;册</a>
-                    <a href="" class="login_login">返回登录</a>
+                    <a href="javascript:void(0);" class="login_register">注&nbsp;册</a>
+                    <a href="./login.html" class="login_login">返回登录</a>
                 </li>
                 <li class="clear-fix login_onekey">
                     <span>合作账号登录:</span>
@@ -102,9 +102,28 @@
         </div>
     </div>
     <p class="copy_cont">
-            ICP © 2015 广州脑动网络科技有限公司 版权所有（备案号：
-            <a href="">粤ICP备15028368号</a>)
+        ICP © 2015 广州脑动网络科技有限公司 版权所有（备案号：
+        <a href="">粤ICP备15028368号</a>)
     </p>
 </body>
+<script src="./javascripts/require.js"></script>
+<script>
+    vaptcha({
+        vid: '5d761323fc650e04687aa5e2', // 验证单元id
+        type: 'click', // 显示类型 点击式
+        container: '.register_check' // 按钮容器，可为Element 或者 selector
+    }).then(function (vaptchaObj) {
+        vaptchaObj.render(); // 调用验证实例 vpObj 的 render 方法加载验证按钮
+        vaptchaObj.listen('pass', function () {
+            // 验证成功进行后续操作''
+            if (vaptchaObj.getToken() === null) {
+                $(".register_list").attr("ifCom",true);
+            }
+        });
+    });
+    require(["./javascripts/require.config"], function () {
+        require(["register_main"]);
+    });
+</script>
 
 </html>

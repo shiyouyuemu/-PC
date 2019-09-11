@@ -196,43 +196,45 @@ input {
     .register_cont .register_ccont .register_list {
       padding: 120px 0 0 35px;
       width: 400px; }
-      .register_cont .register_ccont .register_list li span {
-        float: right;
-        line-height: 40px;
-        font-size: 17px;
-        color: #666; }
-      .register_cont .register_ccont .register_list li .login_input {
-        font-size: 16px;
-        display: block;
-        height: 42px;
-        width: 256px;
-        border: 1px solid #d3d3d3;
-        border-radius: 0 4px 4px 0;
-        padding: 10px;
-        box-sizing: border-box;
-        float: left; }
-      .register_cont .register_ccont .register_list li .tel {
-        background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_ph.png") no-repeat 278px 7px; }
-      .register_cont .register_ccont .register_list li .pwd {
-        background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px; }
-      .register_cont .register_ccont .register_list li .rpwd {
-        background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px; }
-      .register_cont .register_ccont .register_list li .list_input {
-        float: right;
-        display: block;
-        height: 40px;
-        width: 300px;
-        border: 1px solid #d3d3d3;
-        border-radius: 4px 4px 4px 4px;
-        font-size: 16px;
-        padding: 10px;
-        margin: 0 0 20px 10px; }
-      .register_cont .register_ccont .register_list li .register_check {
-        width: 300px;
-        height: 40px !important;
-        float: right;
-        border-radius: 4px;
-        margin: 0 0 20px 10px; }
+      .register_cont .register_ccont .register_list li {
+        position: relative; }
+        .register_cont .register_ccont .register_list li span {
+          float: right;
+          line-height: 40px;
+          font-size: 17px;
+          color: #666; }
+        .register_cont .register_ccont .register_list li .login_input {
+          font-size: 16px;
+          display: block;
+          height: 42px;
+          width: 256px;
+          border: 1px solid #d3d3d3;
+          border-radius: 0 4px 4px 0;
+          padding: 10px;
+          box-sizing: border-box;
+          float: left; }
+        .register_cont .register_ccont .register_list li .tel {
+          background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_ph.png") no-repeat 278px 7px; }
+        .register_cont .register_ccont .register_list li .pwd {
+          background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px; }
+        .register_cont .register_ccont .register_list li .rpwd {
+          background: #fff url("http://www.cycang.com/Public/build/img/i/register/reg_lock.png") no-repeat 278px 7px; }
+        .register_cont .register_ccont .register_list li .list_input {
+          float: right;
+          display: block;
+          height: 40px;
+          width: 300px;
+          border: 1px solid #d3d3d3;
+          border-radius: 4px 4px 4px 4px;
+          font-size: 16px;
+          padding: 10px;
+          margin: 0 0 20px 10px; }
+        .register_cont .register_ccont .register_list li .register_check {
+          width: 300px;
+          height: 40px !important;
+          float: right;
+          border-radius: 4px;
+          margin: 0 0 20px 10px; }
       .register_cont .register_ccont .register_list li:nth-of-type(5) {
         padding-bottom: 20px; }
         .register_cont .register_ccont .register_list li:nth-of-type(5) .cnum {
@@ -252,7 +254,11 @@ input {
           height: 41px;
           margin-left: 18px;
           float: right;
-          background: #000; }
+          background: #ccc;
+          text-align: center;
+          line-height: 41px;
+          font-size: 16px;
+          font-weight: bold; }
       .register_cont .register_ccont .register_list li:nth-of-type(6) {
         margin: 0 0 24px 98px;
         font-size: 13px; }

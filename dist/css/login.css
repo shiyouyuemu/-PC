@@ -202,7 +202,8 @@ input {
       .login_center .center_cont .login_box .login_inputList {
         padding: 0 45px; }
         .login_center .center_cont .login_box .login_inputList li {
-          margin-top: 20px; }
+          margin-top: 20px;
+          position: relative; }
           .login_center .center_cont .login_box .login_inputList li .login_icon {
             display: block;
             width: 42px;

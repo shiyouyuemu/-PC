@@ -15,8 +15,11 @@
         <nav class="header_cont">
             <div class="header_left">
                 <span>吱，欢迎来到次元仓</span>
-                <a href="./login.html">请登录</a>
-                <a href="./register.html">免费注册</a>
+                <span id="username">
+                    <a href="./login.html">请登录</a>
+                    <a href="./register.html">免费注册</a>
+                </span>
+
             </div>
             <div class="header_right">
                 <a href="#">我的订单</a>
@@ -1511,26 +1514,33 @@
 
                 </ul>
                 <dl class="footer_friend">
-                        <dd>友情链接:</dd>
-                        <dd>
-                            <a href="http://www.meng2u.com" target="_blank">麦萌对手戏</a>
-                        </dd>
-                        <dd>
-                            <a href="https://www.bearead.com/" target="_blank">白熊阅读</a>
-                        </dd>
-                        <dd>
-                            <a href="http://www.icartoons.cn/portal/index.html" target="_blank">爱动漫</a>
-                        </dd>
-                    </dl>
+                    <dd>友情链接:</dd>
+                    <dd>
+                        <a href="http://www.meng2u.com" target="_blank">麦萌对手戏</a>
+                    </dd>
+                    <dd>
+                        <a href="https://www.bearead.com/" target="_blank">白熊阅读</a>
+                    </dd>
+                    <dd>
+                        <a href="http://www.icartoons.cn/portal/index.html" target="_blank">爱动漫</a>
+                    </dd>
+                </dl>
             </div>
         </div>
         <p class="copy_cont">
-                ICP © 2017 广州脑动网络科技有限公司 版权所有
-                <a href="">免责声明 </a>
-                （备案号：<a href="">粤ICP备15028368号</a>)
+            ICP © 2017 广州脑动网络科技有限公司 版权所有
+            <a href="">免责声明 </a>
+            （备案号：<a href="">粤ICP备15028368号</a>)
         </p>
         <a class="go_top" href=""></a>
     </div>
 </body>
+<script src="./javascripts/require.js"></script>
+<script>
+    require(["./javascripts/require.config"], function () {
+        require(["index_main"]);
+    });
+    
+</script>
 
 </html>
