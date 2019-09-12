@@ -12,13 +12,13 @@
 <body>
     <div id="header">
         <nav class="header_cont">
-            <div class="header_left">
-                <a href="">登录</a>
-                <a href="">注册</a>
+            <div class="header_left" id="username"> 
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
             </div>
             <div class="header_right">
                 <a href="">联系客服</a>
-                <a href="">购物车</a>
+                <a href="./shoppingCart.html">购物车</a>
                 <a href="">我的订单</a>
                 <a href="">我的收藏</a>
             </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="search_r">
-                <a href="">
+                <a href="./shoppingCart.html">
                     <span class="cart_icon"></span>
                     <span>我的购物车</span>
                     <i class="num"></i>
@@ -58,7 +58,7 @@
     <div id="navList">
         <ul class="navList_cont">
             <li>
-                <a href="">
+                <a href="./index.html">
                     首页
                 </a>
             </li>
@@ -282,6 +282,11 @@
         （备案号：<a href="">粤ICP备15028368号</a>)
     </p>
 </body>
-
+<script src="./javascripts/require.js"></script>
+<script>
+    require(["./javascripts/require.config"], function () {
+        require(["list_main"]);
+    });
+</script>
 </html>
 <!-- http://act.cycangcdn.com/comm_img/loading.jpg -->

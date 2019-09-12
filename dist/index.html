@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_1394198_w2b4veaaf1.css">
 </head>
+<script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
 
-<body>
+<body style="background-color: rgba(255, 255, 255, .1)">
     <div id="header">
         <nav class="header_cont">
             <div class="header_left">
@@ -287,228 +288,61 @@
                     <a href="">更多</a>
                 </div>
             </div>
-            <ul class="boxList">
-                <li>
-                    <a href="">
+            <ul class="boxList" id="boxOne">
+                <script id="box_one" type="text/html">
+                    <%for(var i in list){ %>
+                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                        data-img='<%=list[i].figure%>'>
+                        <a href="./details.html">
                         <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
+                            <dt><img src='<%=list[i].figure%>' alt=""></dt>
                             <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                                <h3><%=list[i].name%></h3>
+                                <%var before=parseInt(list[i].origin_price)%>
+                                <%var now=parseInt(list[i].cover_price)%>
+                                <%if(before>0&&before>now){%>
+                                <div class="price_discount">
+                                    <span>折扣价</span>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <del>￥<%=list[i].origin_price%></del>
+                                </div>
+                                <%}else{%>
+                                <span>￥<%=list[i].cover_price%></span>
+                                <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
+            </ul>
+            <ul class="boxList" id="boxTwo" style="display: none;">
+                <script id="box_two" type="text/html">
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 装扮仓 -->
@@ -521,98 +355,36 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxZhuangban">
+                <script id="box_zhuangban" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1490682986234.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 古风仓 -->
@@ -625,98 +397,36 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxGufeng">
+                <script id="box_gufeng" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 汉风仓 -->
@@ -729,98 +439,36 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxHanfeng">
+                <script id="box_hanfeng" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1516074720873.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 首饰仓 -->
@@ -833,98 +481,36 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxShoushi">
+                <script id="box_shoushi" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1527842202152.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 零食仓 -->
@@ -937,98 +523,36 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxLingshi">
+                <script id="box_lingshi" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1480302222099.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 服饰仓 -->
@@ -1041,98 +565,36 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxFushi">
+                <script id="box_fushi" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1486106317267.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 周边仓 -->
@@ -1145,98 +607,36 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxZhoubian">
+                <script id="box_zhoubian" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1520303527494.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 手办仓 -->
@@ -1249,156 +649,95 @@
                 <a href="#" class="title_right">更多</a>
                 <a href="#" class="title_center">换一批</a>
             </div>
-            <ul class="boxList title_boxList">
-                <a href="#" class="boxList_first">
-                    <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
+            <ul class="boxList title_boxList" id="boxShouban">
+                <script id="box_shouban" type="text/html">
+                    <a href="#" class="boxList_first">
+                        <img src="http://b.cycangcdn.com/1483692054537.jpg" alt="">
                     </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <%}%>
+                </script>
             </ul>
         </div>
         <!-- 友情推荐 -->
         <div class="friend_cont">
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
-            <a href="">
-                <img src="http://f.p.cycangcdn.com/1480304143900.jpg" alt="">
-            </a>
+            <a href="index.php?a=page&supplier_code=1801001"><img
+                    data-original="http://f.p.cycangcdn.com/1480304143900.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1104001"><img
+                    data-original="http://f.p.cycangcdn.com/1510647364116.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1101004"><img
+                    data-original="http://f.p.cycangcdn.com/1486372890662.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=2101001"><img
+                    data-original="http://f.p.cycangcdn.com/1480304250388.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1201001"><img
+                    data-original="http://f.p.cycangcdn.com/1480477875838.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=2101002"><img
+                    data-original="http://f.p.cycangcdn.com/1510818874232.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=100004"><img
+                    data-original="http://f.p.cycangcdn.com/1480302113288.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=300013"><img
+                    data-original="http://f.p.cycangcdn.com/1486610249632.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1101037"><img
+                    data-original="http://f.p.cycangcdn.com/1480304356488.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1601007"><img
+                    data-original="http://f.p.cycangcdn.com/1480302679565.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1101042"><img
+                    data-original="http://f.p.cycangcdn.com/1480304191928.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=802004"><img
+                    data-original="http://f.p.cycangcdn.com/1480649598649.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1601008"><img
+                    data-original="http://f.p.cycangcdn.com/1480493800090.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1606002"><img
+                    data-original="http://f.p.cycangcdn.com/1480304209532.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1601009"><img
+                    data-original="http://f.p.cycangcdn.com/1480304312396.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1000018"><img
+                    data-original="http://f.p.cycangcdn.com/1480403516418.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1601020"><img
+                    data-original="http://f.p.cycangcdn.com/1490601883028.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+            <a href="index.php?a=page&supplier_code=1301002"><img
+                    data-original="http://f.p.cycangcdn.com/1494833782957.jpg"
+                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" class="c_lazyload"></a>
+
         </div>
         <!-- 猜你喜欢 -->
         <div class="guess_cont">
@@ -1406,66 +745,34 @@
                 <h2>猜你喜欢</h2>
                 <h3>这些商品也一样给力哦</h3>
             </div>
-            <ul class="boxList">
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <div class="price_discount">
-                                    <span>折扣价</span>
-                                    <span>¥88.00</span>
-                                    <del>¥188.00</del>
-                                </div>
-                            </dd>
+
+            <ul class="boxList" id="boxGuess">
+                <script id="box_guess" type="text/html">
+                    <%for(var i in list){ %>
+                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            data-img='<%=list[i].figure%>'>
+                            <a href="./details.html">
+                            <dl>
+                                <dt><img src='<%=list[i].figure%>' alt=""></dt>
+                                <dd>
+                                    <h3><%=list[i].name%></h3>
+                                    <%var before=parseInt(list[i].origin_price)%>
+                                    <%var now=parseInt(list[i].cover_price)%>
+                                    <%if(before>0&&before>now){%>
+                                    <div class="price_discount">
+                                        <span>折扣价</span>
+                                        <span>￥<%=list[i].cover_price%></span>
+                                        <del>￥<%=list[i].origin_price%></del>
+                                    </div>
+                                    <%}else{%>
+                                    <span>￥<%=list[i].cover_price%></span>
+                                    <%}%>
+                                        </dd>
                         </dl>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <dl>
-                            <dt><img src="http://f.p.cycangcdn.com/1566295331833.jpg" alt=""></dt>
-                            <dd>
-                                <h3>【风树息-画影】 原创羽织 日月鹤</h3>
-                                <span>¥88.00</span>
-                            </dd>
-                        </dl>
-                    </a>
-                </li>
+                <%}%>
+                </script>
             </ul>
         </div>
         <div class="footer_cont clear-fix">
@@ -1540,7 +847,6 @@
     require(["./javascripts/require.config"], function () {
         require(["index_main"]);
     });
-    
 </script>
 
 </html>

@@ -1,23 +1,53 @@
-(function(factory){
-    if(typeof define =="function"&&define.amd){
-        define(["jquery"],factory);
-    }else{
+(function (factory) {
+    if (typeof define == "function" && define.amd) {
+        define(["jquery","template"], factory);
+    } else {
         factory(jQuery);
     }
-})(function($){
-    $.fn.render=function(options){
-        new Render().init(this,options);
+})(function ($) {
+    $.fn.render = function (options) {
+        new Render().init(this, options);
     }
-    function Render(){}
-    $.extend(Render.prototype,{
-        init:function(that,options){
 
+    function Render() {}
+    $.extend(Render.prototype, {
+        init: function (that, options) {
+            this.that = that;
+            options.url ? this.url = options.url : "";
+            options.c ? this.c = options.c : "";
+            options.a ? this.a = options.a : "";
+            options.nums ? this.nums = options.nums : "";
+            options.chid ? this.chid = options.chid : "";
+            options.start ? this.start = options.start : "";
+            options.cont ? this.cont = options.cont : "";
+            options.templates?this.templates=options.templates:"";
+            options.url ? this.getData() : "";
         },
-        bindEvent:function(){
-
-        },
-        getData:function(){
-
+        getData: function () {
+            var cont=this.cont;
+            var templates=this.templates;
+            $.ajax({
+                url: this.url,
+                type: "get",
+                dataType: "json",
+                data: {
+                    c: this.c,
+                    a: this.a,
+                    nums: this.nums,
+                    chid: this.chid,
+                    start: this.start
+                },
+                success: function (res) {
+                    if (res.code == "200") {
+                        var html = template($(templates).html(), res.result.data);
+                        
+                        $(cont).html(html);
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            })
         }
     })
 })

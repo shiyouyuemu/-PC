@@ -8,17 +8,17 @@
     <title>详情页</title>
     <link rel="stylesheet" href="./css/details.css">
 </head>
-
+<script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
 <body>
     <div id="header">
         <nav class="header_cont">
-            <div class="header_left">
-                <a href="">登录</a>
-                <a href="">注册</a>
+            <div class="header_left" id="username">
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
             </div>
             <div class="header_right">
                 <a href="">联系客服</a>
-                <a href="">购物车</a>
+                <a href="./shoppingCart.html">购物车</a>
                 <a href="">我的订单</a>
                 <a href="">我的收藏</a>
             </div>
@@ -58,7 +58,7 @@
     <div id="navList">
         <ul class="navList_cont">
             <li>
-                <a href="">
+                <a href="./index.html">
                     首页
                 </a>
             </li>
@@ -115,24 +115,26 @@
             </li>
         </ul>
     </div>
+    <div id="detailCont">
+    <script id="contents" type="text/html">
     <div class="bread_cont">
         <a href="">
             全部&nbsp;>
         </a>
-        <span>bilibili 哔哩哔哩B站周边 小电视眼罩</span>
+        <span><%=data.name%></span>
     </div>
     <div class="wrap_cont clear-fix">
         <div class="wrap_left">
             <a href="">
-                <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
+                <img src="<%=data.img%>" alt="">
             </a>
         </div>
         <div class="wrap_right">
-            <P class="title">bilibili 哔哩哔哩B站周边 小电视眼罩</P>
+            <p class="title"><%=data.name%></p>
             <div class="wrap_price">
                 <div class="wrap_price_p">
                     价&nbsp;&nbsp;&nbsp;&nbsp;格：
-                    <span>￥29</span>
+                    <span><%=data.price%></span>
                 </div>
                 <div class="wrap_price_s">
                     服&nbsp;&nbsp;&nbsp;&nbsp;务：
@@ -216,6 +218,9 @@
             </div>
         </div>
     </div>
+</div>
+</script>
+</div>
     <div class="details_cont">
         <div class="cont_tit clear-fix">
             <span>商品详情</span>
@@ -225,22 +230,15 @@
                 <span></span>
             </p>
         </div>
-        <div class="cont">
-            <img src="http://d.p.cycangcdn.com/1550111955257.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111960079.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111964664.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111968981.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111973143.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111977564.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111981633.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111985965.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111990113.jpg" alt="" />
-            <img src="http://d.p.cycangcdn.com/1550111994707.jpg" alt="" />
-
+        <div class="cont" id="cont2">
+            <script type="text/html" id="detailsCont2">
+                <p class="title"><%=data.name%></p>
+                <img src="<%=data.img%>" alt="">
+            </script>
         </div>
+        
     </div>
-
-    <div class="banner_cont">
+    <div class="banner_cont" style="overflow: hidden">
         <div class="prev"></div>
         <div class="next"></div>
         <p class="title">
@@ -341,6 +339,11 @@
         （备案号：<a href="">粤ICP备15028368号</a>)
     </p>
 </body>
-
+<script src="./javascripts/require.js"></script>
+<script>
+    require(["./javascripts/require.config"], function () {
+        require(["details_main"]);
+    });
+</script>
 </html>
 <!-- http://act.cycangcdn.com/comm_img/loading.jpg -->

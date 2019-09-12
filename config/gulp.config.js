@@ -7,7 +7,8 @@ module.exports={
         "php":"./src/server/"
     },
     proxyList:{
-        "lophp":"http://localhost:80"
+        "lophp":"http://localhost:80",
+        "cyc":"http://cycang.com/index.php"
         
         
     }
