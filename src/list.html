@@ -8,7 +8,7 @@
     <title>详情页</title>
     <link rel="stylesheet" href="./css/list.css">
 </head>
-
+<script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
 <body>
     <div id="header">
         <nav class="header_cont">
@@ -50,7 +50,7 @@
                 <a href="./shoppingCart.html">
                     <span class="cart_icon"></span>
                     <span>我的购物车</span>
-                    <i class="num"></i>
+                    <b class="cartNum">0</b>
                 </a>
             </div>
         </div>
@@ -62,170 +62,35 @@
                     首页
                 </a>
             </li>
-            <li>
-                <a href="">
-                    图书仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    汉风仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    手办仓
-                </a>
-            </li>
-
-            <li>
-                <a href="">
-                    首饰仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    零食仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    文具仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    古风仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    装扮仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    周边仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    服饰仓
-                </a>
-            </li>
+            <li><a href="./list.html?typename=01">图书仓</a></li>
+            <li><a href="./list.html?typename=02">汉风仓</a></li>
+            <li><a href="./list.html?typename=03">手办仓</a></li>
+            <li><a href="./list.html?typename=04">首饰仓</a></li>
+            <li><a href="./list.html?typename=05">零食仓</a></li>
+            <li><a href="./list.html?typename=06">文具仓</a></li>
+            <li><a href="./list.html?typename=07">古风仓</a></li>
+            <li><a href="./list.html?typename=08">装扮仓</a></li>
+            <li><a href="./list.html?typename=9">周边仓</a></li>
+            <li><a href="./list.html?typename=10">服饰仓</a></li>
         </ul>
     </div>
 
     <div class="waterfall clear-fix">
-        <ul class="waterfall_cont">
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
+        <ul class="waterfall_cont clear-fix">
+            <script type="text/html" id="temp">
+                <%for(var i in list){ %>
+            <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                data-img='<%=list[i].figure%>'>
+                <a href="./details.html">
+                    <img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="">
                     <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
+                        <p><%=list[i].name%></p>
+                        <p>￥<%=list[i].cover_price%></p>
                     </div>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="http://f.p.cycangcdn.com/1550111920074.jpg" alt="">
-                    <div>
-                        <p>bilibili 哔哩哔哩B站周边 小电视眼罩</p>
-                        <p>￥29.00</p>
-                    </div>
-                </a>
-            </li>
+            <%}%>
+        </script>
         </ul>
     </div>
 

@@ -11,6 +11,7 @@
     function Load(){}
     $.extend(Load.prototype,{
         init:function(options){
+            options.ls?this.ls=options.ls:this.ls="details";
             options.cont?this.cont=options.cont:"";
             options.template?this.templates=options.template:"";
             options.cont2?this.cont2=options.cont2:"";
@@ -18,16 +19,18 @@
             this.load();
         },
         load:function(){
-            var data=localStorage.getItem("details");
+            var data=localStorage.getItem(this.ls);
             data=JSON.parse(data);
             data={
                 data
             };
-            
             var html = template($(this.templates).html(), data);
             $(this.cont).html(html);
-            var html2 = template($(this.templates2).html(), data);
-            $(this.cont2).html(html2);
+            var html2="";
+            if(this.template2!="undifined"){
+                html2 = template($(this.templates2).html(), data);
+                $(this.cont2).html(html2);
+            }
         }
     });
 });

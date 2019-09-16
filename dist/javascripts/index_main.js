@@ -2,7 +2,8 @@ define([
     "autoLogin",
     "render",
     "sendSelf",
-    "outLogin"
+    "outLogin",
+    "shoppingCart"
 ], function (autoLogin, render, sendSelf) {
 
     $("#username").autoLogin();
@@ -111,4 +112,7 @@ define([
             item: ".item"
         });
     }, 1000);
+    $("body").shoppingCart({
+        cartNum:".cartnum"
+    })
 });

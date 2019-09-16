@@ -12,9 +12,9 @@
 <body>
     <div id="header">
         <nav class="header_cont">
-            <div class="header_left" id="username">
-                <a href="./login.html">登录</a>
-                <a href="./register.html">注册</a>
+            <div class="header_left">
+                <a href="">登录</a>
+                <a href="">注册</a>
             </div>
             <div class="header_right">
                 <a href="">联系客服</a>
@@ -47,10 +47,10 @@
                 </div>
             </div>
             <div class="search_r">
-                <a href="">
+                <a href="./shoppingCart.html">
                     <span class="cart_icon"></span>
                     <span>我的购物车</span>
-                    <i class="num"></i>
+                    <b class="cartNum">0</b>
                 </a>
             </div>
         </div>
@@ -62,57 +62,15 @@
                     首页
                 </a>
             </li>
-            <li>
-                <a href="">
-                    图书仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    汉风仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    手办仓
-                </a>
-            </li>
-
-            <li>
-                <a href="">
-                    首饰仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    零食仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    文具仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    古风仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    装扮仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    周边仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    服饰仓
-                </a>
-            </li>
+            <li><a href="./list.html?typename=02">汉风仓</a></li>
+                <li><a href="./list.html?typename=03">手办仓</a></li>
+                <li><a href="./list.html?typename=04">首饰仓</a></li>
+                <li><a href="./list.html?typename=05">零食仓</a></li>
+                <li><a href="./list.html?typename=06">文具仓</a></li>
+                <li><a href="./list.html?typename=07">古风仓</a></li>
+                <li><a href="./list.html?typename=08">装扮仓</a></li>
+                <li><a href="./list.html?typename=9">周边仓</a></li>
+                <li><a href="./list.html?typename=10">服饰仓</a></li>
         </ul>
     </div>
     <div id="detailCont">
@@ -163,9 +121,9 @@
             <div class="wrap_num">
                 数量：
                 <div class="num_box">
-                    <span>-</span>
-                    <input type="text" name="" id="" value="1">
-                    <span>+</span>
+                    <span class="num_btn">-</span>
+                    <input type="text" name="" id="num_num" value="1">
+                    <span class="num_btn">+</span>
                 </div>
             </div>
             <div class="wrap_addcart">

@@ -166,6 +166,17 @@ input {
     transition: all .7s;
     border-color: #ed3f3f; }
 
+.num_btn, .num_num {
+  user-select: none; }
+
+.cartNum {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ed3f3f;
+  padding: 1px 6px;
+  border-radius: 50%; }
+
 /*body*/
 body {
   background: url("http://s1.cycangcdn.com/img/bg.jpg") no-repeat 50% center fixed;
@@ -243,6 +254,8 @@ body {
     font-size: 14px; }
   body .header_wb:hover .header_wbcont span {
     opacity: 0.9; }
+  body .cartnum {
+    width: 20px; }
   body #search {
     background: #fff; }
   body .search_cont {

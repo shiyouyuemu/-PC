@@ -41,7 +41,7 @@
                     if (res.code == "200") {
                         var html = template($(templates).html(), res.result.data);
                         
-                        $(cont).html(html);
+                        $(cont).html($(cont).html()+html);
                     }
                 },
                 error: function (e) {

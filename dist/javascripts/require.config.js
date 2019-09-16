@@ -18,8 +18,11 @@ requirejs.config({
             "details_main":"./javascripts/details_main",
             "shoppingCart_main":"./javascripts/shoppingCart_main",
             "list_main":"./javascripts/list_main",
+            "list":"./javascripts/list",
             "sendSelf" :"./javascripts/sendSelf",
             "load":"./javascripts/load",
-            "outLogin":"./javascripts/outLogin"
+            "lazyLoad":"./javascripts/lazyLoad",
+            "outLogin":"./javascripts/outLogin",
+            "addCart":"./javascripts/addCart"
       }
 })

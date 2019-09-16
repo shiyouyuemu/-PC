@@ -1,10 +1,32 @@
 define([
     'autoLogin',
-    'cookie',
     'render',
-    "template"
-], function(autoLogin, render) {
-    'use strict';
+    "shoppingCart",
+    "load",
+    "addCart"
+], function(autoLogin, render,shoppingCart) {
     $(".header_left").autoLogin({
     });
+    var obj=JSON.parse(localStorage.getItem("cartItem"));
+    if(obj&&obj.data.length>0){
+        $("body").load({
+            ls:"cartItem",
+            template:"#cartCont",
+            cont:".wrapper_settlement"
+        });
+        $("body").addCart({
+            num:".num_num",
+            btn:".num_btn",
+            addcont:".num_btn"
+        })
+    }else{
+        $(".wrapper_ele").css({
+            display:"block"
+        });
+    }
+    $("body").shoppingCart({
+        cartNum:".cartNum"
+    })
 });
+//改变物品数量时改变价格
+//选中物品与否时改变价格
