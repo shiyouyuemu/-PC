@@ -13,8 +13,8 @@
     <div id="header">
         <nav class="header_cont">
             <div class="header_left">
-                <a href="">登录</a>
-                <a href="">注册</a>
+                <a href="./login.html">登录</a>
+                <a href="./register.html">注册</a>
             </div>
             <div class="header_right">
                 <a href="">联系客服</a>
@@ -62,63 +62,22 @@
                     首页
                 </a>
             </li>
-            <li>
-                <a href="">
-                    图书仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    汉风仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    手办仓
-                </a>
-            </li>
-
-            <li>
-                <a href="">
-                    首饰仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    零食仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    文具仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    古风仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    装扮仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    周边仓
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    服饰仓
-                </a>
-            </li>
+            <li><a href="./list.html?typename=01">图书仓</a></li>
+                <li><a href="./list.html?typename=02">汉风仓</a></li>
+                <li><a href="./list.html?typename=03">手办仓</a></li>
+                <li><a href="./list.html?typename=04">首饰仓</a></li>
+                <li><a href="./list.html?typename=05">零食仓</a></li>
+                <li><a href="./list.html?typename=06">文具仓</a></li>
+                <li><a href="./list.html?typename=07">古风仓</a></li>
+                <li><a href="./list.html?typename=08">装扮仓</a></li>
+                <li><a href="./list.html?typename=9">周边仓</a></li>
+                <li><a href="./list.html?typename=10">服饰仓</a></li>
         </ul>
     </div>
     <div id="detailCont">
     <script id="contents" type="text/html">
     <div class="bread_cont">
-        <a href="">
+        <a href="./index.html">
             全部&nbsp;>
         </a>
         <span><%=data.name%></span>
@@ -126,7 +85,7 @@
     <div class="wrap_cont clear-fix">
         <div class="wrap_left">
             <a href="">
-                <img src="<%=data.img%>" alt="">
+                <img id="small_img" src="<%=data.img%>" alt="">
             </a>
         </div>
         <div class="wrap_right">
@@ -157,7 +116,7 @@
             <div class="wrap_style clear-fix">
                 <span>款&nbsp;&nbsp;&nbsp;&nbsp;式：</span>
                 <ul>
-                    <li>眼罩</li>
+                    <li>正常</li>
                 </ul>
             </div>
             <div class="wrap_num">
@@ -244,44 +203,22 @@
         <p class="title">
             <span>购买了该商品的顾客还买了：</span>
         </p>
-        <div class="cont">
-            <ul class="wrapper">
-                <li class="slide">
-                    <a href="">
-                        <img src="http://f.p.cycangcdn.com/1564646720262.jpg" alt="">
+        <div class="cont banner_Cont">
+            <ul class="wrapper clear-fix" id="banner">
+                <script type="text/html" id="buyMore">
+                    <%for(var i in list){%>
+                <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                    data-img='<%=list[i].figure%>'>
+                    <a href="./details.html">
+                        <img src='<%=list[i].figure%>' alt="">
                         <div class="tit">
-                            <p>￥29.00</p>
-                            <p>预售【官方正版】 霹雳布袋戏 人物角色 色纸签名版</p>
+                                <p>￥<%=list[i].cover_price%></p>
+                                <p><%=list[i].name%></p>
                         </div>
                     </a>
                 </li>
-                <li class="slide">
-                    <a href="">
-                        <img src="http://f.p.cycangcdn.com/1564646720262.jpg" alt="">
-                        <div class="tit">
-                            <p>￥29.00</p>
-                            <p>预售【官方正版】 霹雳布袋戏 人物角色 色纸签名版</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="">
-                        <img src="http://f.p.cycangcdn.com/1564646720262.jpg" alt="">
-                        <div class="tit">
-                            <p>￥29.00</p>
-                            <p>预售【官方正版】 霹雳布袋戏 人物角色 色纸签名版</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="">
-                        <img src="http://f.p.cycangcdn.com/1564646720262.jpg" alt="">
-                        <div class="tit">
-                            <p>￥29.00</p>
-                            <p>预售【官方正版】 霹雳布袋戏 人物角色 色纸签名版</p>
-                        </div>
-                    </a>
-                </li>
+                <%}%>
+            </script>
             </ul>
         </div>
     </div>

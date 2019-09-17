@@ -20,16 +20,21 @@
     .cont {
         width: 100%;
         overflow: hidden;
-
+        position: relative;
+        height: 321px;
         .wrapper {
-            width: 4208px;
+            min-width: 10000px;
+            position: absolute;
+            margin: 0;
+            padding: 0;
 
             .slide {
                 float: left;
                 width: 248px;
                 margin-right: 13px;
                 border: 1px solid #ccc;
-
+                box-sizing: border-box;
+                overflow: hidden;
                 a {
                     display: block;
 
@@ -54,39 +59,57 @@
                             text-overflow: ellipsis;
                             white-space: normal;
                         }
+
+                        p:last-of-type {
+                            display: block;
+                            height: 35px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: normal;
+                        }
                     }
                 }
-                
+
             }
-            .slide:hover{
+
+            .slide:hover {
                 border-radius: 5px;
                 box-shadow: 1px 1px 20px grey;
             }
-            .slide:hover .tit{
+
+            .slide:hover .tit {
                 background: $color_Basics;
             }
-            .slide:hover .tit p{
-                color: #fff!important;
+
+            .slide:hover .tit p {
+                color: #fff !important;
             }
         }
     }
-    .prev,.next{
+
+    .prev,
+    .next {
         width: 48px;
         height: 100px;
         position: absolute;
         top: 150px;
         display: none;
+        z-index: 999;
     }
-    .prev{
+
+    .prev {
         left: 1px;
         background: url("http://www.cycang.com/Public/build/img/shop/left_arrow.png");
     }
-    .next{
+
+    .next {
 
         right: 1px;
         background: url("http://www.cycang.com/Public/build/img/shop/right_arrow.png");
     }
 }
-.banner_cont:hover .prev,.banner_cont:hover .next{
+
+.banner_cont:hover .prev,
+.banner_cont:hover .next {
     display: block;
 }

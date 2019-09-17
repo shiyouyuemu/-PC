@@ -10,11 +10,13 @@
     $.extend(List.prototype,{
         init:function(that,options){
             options?this.options=options:"";
+            options.ifAdd?this.ifAdd=options.ifAdd:this.ifAdd=true;
             this.cont=options.cont;
             this.templates=options.templates;
             this.typeList=options.typeList;
             this.start=options.start;
             this.nums=16;
+            options.chid?this.chid=options.chid:"";
             this.typeArr=[0,17,15,13,12,10,11,6,5,16,8];
             options.typeList?this.getType():"";
             this.rending();
@@ -36,7 +38,8 @@
                 chid: this.chid,
                 start: this.start,
                 templates: this.templates,
-                cont: this.cont
+                cont: this.cont,
+                ifAdd:this.ifAdd
             });
             
             

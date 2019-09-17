@@ -3,11 +3,25 @@ define([
     "render",
     "sendSelf",
     "outLogin",
-    "shoppingCart"
-], function (autoLogin, render, sendSelf) {
+    "shoppingCart",
+    "lazyLoading",
+    "list",
+    "anotherChange",
+    "tab",
+    "banner",
+    "gotop"
+], function (autoLogin, render, sendSelf,lazyLoading,gotop) {
 
     $("#username").autoLogin();
-    $("#box_one").render({
+    $(".banner_center").banner({
+        auto:true,
+        slides:".slide",
+        dot:true
+    });
+    $(".go_top").gotop({
+        boundary:"#content"
+    });
+    $("body").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -15,9 +29,21 @@ define([
         chid: "0",
         start: "0",
         templates: "#box_one",
-        cont: "#boxOne"
+        cont: "#boxOne",
+        li: ".item"
     });
-    $("#box_zhuangban").render({
+    $("body").lazyLoading({
+        url: "/cyc",
+        c: "page",
+        a: "page",
+        nums: "20",
+        chid: "5",
+        start: "0",
+        templates: "#box_two",
+        cont: "#boxTwo",
+        li: ".item"
+    });
+    $("#box_zhuangban").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -25,9 +51,10 @@ define([
         chid: "5",
         start: "0",
         templates: "#box_zhuangban",
-        cont: "#boxZhuangban"
+        cont: "#boxZhuangban",
+        li:".item"
     });
-    $("#box_gufeng").render({
+    $("#box_gufeng").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -35,9 +62,10 @@ define([
         chid: "6",
         start: "0",
         templates: "#box_gufeng",
-        cont: "#boxGufeng"
+        cont: "#boxGufeng",
+        li:".item"
     });
-    $("#box_hanfeng").render({
+    $("#box_hanfeng").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -45,9 +73,10 @@ define([
         chid: "15",
         start: "0",
         templates: "#box_hanfeng",
-        cont: "#boxHanfeng"
+        cont: "#boxHanfeng",
+        li:".item"
     });
-    $("#box_shoushi").render({
+    $("#box_shoushi").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -55,9 +84,10 @@ define([
         chid: "12",
         start: "0",
         templates: "#box_shoushi",
-        cont: "#boxShoushi"
+        cont: "#boxShoushi",
+        li:".item"
     });
-    $("#box_lingshi").render({
+    $("#box_lingshi").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -65,9 +95,10 @@ define([
         chid: "10",
         start: "0",
         templates: "#box_lingshi",
-        cont: "#boxLingshi"
+        cont: "#boxLingshi",
+        li:".item"
     });
-    $("#box_fushi").render({
+    $("#box_fushi").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -75,9 +106,10 @@ define([
         chid: "8",
         start: "0",
         templates: "#box_fushi",
-        cont: "#boxFushi"
+        cont: "#boxFushi",
+        li:".item"
     });
-    $("#box_zhoubian").render({
+    $("#box_zhoubian").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -85,9 +117,10 @@ define([
         chid: "16",
         start: "0",
         templates: "#box_zhoubian",
-        cont: "#boxZhoubian"
+        cont: "#boxZhoubian",
+        li:".item"
     });
-    $("#box_shouban").render({
+    $("#box_shouban").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -95,9 +128,10 @@ define([
         chid: "13",
         start: "0",
         templates: "#box_shouban",
-        cont: "#boxShouban"
+        cont: "#boxShouban",
+        li:".item"
     });
-    $("#box_guess").render({
+    $("#box_guess").lazyLoading({
         url: "/cyc",
         c: "page",
         a: "page",
@@ -105,8 +139,13 @@ define([
         chid: "17",
         start: parseInt(Math.random() * 100),
         templates: "#box_guess",
-        cont: "#boxGuess"
+        cont: "#boxGuess",
+        li:".item"
     });
+    $(".friend_cont").lazyLoad({
+        li:".friend_cont .item",
+        ifloading:false
+    })
     setTimeout(function () {
         $("body").sendSelf({
             item: ".item"
@@ -114,5 +153,13 @@ define([
     }, 1000);
     $("body").shoppingCart({
         cartNum:".cartnum"
+    });
+    $("body").anotherChange({
+        item:".title_center"
+    });
+    $(".recommend_cont").tab({
+        bar:".recommend_bar",
+        item:".boxList",
+        btn:".rbtn"
     })
 });

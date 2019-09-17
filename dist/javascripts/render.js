@@ -21,11 +21,13 @@
             options.start ? this.start = options.start : "";
             options.cont ? this.cont = options.cont : "";
             options.templates?this.templates=options.templates:"";
+            options.ifAdd!=undefined?this.ifAdd=options.ifAdd:this.ifAdd=true;
             options.url ? this.getData() : "";
         },
         getData: function () {
             var cont=this.cont;
             var templates=this.templates;
+            var ifAdd=this.ifAdd;
             $.ajax({
                 url: this.url,
                 type: "get",
@@ -40,8 +42,7 @@
                 success: function (res) {
                     if (res.code == "200") {
                         var html = template($(templates).html(), res.result.data);
-                        
-                        $(cont).html($(cont).html()+html);
+                        ifAdd?$(cont).html($(cont).html()+html):$(cont).html(html);
                     }
                 },
                 error: function (e) {

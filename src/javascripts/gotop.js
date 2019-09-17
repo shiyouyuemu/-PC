@@ -6,7 +6,7 @@
         factory(jQuery);
     }
 })(function($){
-    $.fn.goback=function(option){
+    $.fn.gotop=function(option){
         new GoBack().init(this,option);
     }
     function GoBack(){}
@@ -30,9 +30,7 @@
         follow:function(){
             if(this.dom.scrollTop()>this.boundary.offset().top){
                 this.btn.css({
-                    display:"block",
-                    bottom:50,
-                    right:50
+                    display:"block"
                 })
             }else{
                 this.btn.css({

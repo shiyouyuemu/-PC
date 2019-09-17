@@ -97,7 +97,8 @@ input {
     height: 306px;
     width: 462px;
     margin-right: 9px;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    box-sizing: border-box; }
     .boxList .boxList_first img {
       width: 100%;
       height: 100%; }
@@ -176,6 +177,37 @@ input {
   background: #ed3f3f;
   padding: 1px 6px;
   border-radius: 50%; }
+
+.slide.show {
+  display: block;
+  z-index: 2; }
+
+.slide.prev-show {
+  z-index: 1;
+  display: block; }
+
+.dotCont {
+  z-index: 555;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto; }
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background: #ccc;
+  opacity: 0.7;
+  float: left;
+  margin-right: 10px; }
+
+.dot.active {
+  background: #ed3f3f; }
+
+.go_top {
+  cursor: pointer; }
 
 /*head*/
 #header {
@@ -332,10 +364,14 @@ input {
       margin: 0 25px 15px 0;
       background: #eee;
       border-radius: 3px;
-      height: 100%; }
+      height: 330px;
+      width: 100%;
+      overflow: hidden;
+      position: relative; }
       .wrap_cont .wrap_left a img {
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        position: absolute; }
   .wrap_cont .wrap_right {
     width: 645px;
     margin-bottom: 15px;
@@ -558,14 +594,21 @@ input {
       font-size: 14px; }
   .banner_cont .cont {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    height: 321px; }
     .banner_cont .cont .wrapper {
-      width: 4208px; }
+      min-width: 10000px;
+      position: absolute;
+      margin: 0;
+      padding: 0; }
       .banner_cont .cont .wrapper .slide {
         float: left;
         width: 248px;
         margin-right: 13px;
-        border: 1px solid #ccc; }
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        overflow: hidden; }
         .banner_cont .cont .wrapper .slide a {
           display: block; }
           .banner_cont .cont .wrapper .slide a img {
@@ -583,6 +626,12 @@ input {
               overflow: hidden;
               text-overflow: ellipsis;
               white-space: normal; }
+            .banner_cont .cont .wrapper .slide a .tit p:last-of-type {
+              display: block;
+              height: 35px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: normal; }
       .banner_cont .cont .wrapper .slide:hover {
         border-radius: 5px;
         box-shadow: 1px 1px 20px grey; }
@@ -590,12 +639,14 @@ input {
         background: #ed3f3f; }
       .banner_cont .cont .wrapper .slide:hover .tit p {
         color: #fff !important; }
-  .banner_cont .prev, .banner_cont .next {
+  .banner_cont .prev,
+  .banner_cont .next {
     width: 48px;
     height: 100px;
     position: absolute;
     top: 150px;
-    display: none; }
+    display: none;
+    z-index: 999; }
   .banner_cont .prev {
     left: 1px;
     background: url("http://www.cycang.com/Public/build/img/shop/left_arrow.png"); }
@@ -603,7 +654,8 @@ input {
     right: 1px;
     background: url("http://www.cycang.com/Public/build/img/shop/right_arrow.png"); }
 
-.banner_cont:hover .prev, .banner_cont:hover .next {
+.banner_cont:hover .prev,
+.banner_cont:hover .next {
   display: block; }
 
 /*footer*/

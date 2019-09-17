@@ -7,20 +7,19 @@ define([
     "list",
     "sendSelf",
     "lazyLoad"
-], function(autoLogin, render,shoppingCart,lazyLoad) {
+], function (autoLogin, render, shoppingCart, lazyLoad) {
     'use strict';
     $(".header_left").autoLogin({
 
     });
     $("body").shoppingCart({
-        cartNum:".cartNum"
+        cartNum: ".cartNum"
     });
     $("body").list({
-        cont:".waterfall_cont",
-        templates:"#temp",
-        typeList:".navList_cont",
-        start:0
-        
+        cont: ".waterfall_cont",
+        templates: "#temp",
+        typeList: ".navList_cont",
+        start: 0
     });
     setTimeout(function () {
         $("body").sendSelf({
@@ -28,6 +27,10 @@ define([
         });
     }, 1000);
     $("body").lazyLoad({
-        li:".item"
+        li: ".item",
+        cont: ".waterfall_cont",
+        templates: "#temp",
+        typeList: ".navList_cont",
+        ifloading:true
     });
 });

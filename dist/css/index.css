@@ -97,7 +97,8 @@ input {
     height: 306px;
     width: 462px;
     margin-right: 9px;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    box-sizing: border-box; }
     .boxList .boxList_first img {
       width: 100%;
       height: 100%; }
@@ -176,6 +177,37 @@ input {
   background: #ed3f3f;
   padding: 1px 6px;
   border-radius: 50%; }
+
+.slide.show {
+  display: block;
+  z-index: 2; }
+
+.slide.prev-show {
+  z-index: 1;
+  display: block; }
+
+.dotCont {
+  z-index: 555;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto; }
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background: #ccc;
+  opacity: 0.7;
+  float: left;
+  margin-right: 10px; }
+
+.dot.active {
+  background: #ed3f3f; }
+
+.go_top {
+  cursor: pointer; }
 
 /*body*/
 body {
@@ -436,18 +468,22 @@ body {
             height: 46px;
             line-height: 46px;
             font-size: 16px;
-            color: #6c6c6c; }
+            color: #6c6c6c;
+            width: 100%;
+            clear: both; }
           body .banner_cont .banner_list li .banner_submenu a::after {
             content: "";
             background: none; }
           body .banner_cont .banner_list li .banner_submenu .sub_list {
             width: 770px;
             border-top: 1px solid #e1e1e1;
-            padding: 12px 0px; }
+            padding: 12px 0px;
+            margin-bottom: 15px; }
             body .banner_cont .banner_list li .banner_submenu .sub_list a {
+              font-weight: normal;
               font-size: 12px;
-              color: #9d9d9d;
-              line-height: 12px;
+              color: #333333;
+              line-height: 36px;
               width: auto;
               float: left;
               margin-right: 20px; }
@@ -471,7 +507,8 @@ body {
       margin-left: 200px;
       width: 830px;
       height: 310px;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       body .banner_cont .banner_center .wrapper {
         height: 310px;
         position: relative; }
@@ -481,8 +518,11 @@ body {
           top: 0px;
           width: 830px;
           height: 310px;
-          background: url("http://b.cycangcdn.com/1554280243497.png");
-          background-position-x: -550px; }
+          background-position-x: -550px;
+          overflow: hidden; }
+          body .banner_cont .banner_center .wrapper .slide img {
+            width: 100%;
+            height: 100%; }
     body .banner_cont .banner_advertisement {
       height: 310px;
       float: left;
@@ -497,12 +537,15 @@ body {
   body .recommend_cont {
     height: 1377px;
     background: #fff;
-    margin-top: 30px; }
+    margin-top: 30px;
+    position: relative; }
     body .recommend_cont .recommend_bar {
       display: block;
       height: 2px;
       width: 50%;
-      background: #ed3f3f; }
+      background: #ed3f3f;
+      position: absolute;
+      transition: all 0.5s; }
     body .recommend_cont .recommend_btn {
       width: 100%;
       height: 92px; }
@@ -582,7 +625,8 @@ body {
         border-radius: 12px;
         padding: 0 15px 0 30px;
         font-size: 14px;
-        position: relative; }
+        position: relative;
+        cursor: pointer; }
       body .attire_cont .attire_title .title_center:before {
         transform: translateZ(0);
         transition: all .3s;

@@ -9,7 +9,8 @@
         width: 190px;
         background: #fff;
         height: 322px;
-        li{
+
+        li {
             height: 44px;
             line-height: 44px;
             padding: 0px 10px 0px 10px;
@@ -17,22 +18,25 @@
             border-bottom: 1px solid #fff;
             border-right: 1px solid $color_Basics;
             border-left: 1px solid $color_Basics;
-            a{
+
+            a {
                 display: block;
                 font-size: 14px;
                 font-weight: bold;
                 width: 100%;
                 height: 100%;
-                color:$color_Black;
+                color: $color_Black;
             }
-            a::after{
+
+            a::after {
                 content: "";
                 width: 7px;
                 height: 100%;
-                float:right;
+                float: right;
                 background: url("http://www.cycang.com/Public/build/img/shop/index/cat_more.png?__spriter")no-repeat center;
             }
-            .banner_submenu{
+
+            .banner_submenu {
                 display: none;
                 z-index: 999;
                 width: 805px;
@@ -46,34 +50,41 @@
                 left: 190px;
                 padding-left: 34px;
 
-                .sub_title{
+                .sub_title {
                     height: 46px;
                     line-height: 46px;
                     font-size: 16px;
                     color: #6c6c6c;
+                    width: 100%;
+                    clear: both;
                 }
-                a::after{
+
+                a::after {
                     content: "";
                     background: none;
                 }
-                .sub_list{
+
+                .sub_list {
                     width: 770px;
                     border-top: 1px solid #e1e1e1;
                     padding: 12px 0px;
-
-                    a{
+                    margin-bottom:15px;
+                    a {
+                        font-weight: normal;
                         font-size: 12px;
-                        color: #9d9d9d;
-                        line-height: 12px;
+                        color: $color_Black;
+                        line-height: 36px;
                         width: auto;
                         float: left;
                         margin-right: 20px;
-                        
+
                     }
-                    a:hover{
+
+                    a:hover {
                         color: $color_Basics;
                     }
-                    a::after{
+
+                    a::after {
                         content: "";
                         background: none;
                     }
@@ -81,52 +92,66 @@
 
             }
         }
-        li:hover .banner_submenu{
+
+        li:hover .banner_submenu {
             display: block;
         }
-        li:first-of-type{
+
+        li:first-of-type {
             border-top: 1px solid $color_Basics;
         }
-        li:last-of-type{
+
+        li:last-of-type {
             border-bottom: 1px solid $color_Basics;
         }
-        li:hover{
+
+        li:hover {
             border-top: 1px solid $color_Basics;
             border-right: 1px solid #fff;
             border-bottom: 1px solid $color_Basics;
         }
     }
-    .banner_center{
+
+    .banner_center {
         float: left;
         margin-left: 200px;
         width: 830px;
         height: 310px;
         overflow: hidden;
-        .wrapper{
+        position: relative;
+        .wrapper {
             height: 310px;
             position: relative;
-            .slide{
+
+            .slide {
                 display: block;
                 position: absolute;
                 top: 0px;
                 width: 830px;
                 height: 310px;
-                background: url("http://b.cycangcdn.com/1554280243497.png");
                 background-position-x: -550px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
-    .banner_advertisement{
+
+    .banner_advertisement {
         height: 310px;
         float: left;
         width: 160px;
         margin-left: 10px;
-        a{
+
+        a {
             display: block;
             width: 160px;
             height: 150px;
         }
-        a:last-of-type{
+
+        a:last-of-type {
             margin-top: 10px;
         }
     }

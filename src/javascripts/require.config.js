@@ -22,7 +22,12 @@ requirejs.config({
             "sendSelf" :"./javascripts/sendSelf",
             "load":"./javascripts/load",
             "lazyLoad":"./javascripts/lazyLoad",
+            "lazyLoading":"./javascripts/lazyLoading",
             "outLogin":"./javascripts/outLogin",
-            "addCart":"./javascripts/addCart"
+            "addCart":"./javascripts/addCart",
+            "anotherChange":"./javascripts/anotherChange",
+            "magnifier":"./javascripts/magnifier",
+            "tab":"./javascripts/tab",
+            "gotop":"./javascripts/gotop"
       }
 })
