@@ -16,13 +16,15 @@
             this.key=[/^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}$/,
                     [/\d/,/[a-zA-Z]/,/[!@#\$%&\*_]/,/^.{6,20}$/]
                     ];
-            this.ifOk=[0,0,0,0];
+            this.ifOk=[0,0,0,0,0];
             this.options=options;
             this.options.account?this.acc=this.options.account:this.ifOk[0]=1;
             this.options.password?this.pwd=this.options.password:this.ifOk[1]=1;
             this.options.repassword?this.rpwd=this.options.repassword:this.ifOk[2]=1;
             this.options.verification?this.ver=this.options.verification:this.ifOk[3]=1;
+            this.options.agree?this.agr=this.options.agree:this.ifOk[4]=1;
             this.options.randomVerification?this.rom=this.options.randomVerification:"";
+            this.options.cont?this.cont=this.options.cont:"";
             this.bindEvent();
             this.randomVerification(this);
         },
@@ -40,9 +42,15 @@
             this.options.verification?$(this.ver,this.that).on("blur",function(){
                 _.verCheck(_);
             }):"";
+            this.options.agree?$(this.agr).on("click",function(){
+                _.agrCheck(_);
+            }):"";
             this.options.randomVerification?$(this.rom,this.that).on("click",function(){
                _.randomVerification(_);
-               _.verCheck(_);
+               //_.verCheck(_);
+            }):"";
+            this.cont?$(this.cont).on("click",function(){
+                _.changeIfOk(_);
             }):"";
         },
         accCheck:function(_){
@@ -123,7 +131,14 @@
                 _.ifOk[3]=0;
                 $("#vtxt").length!=0?"": $(_.ver).parentsUntil("li").append($("<span id='vtxt' style='color:red;font-size:12px; position:absolute;bottom:-14px;background:none; line-height:12px; right:0;'>验证码错误</span>"));
             }
-            _.changeIfOk(_);
+           // _.changeIfOk(_);
+        },
+        agrCheck:function(_){
+            if($(this.agr).prop("checked")){
+                _.ifOk[4]=1;
+            }else{
+                _.ifOk[4]=0;
+            }
         },
         randomVerification:function(_){
             
@@ -143,7 +158,7 @@
             $.each(_.ifOk,((index,item)=>{
                 num+=item;
                 nam++;
-            }))
+            }));
             if(num===nam){
                 $(_.that).attr("ifOk",true);
             }else{

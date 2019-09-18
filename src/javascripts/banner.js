@@ -30,6 +30,8 @@
                   this.index = this.num;
                   this.previndex = 0;
                   this.playTimer = null;
+                  this.timer=null;
+                  this.ifTime=true;
                   this.auto ? this.autoPlay() : "";
                   this.dot ? this.createDot() : "";
                   this.type=="change"?$(this.wrapper,this.cont).css({
@@ -53,32 +55,39 @@
                   }) : "";
             },
             changeIndex: function (str, evt) {
-                  if (str === "next") {
-                        this.previndex = this.index;
-                        if (this.index === this.slides.length - 1) {
-
-                              this.index = 0;
-                        } else {
-                              this.index+=this.changeNum;
-                        }
-                  } else if (str === "prev") {
-                        this.previndex = this.index;
-                        if (this.index === 0) {
-                              this.index = this.slides.length - 1;
-                        } else {
-                              this.index-=this.changeNum;
-                        }
-                  } else if (str == "dot") {
-                        var e = evt || event;
-                        var target = e.target;
-                        $.each($(".dot"), (index, item) => {
-                              if (item == target) {
-                                    this.previndex = this.index;
-                                    this.index = index;
+                  if(this.ifTime){
+                        if (str === "next") {
+                              this.previndex = this.index;
+                              if (this.index === this.slides.length - 1) {
+      
+                                    this.index = 0;
+                              } else {
+                                    this.index+=this.changeNum;
                               }
-                        });
+                        } else if (str === "prev") {
+                              this.previndex = this.index;
+                              if (this.index === 0) {
+                                    this.index = this.slides.length - 1;
+                              } else {
+                                    this.index-=this.changeNum;
+                              }
+                        } else if (str == "dot") {
+                              var e = evt || event;
+                              var target = e.target;
+                              $.each($(".dot"), (index, item) => {
+                                    if (item == target) {
+                                          this.previndex = this.index;
+                                          this.index = index;
+                                    }
+                              });
+                        }
+                        this.play();
+                        this.ifTime=false;
+                        clearTimeout(this.timer);
+                        this.timer=setTimeout(function(){
+                              this.ifTime=true;
+                        }.bind(this),1000);
                   }
-                  this.play();
             },
             play: function () {
                   switch (this.type) {

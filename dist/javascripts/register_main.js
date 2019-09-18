@@ -8,7 +8,9 @@ define([
         password:"#register_pwd",
         repassword:"#register_rpwd",
         verification:"#register_ver",
-        randomVerification:"#register_rom"
+        randomVerification:"#register_rom",
+        cont:".login_register",
+        agree:"#agree"
     });
     $(".login_register").register({
         account:"#register_acc",
