@@ -28,6 +28,9 @@ requirejs.config({
             "anotherChange":"./javascripts/anotherChange",
             "magnifier":"./javascripts/magnifier",
             "tab":"./javascripts/tab",
-            "gotop":"./javascripts/gotop"
+            "gotop":"./javascripts/gotop",
+            "activity_main":"./javascripts/activity_main",
+            "changeTab":"./javascripts/changeTab",
+            "showActive":"./javascripts/showActive"
       }
 })

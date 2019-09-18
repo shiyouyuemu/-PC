@@ -336,330 +336,171 @@ input {
       #navList .navList_cont li .active {
         background: #d13535; }
 
-/*cont*/
-.bread_cont {
-  width: 1040px;
-  margin: 20px auto; }
-  .bread_cont a:first-of-type {
-    font-weight: bold; }
-  .bread_cont a, .bread_cont span {
-    line-height: 30px;
-    font-size: 12px;
-    color: #666;
-    margin-right: 10px;
-    cursor: pointer; }
-  .bread_cont a:hover, .bread_cont span:hover {
-    color: #ed3f3f; }
-
-/*wrap*/
-.wrap_cont {
-  width: 1040px;
-  margin: 10px auto;
-  padding: 20px 10px;
-  border: 1px solid #e0e0e0;
-  box-sizing: border-box; }
-  .wrap_cont .wrap_left {
-    width: 330px;
-    margin-bottom: 15px;
-    float: left; }
-    .wrap_cont .wrap_left a {
-      display: block;
-      margin: 0 25px 15px 0;
-      background: #eee;
-      border-radius: 3px;
-      height: 330px;
-      width: 100%;
-      overflow: hidden;
-      position: relative; }
-      .wrap_cont .wrap_left a img {
-        height: 100%;
+/*activity*/
+#activity {
+  background: #723f23; }
+  #activity .activity_cont {
+    width: 990px;
+    margin: 0 auto;
+    background: #ffc5a2; }
+    #activity .activity_cont .activity_title {
+      height: 1201px; }
+      #activity .activity_cont .activity_title img {
         width: 100%;
-        position: absolute; }
-  .wrap_cont .wrap_right {
-    width: 645px;
-    margin-bottom: 15px;
-    margin-left: 40px;
-    float: left; }
-    .wrap_cont .wrap_right .title {
-      font-size: 18px; }
-    .wrap_cont .wrap_right .wrap_price {
-      font-size: 12px;
-      width: 100%;
-      background: #f3f3f3;
-      padding: 10px 17px;
-      margin-bottom: 10px;
-      position: relative;
-      box-sizing: border-box; }
-      .wrap_cont .wrap_right .wrap_price .wrap_price_p {
-        padding-bottom: 14px; }
-        .wrap_cont .wrap_right .wrap_price .wrap_price_p span {
-          font-size: 20px;
-          font-weight: 700;
-          color: #e33;
-          line-height: 26px; }
-      .wrap_cont .wrap_right .wrap_price .wrap_price_s {
-        margin-bottom: 14px; }
-        .wrap_cont .wrap_right .wrap_price .wrap_price_s a {
-          color: #333333; }
-        .wrap_cont .wrap_right .wrap_price .wrap_price_s .kf {
-          float: right;
-          height: 18px;
-          border-left: 1px solid #c4bebe;
-          padding: 0 3px 0 20px; }
-          .wrap_cont .wrap_right .wrap_price .wrap_price_s .kf img {
-            margin-right: 10px;
-            display: inline-block; }
-          .wrap_cont .wrap_right .wrap_price .wrap_price_s .kf span {
-            display: inline-block; }
-      .wrap_cont .wrap_right .wrap_price .wrap_price_a {
-        margin-bottom: 14px;
-        line-height: 24px; }
-    .wrap_cont .wrap_right .wrap_style {
-      font-size: 12px;
-      margin-bottom: 20px; }
-      .wrap_cont .wrap_right .wrap_style span {
-        float: left; }
-      .wrap_cont .wrap_right .wrap_style ul {
-        float: left;
-        width: 480px;
-        margin-left: 5px;
-        overflow: hidden; }
-        .wrap_cont .wrap_right .wrap_style ul li {
-          width: 78px;
-          height: 16px;
-          text-align: center;
-          padding: 5px;
-          margin: 0 6px 6px 0;
-          border: 1px solid #ed3f3f;
-          cursor: pointer; }
-    .wrap_cont .wrap_right .wrap_num {
-      margin-bottom: 20px;
-      font-size: 12px; }
-      .wrap_cont .wrap_right .wrap_num .num_box {
-        display: inline-block;
-        vertical-align: middle;
-        width: 100px;
-        margin: 0;
-        text-align: center;
-        box-sizing: border-box; }
-        .wrap_cont .wrap_right .wrap_num .num_box span {
-          line-height: 28px;
-          width: 28px;
-          height: 28px;
-          box-sizing: border-box;
-          border: 1px solid #c4bebe;
-          background: #eee;
-          cursor: pointer;
-          text-align: center;
-          display: inline-block;
-          text-align: center;
-          vertical-align: middle; }
-        .wrap_cont .wrap_right .wrap_num .num_box input {
-          border: 1px solid #c4bebe;
-          background: #fff;
-          border-left: none;
-          border-right: none;
-          line-height: 28px;
-          width: 30px;
-          height: 28px;
-          text-align: center;
-          vertical-align: middle;
-          box-sizing: border-box;
-          margin: 0px -5px; }
-    .wrap_cont .wrap_right .wrap_addcart {
-      margin-bottom: 20px; }
-      .wrap_cont .wrap_right .wrap_addcart .addcart {
-        outline: none;
-        text-align: center;
-        width: 160px;
-        height: 40px;
-        line-height: 40px;
-        color: #fff;
-        background: #ed3f3f;
-        font-size: 14px;
-        border-radius: 5px;
-        font-weight: 700;
-        cursor: pointer;
-        vertical-align: bottom;
-        border: none; }
-      .wrap_cont .wrap_right .wrap_addcart .addhoby {
-        outline: none;
-        width: 100px;
-        margin-left: 20px;
-        text-align: center;
-        line-height: 36px;
-        font-size: 14px;
-        border-radius: 5px;
-        font-weight: 700;
-        cursor: pointer;
-        border: 1px solid #ed3f3f;
-        color: #ed3f3f;
-        background-color: #fff; }
-  .wrap_cont .wrap_bottom {
-    width: 100%;
-    padding: 10px;
-    background: #f8f7f6;
-    float: left; }
-    .wrap_cont .wrap_bottom .title {
-      float: left;
-      width: 75px;
-      margin-left: 10px;
-      margin-top: 5px;
-      padding-left: 20px;
-      font-size: 12px;
-      background: url("http://www.cycang.com/Public/build/img/shop/fav_is.png") no-repeat;
-      background-size: contain; }
-    .wrap_cont .wrap_bottom .help_item {
-      position: relative;
-      float: left;
-      width: 80px;
-      font-size: 12px;
-      color: #333333;
-      margin-right: 14px;
-      cursor: pointer;
-      padding: 5px 0; }
-      .wrap_cont .wrap_bottom .help_item span {
-        background: url("http://www.cycang.com/Public/build/img/shop/details_icon_question.png") no-repeat;
-        width: 13px;
-        height: 13px;
-        margin-left: 3px;
-        margin-top: 2px;
-        float: right; }
-      .wrap_cont .wrap_bottom .help_item ul {
-        display: none;
+        height: 100%; }
+    #activity .activity_cont .baokuan {
+      height: 233px; }
+    #activity .activity_cont .jingpin {
+      height: 203px; }
+    #activity .activity_cont .manjian {
+      height: 193px; }
+    #activity .activity_cont .chaozhi {
+      height: 182px; }
+    #activity .activity_cont .dazhe {
+      height: 193px; }
+    #activity .activity_cont .baokuan_three {
+      height: 380px; }
+    #activity .activity_cont .jingpin_two {
+      height: 524px; }
+    #activity .activity_cont .manjian_two {
+      height: 352px; }
+    #activity .activity_cont .chaozhi_two {
+      height: 374px; }
+    #activity .activity_cont .act_banner {
+      position: relative; }
+      #activity .activity_cont .act_banner .banner_cont {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 321px; }
+        #activity .activity_cont .act_banner .banner_cont .wrapper {
+          min-width: 10000px;
+          position: absolute;
+          margin: 0;
+          padding: 0; }
+          #activity .activity_cont .act_banner .banner_cont .wrapper .slide {
+            float: left;
+            width: 238px;
+            margin-right: 13px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            overflow: hidden;
+            background: #fff; }
+            #activity .activity_cont .act_banner .banner_cont .wrapper .slide a {
+              display: block; }
+              #activity .activity_cont .act_banner .banner_cont .wrapper .slide a img {
+                width: 248px;
+                height: 248px; }
+              #activity .activity_cont .act_banner .banner_cont .wrapper .slide a .tit {
+                padding: 10px; }
+                #activity .activity_cont .act_banner .banner_cont .wrapper .slide a .tit p:first-of-type {
+                  font-size: 12px;
+                  color: #e33;
+                  font-weight: bold; }
+                #activity .activity_cont .act_banner .banner_cont .wrapper .slide a .tit p {
+                  color: #333333;
+                  font-size: 12px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: normal; }
+                #activity .activity_cont .act_banner .banner_cont .wrapper .slide a .tit p:last-of-type {
+                  display: block;
+                  height: 35px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: normal; }
+          #activity .activity_cont .act_banner .banner_cont .wrapper .slide:hover img {
+            opacity: 0.8; }
+          #activity .activity_cont .act_banner .banner_cont .wrapper .slide:hover .tit p:last-of-type {
+            color: #e33; }
+      #activity .activity_cont .act_banner .prev,
+      #activity .activity_cont .act_banner .next {
+        width: 48px;
+        height: 100px;
         position: absolute;
-        width: 200px;
-        padding: 10px;
-        top: 20px;
-        left: 0px;
-        border: 1px solid #ed3f3f;
-        background: #f8f7f6; }
-        .wrap_cont .wrap_bottom .help_item ul li {
-          margin-bottom: 5px; }
-    .wrap_cont .wrap_bottom .help_item:hover ul {
-      display: block; }
-
-/*details*/
-.details_cont {
-  border: 1px solid #ccc;
-  border-top: 2px solid #ed3f3f;
-  width: 1040px;
-  margin: 0 auto; }
-  .details_cont .cont_tit {
-    padding: 20px 10px 0;
-    border-bottom: 1px solid #ccc; }
-    .details_cont .cont_tit span:first-of-type {
-      font-size: 14px;
-      float: left; }
-    .details_cont .cont_tit p {
-      float: right;
-      height: 40px;
-      position: relative;
-      cursor: pointer; }
-      .details_cont .cont_tit p span:first-of-type {
-        display: block;
-        width: 22px;
-        height: 22px;
-        background: url("http://www.cycang.com/Public/build/img/shop/small_qr.png") no-repeat;
-        margin-top: -2px;
-        margin-right: 8px; }
-      .details_cont .cont_tit p span:last-of-type {
+        top: 100px;
         display: none;
-        width: 130px;
-        height: 130px;
-        position: absolute;
-        left: 0;
-        top: 30px;
-        background: url("http://www.cycang.com/Public/build/img/shop/detail-qr.png") no-repeat;
-        background-size: contain; }
-    .details_cont .cont_tit p:hover span:last-of-type {
+        z-index: 999; }
+      #activity .activity_cont .act_banner .prev {
+        left: 1px;
+        background: url("http://www.cycang.com/Public/build/img/shop/left_arrow.png"); }
+      #activity .activity_cont .act_banner .next {
+        right: 1px;
+        background: url("http://www.cycang.com/Public/build/img/shop/right_arrow.png"); }
+    #activity .activity_cont .act_banner:hover .prev,
+    #activity .activity_cont .act_banner:hover .next {
       display: block; }
-  .details_cont .cont {
-    padding: 20px; }
-    .details_cont .cont img {
-      max-width: 100%;
-      margin: 0 auto; }
-
-/*banner*/
-.banner_cont {
-  width: 1040px;
-  margin: 20px auto;
-  position: relative; }
-  .banner_cont .title {
-    padding: 12px 0;
-    font-size: 14px;
-    background-image: url("http://www.cycang.com/Public/build/img/shop/reco_bg.jpg");
-    background-repeat: no-repeat;
-    background-color: #fff2f9;
-    margin-bottom: 20px; }
-    .banner_cont .title span {
-      margin-left: 40px;
-      font-size: 14px; }
-  .banner_cont .cont {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 321px; }
-    .banner_cont .cont .wrapper {
-      min-width: 10000px;
-      position: absolute;
-      margin: 0;
-      padding: 0; }
-      .banner_cont .cont .wrapper .slide {
+    #activity .activity_cont .act_tab .tab_title {
+      height: 50px; }
+      #activity .activity_cont .act_tab .tab_title li {
         float: left;
-        width: 248px;
-        margin-right: 13px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        overflow: hidden; }
-        .banner_cont .cont .wrapper .slide a {
+        width: 198px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer; }
+        #activity .activity_cont .act_tab .tab_title li span {
+          display: none;
+          width: 100%;
+          height: 2px;
+          background: #000; }
+        #activity .activity_cont .act_tab .tab_title li span.active {
           display: block; }
-          .banner_cont .cont .wrapper .slide a img {
-            width: 248px;
-            height: 248px; }
-          .banner_cont .cont .wrapper .slide a .tit {
-            padding: 10px; }
-            .banner_cont .cont .wrapper .slide a .tit p:first-of-type {
-              font-size: 12px;
-              color: #e33;
-              font-weight: bold; }
-            .banner_cont .cont .wrapper .slide a .tit p {
-              color: #333333;
-              font-size: 12px;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: normal; }
-            .banner_cont .cont .wrapper .slide a .tit p:last-of-type {
-              display: block;
-              height: 35px;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              white-space: normal; }
-      .banner_cont .cont .wrapper .slide:hover {
-        border-radius: 5px;
-        box-shadow: 1px 1px 20px grey; }
-      .banner_cont .cont .wrapper .slide:hover .tit {
-        background: #ed3f3f; }
-      .banner_cont .cont .wrapper .slide:hover .tit p {
-        color: #fff !important; }
-  .banner_cont .prev,
-  .banner_cont .next {
-    width: 48px;
-    height: 100px;
-    position: absolute;
-    top: 150px;
-    display: none;
-    z-index: 999; }
-  .banner_cont .prev {
-    left: 1px;
-    background: url("http://www.cycang.com/Public/build/img/shop/left_arrow.png"); }
-  .banner_cont .next {
-    right: 1px;
-    background: url("http://www.cycang.com/Public/build/img/shop/right_arrow.png"); }
-
-.banner_cont:hover .prev,
-.banner_cont:hover .next {
-  display: block; }
+      #activity .activity_cont .act_tab .tab_title .tab_02 span {
+        width: 64px;
+        background: #fff;
+        margin: 0 auto; }
+      #activity .activity_cont .act_tab .tab_title li.active {
+        color: #fff; }
+    #activity .activity_cont .tab_list {
+      padding: 5px 0px; }
+      #activity .activity_cont .tab_list li {
+        float: left;
+        width: 192px;
+        margin: 0 3px;
+        margin-bottom: 10px;
+        background: #fff; }
+        #activity .activity_cont .tab_list li a dl dt {
+          width: 100%;
+          height: 192px;
+          position: relative; }
+          #activity .activity_cont .tab_list li a dl dt img {
+            width: 172px;
+            height: 172px;
+            margin: 10px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; }
+        #activity .activity_cont .tab_list li a dl dd .txt {
+          color: #000;
+          line-height: 16px;
+          padding: 0 18px;
+          height: 33px;
+          font-size: 12px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          word-break: break-all; }
+        #activity .activity_cont .tab_list li a dl dd .price {
+          font-size: 18px;
+          padding: 10px 18px; }
+          #activity .activity_cont .tab_list li a dl dd .price span:first-of-type {
+            color: #e33;
+            line-height: 18px;
+            margin-right: 5px; }
+          #activity .activity_cont .tab_list li a dl dd .price span:last-of-type {
+            height: 18px;
+            display: block; }
+      #activity .activity_cont .tab_list li:hover img {
+        opacity: 0.8; }
+      #activity .activity_cont .tab_list li:hover .txt {
+        color: #e33; }
+    #activity .activity_cont img {
+      width: 100%;
+      height: 100%; }
 
 /*footer*/
 .footer_cont {

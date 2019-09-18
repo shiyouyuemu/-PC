@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/shoppingCart.css">
 </head>
 <script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
+
 <body>
     <div id="header">
         <nav class="header_cont">
@@ -65,15 +66,15 @@
                 </a>
             </li>
             <li><a href="./list.html?typename=01">图书仓</a></li>
-                <li><a href="./list.html?typename=02">汉风仓</a></li>
-                <li><a href="./list.html?typename=03">手办仓</a></li>
-                <li><a href="./list.html?typename=04">首饰仓</a></li>
-                <li><a href="./list.html?typename=05">零食仓</a></li>
-                <li><a href="./list.html?typename=06">文具仓</a></li>
-                <li><a href="./list.html?typename=07">古风仓</a></li>
-                <li><a href="./list.html?typename=08">装扮仓</a></li>
-                <li><a href="./list.html?typename=9">周边仓</a></li>
-                <li><a href="./list.html?typename=10">服饰仓</a></li>
+            <li><a href="./list.html?typename=02">汉风仓</a></li>
+            <li><a href="./list.html?typename=03">手办仓</a></li>
+            <li><a href="./list.html?typename=04">首饰仓</a></li>
+            <li><a href="./list.html?typename=05">零食仓</a></li>
+            <li><a href="./list.html?typename=06">文具仓</a></li>
+            <li><a href="./list.html?typename=07">古风仓</a></li>
+            <li><a href="./list.html?typename=08">装扮仓</a></li>
+            <li><a href="./list.html?typename=9">周边仓</a></li>
+            <li><a href="./list.html?typename=10">服饰仓</a></li>
         </ul>
     </div>
     <div id="wrapper">
@@ -91,68 +92,29 @@
                     大家都在看
                     <hr>
                 </h2>
-                <div class="wrapper_list">
-                    <div class="wrapper">
-                        <div class="slide">
-                            <dl>
-                                <a href="">
-                                    <dt>
-                                        <img src="http://f.p.cycangcdn.com/1545723827308.jpg" alt="">
-                                    </dt>
-                                    <dd>
-                                        <h3>预售【官方正版】魔道祖师 动画版 人物角色 Q版 金属挂件</h2>
-                                            <p>￥35.00</p>
-                                    </dd>
-                                </a>
-                            </dl>
-                            <dl>
-                                <a href="">
-                                    <dt>
-                                        <img src="http://f.p.cycangcdn.com/1545212095898.jpg" alt="">
-                                    </dt>
-                                    <dd>
-                                        <h3>预售【官方正版】魔道祖师 动画版 人物角色 Q版 金属挂件</h2>
-                                            <p>￥35.00</p>
-                                    </dd>
-                                </a>
-                            </dl>
-                            <dl>
-                                <a href="">
-                                    <dt>
-                                        <img src="http://f.p.cycangcdn.com/1545211112565.jpg" alt="">
-                                    </dt>
-                                    <dd>
-                                        <h3>预售【官方正版】魔道祖师 动画版 人物角色 Q版 金属挂件</h2>
-                                            <p>￥35.00</p>
-                                    </dd>
-                                </a>
-                            </dl>
-                            <dl>
-                                <a href="">
-                                    <dt>
-                                        <img src="http://f.p.cycangcdn.com/1545376731222.jpg" alt="">
-                                    </dt>
-                                    <dd>
-                                        <h3>预售【官方正版】魔道祖师 动画版 人物角色 Q版 金属挂件</h2>
-                                            <p>￥35.00</p>
-                                    </dd>
-                                </a>
-                            </dl>
-                            <dl>
-                                <a href="">
-                                    <dt>
-                                        <img src="http://f.p.cycangcdn.com/1545376115160.jpg" alt="">
-                                    </dt>
-                                    <dd>
-                                        <h3>预售【官方正版】魔道祖师 动画版 人物角色 Q版 金属挂件</h2>
-                                            <p>￥35.00</p>
-                                    </dd>
-                                </a>
-                            </dl>
+                <div class="btnCont">
+                    <div class="wrapper_list">
+                        <div class="wrapper">
+                            <script type="text/html" id="banner_temp">
+                                <%for(var i in list){%>
+                                <dl class="slide item" data-name='<%=list[i].name%>'
+                                    data-price='<%=list[i].cover_price%>' data-img='<%=list[i].figure%>'>
+                                    <a href="./details.html">
+                                        <dt>
+                                            <img src="<%=list[i].figure%>" alt="">
+                                        </dt>
+                                        <dd>
+                                            <h3><%=list[i].name%></h2>
+                                                <p>￥<%=list[i].cover_price%></p>
+                                        </dd>
+                                    </a>
+                                </dl>
+                                <%}%>
+                            </script>
                         </div>
                     </div>
-                    <a href="" class="prev"></a>
-                    <a href="" class="next"></a>
+                    <a class="prev"></a>
+                    <a class="next"></a>
                 </div>
             </div>
         </div>
@@ -186,7 +148,7 @@
                             <div class="table_head clear-fix">
                                 <div class="table_allbtn">
                                     <div class="allbtn_cont">
-                                        <i class="on ifChoose allChoose" ifChoose="true" >
+                                        <i class="on ifChoose allChoose" ifChoose="true">
                                             <input type="checkbox" name="" id="">
                                         </i>
 
@@ -201,12 +163,12 @@
                                 <div class="table_li">操作</div>
                             </div>
                             <div class="table_cont">
-                                <div class="table_items"  cont="0">
+                                <div class="table_items" cont="0">
                                     <div class="table_type">
                                         <div class="table_type_left">
                                             <div class="table_allbtn">
                                                 <div class="allbtn_cont">
-                                                    <i class="on ifChoose allchoose" ifChoose="true" >
+                                                    <i class="on ifChoose allchoose" ifChoose="true">
                                                         <input type="checkbox" name="" id="">
                                                     </i>
 
@@ -221,15 +183,15 @@
                                             小计：￥
                                             <%var sum=0%>
                                             <%for(var i in data.data){%>
-                                                <%sum+=parseInt(data.data[i].price)*parseInt(data.data[i].cont)%>
+                                            <%sum+=parseInt(data.data[i].price)*parseInt(data.data[i].cont)%>
                                             <%}%>
                                             <span id="price"><%=sum%></span>
                                             运费：
                                             <%var fsum=0%>
                                             <%for(var i in data.data){%>
-                                                <%if(68>parseInt(data.data[i].price)*parseInt(data.data[i].cont)){%>
-                                                    <%fsum+=10%>
-                                                <%}%>
+                                            <%if(68>parseInt(data.data[i].price)*parseInt(data.data[i].cont)){%>
+                                            <%fsum+=10%>
+                                            <%}%>
                                             <%}%>
                                             <span id="freight"><%=fsum%></span>
                                         </div>
@@ -239,7 +201,7 @@
                                         <div class="table_item clear-fix">
                                             <div class="table_allbtn table_td table_th_3">
                                                 <div class="allbtn_cont">
-                                                    <i class="on ifChoose choose" ifChoose="true" >
+                                                    <i class="on ifChoose choose" ifChoose="true">
                                                         <input type="checkbox" name="" id="">
                                                     </i>
 
@@ -257,7 +219,8 @@
                                             <div class="table_td table_th_20 table_text">
                                                 <div class="num_box">
                                                     <span class="num_btn">-</span>
-                                                    <input type="text" disabled="true" name="" class="num_num" value='<%=data.data[item].cont%>'>
+                                                    <input type="text" disabled="true" name="" class="num_num"
+                                                        value='<%=data.data[item].cont%>'>
                                                     <span class="num_btn">+</span>
                                                 </div>
                                             </div>
@@ -265,7 +228,8 @@
                                                 有货
                                             </div>
                                             <div class="table_td table_th_10 table_text">
-                                                <span class="table_sum"><%=parseInt(data.data[item].price)*parseInt(data.data[item].cont)%></span>
+                                                <span
+                                                    class="table_sum"><%=parseInt(data.data[item].price)*parseInt(data.data[item].cont)%></span>
                                             </div>
                                             <div class="table_td table_th_10 table_text">
                                                 <span class="table_del">删除</span>

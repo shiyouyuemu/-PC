@@ -6,7 +6,8 @@ define([
     "shoppingCart",
     "magnifier",
     "sendSelf",
-    "banner"
+    "banner",
+    "outLogin"
 ], function(autoLogin, sendSelf,render,load,addCart,magnifier,banner) {
     'use strict';
     $(".header_left").autoLogin();
@@ -42,13 +43,15 @@ define([
         });
         $(".banner_Cont").banner({
             btns:{
-                prev_btn:".prev",
-                next_btn:".next"
+                prev_btn:".next",
+                next_btn:".prev"
             },
             auto:true,
             type:"change",
             slides:".slide",
-            cont:".banner_Cont"
+            cont:".banner_Cont",
+            num:8,
+            changeNum:1
         });
     }, 1000);
 });

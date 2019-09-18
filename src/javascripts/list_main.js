@@ -6,7 +6,8 @@ define([
     "shoppingCart",
     "list",
     "sendSelf",
-    "lazyLoad"
+    "lazyLoad",
+    "outLogin"
 ], function (autoLogin, render, shoppingCart, lazyLoad) {
     'use strict';
     $(".header_left").autoLogin({

@@ -1,0 +1,251 @@
+#activity {
+    background: #723f23;
+
+    .activity_cont {
+        width: 990px;
+        margin: 0 auto;
+        background: #ffc5a2;
+
+        .activity_title {
+            height: 1201px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .baokuan{
+            height: 233px;
+        }
+        .jingpin{
+            height: 203px;
+        }
+        .manjian{
+            height: 193px;
+        }
+        .chaozhi{
+            height: 182px;
+        }
+        .dazhe{
+            height: 193px;
+        }
+        .baokuan_three {
+            height: 380px;
+        }
+        .jingpin_two{
+            height: 524px;
+        }
+        .manjian_two{
+            height: 352px;
+        }
+        .chaozhi_two{
+            height: 374px;
+        }
+        .act_banner {
+            position: relative;
+
+            .banner_cont {
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                height: 321px;
+
+                .wrapper {
+                    min-width: 10000px;
+                    position: absolute;
+                    margin: 0;
+                    padding: 0;
+
+                    .slide {
+                        float: left;
+                        width: 238px;
+                        margin-right: 13px;
+                        border: 1px solid #ccc;
+                        box-sizing: border-box;
+                        overflow: hidden;
+
+                        a {
+                            display: block;
+
+                            img {
+                                width: 248px;
+                                height: 248px;
+                            }
+
+                            .tit {
+                                padding: 10px;
+
+                                p:first-of-type {
+                                    font-size: 12px;
+                                    color: #e33;
+                                    font-weight: bold;
+                                }
+
+                                p {
+                                    color: $color_Black;
+                                    font-size: 12px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: normal;
+                                }
+
+                                p:last-of-type {
+                                    display: block;
+                                    height: 35px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: normal;
+                                }
+                            }
+                        }
+
+                        background: #fff;
+                    }
+
+                    .slide:hover img{
+                        opacity: 0.8;
+                    }
+                    .slide:hover .tit p:last-of-type{
+                        color: #e33;
+                    }
+                }
+            }
+
+            .prev,
+            .next {
+                width: 48px;
+                height: 100px;
+                position: absolute;
+                top: 100px;
+                display: none;
+                z-index: 999;
+            }
+
+            .prev {
+                left: 1px;
+                background: url("http://www.cycang.com/Public/build/img/shop/left_arrow.png");
+            }
+
+            .next {
+                right: 1px;
+                background: url("http://www.cycang.com/Public/build/img/shop/right_arrow.png");
+            }
+
+        }
+
+        .act_banner:hover .prev,
+        .act_banner:hover .next {
+            display: block;
+        }
+
+        .act_tab {
+
+            .tab_title {
+                height: 50px;
+
+                li {
+                    float: left;
+                    width: 198px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    cursor: pointer;
+                    span {
+                        display: none;
+                        width: 100%;
+                        height: 2px;
+                        background: #000;
+                    }
+                    span.active{
+                        display: block;
+                    }
+                }
+                .tab_02{
+                    span{
+                        width: 64px;
+                        background: #fff;
+                        margin: 0 auto;
+                    }
+                }
+                li.active{
+                    color: #fff;
+                }
+            }
+
+            
+        }
+
+        .tab_list {
+            padding: 5px 0px;
+            li {
+                float: left;
+                width: 192px;
+                margin: 0 3px;
+                margin-bottom: 10px;
+                background: #fff;
+
+                a {
+
+                    dl {
+
+                        dt {
+                            width: 100%;
+                            height: 192px;
+                            position: relative;
+
+                            img {
+                                width: 172px;
+                                height: 172px;
+                                margin: 10px;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+
+                        dd {
+                            .txt {
+                                color: #000;
+                                line-height: 16px;
+                                padding: 0 18px;
+                                height: 33px;
+                                font-size: 12px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                word-break: break-all;
+                            }
+                            .price{
+                                font-size: 18px;
+                                padding: 10px 18px;
+                                span:first-of-type{
+                                    color: #e33;
+                                    line-height: 18px;
+                                    margin-right: 5px;
+                                }
+                                span:last-of-type{
+                                    height: 18px;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            li:hover img{
+                opacity: 0.8;
+            }
+            li:hover .txt{
+                color: #e33;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

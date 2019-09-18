@@ -21,15 +21,20 @@
                   options.dot ? this.dot = true : this.dot = false;
                   options.type ? this.type = options.type : this.type = "hide";
                   options.wrapper ? this.wrapper = options.wrapper : this.wrapper = ".wrapper";
+                  options.changeNum?this.changeNum=parseInt(options.changeNum):this.changeNum=1;
+                  options.num?this.num=parseInt(options.num):this.num=1;
                   this.slides = this.cont.find(options.slides);
                   this.type=="change"?this.createLF():"";
                   this.slides = this.cont.find(options.slides);
-                  this.distance=$(this.slides[1]).width()+parseInt($(this.slides[1]).css("marginRight"))+2;
-                  this.index = -1;
+                  this.distance=$(this.slides[1]).width()+parseInt($(this.slides[1]).css("marginRight"))+parseInt($(this.slides[1]).css("borderLeft"))+parseInt($(this.slides[1]).css("borderRight"));
+                  this.index = this.num;
                   this.previndex = 0;
                   this.playTimer = null;
                   this.auto ? this.autoPlay() : "";
                   this.dot ? this.createDot() : "";
+                  this.type=="change"?$(this.wrapper,this.cont).css({
+                        left:-this.num*this.distance+"px"
+                  }):"";
                   this.bindEvent();
             },
             bindEvent: function () {
@@ -54,14 +59,14 @@
 
                               this.index = 0;
                         } else {
-                              this.index++;
+                              this.index+=this.changeNum;
                         }
                   } else if (str === "prev") {
                         this.previndex = this.index;
                         if (this.index === 0) {
                               this.index = this.slides.length - 1;
                         } else {
-                              this.index--;
+                              this.index-=this.changeNum;
                         }
                   } else if (str == "dot") {
                         var e = evt || event;
@@ -85,21 +90,20 @@
                               $(".dot").removeClass("active").eq(this.index).addClass("active");
                               break;
                         case "change":
-                              if(this.index==0){
-                                    $(this.wrapper).css({
-                                          left:-8*this.distance+"px"
+                              if(this.index==this.changeNum){
+                                    $(this.wrapper,this.cont).css({
+                                          left:(-this.num-this.changeNum-this.changeNum)*this.distance+"px"
                                     });
-                                    this.index=9;
-                              }else if(this.index==this.slides.length -7){
-                                    $(this.wrapper).css({
-                                          left:-8*this.distance+"px"
+                                    this.index=this.num+this.changeNum;
+                              }else if(this.index==this.slides.length -this.num+this.changeNum){
+                                    $(this.wrapper,this.cont).css({
+                                          left:-this.num*this.distance+"px"
                                     });
-                                    this.index=9;
+                                    this.index=this.num+this.changeNum;
                               }
-                                    $(this.wrapper).animate({
+                                    $(this.wrapper,this.cont).animate({
                                           left:-this.index*this.distance+"px"
                                   },500);
-                              
                               
 
                   }
@@ -125,16 +129,12 @@
                         }
                         cont.append(dot);
                   }
-                  $(this.content).append(cont);
+                  $(this.cont).append(cont);
             },
             createLF:function(){
-                  // var first=this.slides.last().prop("outerHTML");;
-                  // var last=this.slides.first().prop("outerHTML");;
-                  // $(this.wrapper).append(last);
-                  // $(this.wrapper).prepend(first);
-                  var first=$(this.wrapper).html();
-                  $(this.wrapper).append(first);
-                  $(this.wrapper).prepend(first);
+                  var first=$(this.wrapper,this.cont).html();
+                  $(this.wrapper,this.cont).append(first);
+                  $(this.wrapper,this.cont).prepend(first);
             }
       });
 })

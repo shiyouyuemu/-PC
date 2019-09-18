@@ -1,0 +1,26 @@
+@import "./variable";
+/*common*/
+@import "./common";
+
+/*head*/
+@import "./common_head";
+
+/*activity*/
+@import "./activity_cont";
+
+
+/*footer*/
+@import "./footer";
+
+.footer_cont{
+    margin-top:50px; 
+    width: 1040px;
+    background: #fff;
+}
+
+/*copy*/
+@import "./copy";
+.copy_cont{
+    margin: 0 auto;
+    width: 1040px;
+}

@@ -32,6 +32,9 @@ h6 {
   font-size: 16px;
   font-weight: normal; }
 
+a {
+  cursor: pointer; }
+
 ul,
 li,
 ol {
@@ -396,3 +399,49 @@ p.copy_cont {
   z-index: 2;
   cursor: pointer;
   background: url("http://www.cycang.com/Public/build/img/shop/to_top.png"); }
+
+.activity {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99997; }
+  .activity .activity_cont {
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+    position: fixed;
+    background: #000;
+    opacity: 0.9; }
+  .activity .img_cont {
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto; }
+    .activity .img_cont a {
+      display: block;
+      width: 500px;
+      height: 500px; }
+      .activity .img_cont a img {
+        width: 500px;
+        height: 500px; }
+    .activity .img_cont .delete {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      right: -25px;
+      top: -25px;
+      background: #000;
+      color: #fff;
+      font-size: 30px;
+      line-height: 50px;
+      text-align: center;
+      opacity: 0.8;
+      border-radius: 50%;
+      cursor: pointer; }

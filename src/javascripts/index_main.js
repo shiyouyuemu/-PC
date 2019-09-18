@@ -9,8 +9,9 @@ define([
     "anotherChange",
     "tab",
     "banner",
-    "gotop"
-], function (autoLogin, render, sendSelf,lazyLoading,gotop) {
+    "gotop",
+    "showActive"
+], function (autoLogin, render, sendSelf,lazyLoading,gotop,showActive) {
 
     $("#username").autoLogin();
     $(".banner_center").banner({
@@ -20,6 +21,10 @@ define([
     });
     $(".go_top").gotop({
         boundary:"#content"
+    });
+    $("body").showActive({
+        btn:".delete",
+        cont:".activity"
     });
     $("body").lazyLoading({
         url: "/cyc",

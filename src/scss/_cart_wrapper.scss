@@ -55,85 +55,89 @@
                 vertical-align: middle;
             }
         }
-
-        .wrapper_list {
-            width: 980px;
-            height: 265px;
+        .btnCont{
             position: relative;
-            margin: 0 auto;
-
-            .wrapper {
-                min-width: 980px;
-                height: 100%;
-                position: absolute;
-
-                .slide {
-                    float: left;
-
-                    dl {
-                        float: left;
-                        margin-right: 10px;
-                        width: 188px;
-                        background: #f1f1f1;
-
-                        a {
-                            display: block;
-                            font-size: 12px;
-
-                            dt {
-                                img {
-                                    width: 100%;
+            .wrapper_list {
+                width: 980px;
+                height: 265px;
+                position: relative;
+                margin: 0 auto;
+                overflow: hidden;
+                .wrapper {
+                    width: 10000px;
+                    height: 100%;
+                    position: absolute;
+    
+    
+    
+                        .slide {
+                            float: left;
+                            margin-right: 10px;
+                            width: 188px;
+                            background: #f1f1f1;
+    
+                            a {
+                                display: block;
+                                font-size: 12px;
+    
+                                dt {
+                                    img {
+                                        width: 100%;
+                                        height: 188px;
+                                    }
+    
                                 }
-
-                            }
-
-                            dd {
-                                padding: 3px 5px;
-                                color: $color_Black;
-
-                                h3 {
-                                    line-height: 1.3em;
-                                    height: 2.6em;
-                                    margin: 3px 0 8px;
-                                    font-size: 12px;
+    
+                                dd {
+                                    padding: 3px 5px;
+                                    color: $color_Black;
+    
+                                    h3 {
+                                        line-height: 1.3em;
+                                        height: 2.6em;
+                                        margin: 3px 0 8px;
+                                        font-size: 12px;
+                                        overflow: hidden;
+                                    }
+    
+                                    p {
+                                        font-size: 20px;
+                                        color: #ed3f3f;
+                                    }
+    
                                 }
-
-                                p {
-                                    font-size: 20px;
-                                    color: #ed3f3f;
-                                }
-
                             }
                         }
-                    }
-
-                    dl:last-of-type {
-                        margin: 0px;
-                    }
+    
+                        
+                    
+    
                 }
-
+    
+                
             }
-
             .next,
-            .prev {
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 50px;
-                font-size: 0;
-                height: 100%;
-            }
-
-            .next {
-                right: -50px;
-                background: url("http://www.cycang.com/Public/build/img/arrow.png")no-repeat -92px -15px;
-            }
-
-            .prev {
-                left: -50px;
-                background: url("http://www.cycang.com/Public/build/img/arrow.png")no-repeat -15px -15px;
-            }
+                .prev {
+                    position: absolute;
+                    bottom: 0;
+                    display: block;
+                    width: 50px;
+                    font-size: 0;
+                    height: 100%;
+                    cursor: pointer;
+                }
+    
+                .next {
+                    right: -50px;
+                    background: url("http://www.cycang.com/Public/build/img/arrow.png")no-repeat -92px -15px;
+                }
+    
+                .prev {
+                    left: -50px;
+                    background: url("http://www.cycang.com/Public/build/img/arrow.png")no-repeat -15px -15px;
+                }
         }
+        
     }
 
 
