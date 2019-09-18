@@ -1,5 +1,5 @@
 <?php
-      header('Access-Control-Allow-Credentials',"true");
+      header("Content-Type: text/javascript;charset=utf8");
       header('Set-Cookie','token=cowshield');
       # 状态码 : 
       # 1  => 成功登陆
@@ -13,7 +13,6 @@
       $usernameValue = @$_GET["username"];
       $passwordValue = @$_GET["password"];
       $validType     = @$_GET["type"];
-      echo($usernameValue,$passwordValue);
       if(!$usernameValue || !$passwordValue){
             die('{"statu":"error","code" : 2}');
       }
