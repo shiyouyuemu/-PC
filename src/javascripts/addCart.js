@@ -191,15 +191,18 @@
                     cont += parseInt($(array[i]).attr("cont"));
                 }
             }
-            console.log(this.bigNum)
             $(".commodity_price").text(sum + fsum);
             if (sum == 0) {
                 $(".allbtn_cont i", "body").attr("ifChoose", "false");
                 $(".allbtn_cont i", "body").removeClass("on");
+                console.log($("#buy"))
+                $("#goBuy").addClass("invalid");
             } else if(array.length==this.bigNum){
                $(".allChoose").attr("ifChoose", "true");
                $(".allChoose").addClass("on");
+               $("#goBuy").removeClass("invalid");
             }else{
+                $("#goBuy").removeClass("invalid");
                 $(".allChoose").attr("ifChoose", "false");
                $(".allChoose").removeClass("on");
             }

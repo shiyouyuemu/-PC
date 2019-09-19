@@ -1,847 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>次元仓</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1394198_w2b4veaaf1.css">
-</head>
-<script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
-
-<body style="background-color: rgba(255, 255, 255, .1)">
-    <div id="header">
-        <nav class="header_cont">
-            <div class="header_left">
-                <span>吱，欢迎来到次元仓</span>
-                <span id="username">
-                    <a href="./login.html">请登录</a>
-                    <a href="./register.html">免费注册</a>
-                </span>
-
-            </div>
-            <div class="header_right">
-                <a href="#">我的订单</a>
-                <a href="./shoppingCart.html"><i class="iconfont icon-gwc"></i> 购物车<b class="cartnum">0</b></a>
-                <a href="#">收藏夹</a>
-                <a href="#">联系客服</a>
-                <a href="#" class="header_wb">
-                    <span class="header_wbcont">
-                        <i></i>
-                        <span>加关注</span>
-                    </span>
-                </a>
-            </div>
-        </nav>
-    </div>
-    <div id="search">
-        <div class="search_cont">
-            <div class="search_l clear-fix">
-                <a href="#">
-                    <img src="http://www.cycang.com/Public/build/img/shop/index/logo.png" alt="">
-                </a>
-            </div>
-            <div class="search_c">
-                <div class="search_cleft">
-                    <form action="#" method="get">
-                        <div class="search_box">
-                            <select name="" id="">
-                                <option value="">商品</option>
-                                <option value="">店铺</option>
-                            </select>
-                            <input class="search_text" type="text">
-                        </div>
-                        <button class="search_btn">搜&nbsp;&nbsp;索</button>
-                    </form>
-                    <span class="search_hotword">
-                        <a href="#">lolita</a>
-                        <a href="#">Honest</a>
-                        <a href="#">画影</a>
-                        <a href="#">人</a>
-                        <a href="#">动漫</a>
-                        <a href="#">Honest</a>
-                        <a href="#">画影</a>
-                        <a href="#">人</a>
-                        <a href="#">动漫</a>
-                    </span>
-                </div>
-                <div class="search_cright"></div>
-            </div>
-            <a class="search_r" href="http://cycang.com/act.php?c=appDownload">
-                <img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt="">
-                <span>下载手机次元仓</span>
-            </a>
-
-        </div>
-        <div class="submenu_cont">
-            <span class="sub_box_left">商品分类</span>
-            <ul class="sub_box_center">
-                <li><a href="./list.html?typename=01">图书仓</a></li>
-                <li><a href="./list.html?typename=02">汉风仓</a></li>
-                <li><a href="./list.html?typename=03">手办仓</a></li>
-                <li><a href="./list.html?typename=04">首饰仓</a></li>
-                <li><a href="./list.html?typename=05">零食仓</a></li>
-                <li><a href="./list.html?typename=06">文具仓</a></li>
-                <li><a href="./list.html?typename=07">古风仓</a></li>
-                <li><a href="./list.html?typename=08">装扮仓</a></li>
-                <li><a href="./list.html?typename=9">周边仓</a></li>
-                <li><a href="./list.html?typename=10">服饰仓</a></li>
-            </ul>
-            <a href="./shoppingCart.html" class="sub_box_right">
-                <span class="cartbox">
-                    <span class="cartbox_leftwall"></span>
-                    <i class="iconfont icon-gwc"></i>
-                    <span class="cartbox_txt">购物车</span>
-                    <em>(<b class="cartnum">0</b>)</em>
-                    <span class="cartbox_rightwall"></span>
-                </span>
-            </a>
-        </div>
-    </div>
-    <div id="content">
-        <div class="banner_cont">
-            <ul class="banner_list">
-                <li><a href="">上衣、下装</a>
-                    <div class="banner_submenu">
-                        <a href="" class="sub_title clear-fix">上衣</a>
-                        <div class="sub_list">
-                            <a href="">日常</a>
-                            <a href="">泳衣</a>
-                            <a href="">汉风</a>
-                            <a href="">古风</a>
-                            <a href="">lolita</a>
-                            <a href="">T恤</a>
-                        </div>
-                        <a href="" class="sub_title">下装</a>
-                        <div class="sub_list">
-                            <a href="">汉风</a>
-                            <a href="">古风</a>
-                            <a href="">lolita</a>
-                            <a href="">胖次</a>
-                            <a href="">南瓜裤</a>
-                            <a href="">日常</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="">小裙子、外套</a>
-                    <div class="banner_submenu">
-                        <a href="" class="sub_title">小裙子</a>
-                        <div class="sub_list">
-                            <a href="">汉风</a>
-                            <a href="">古风</a>
-                            <a href="">和风</a>
-                            <a href="">lolita</a>
-                            <a href="">日常</a>
-                        </div>
-                        <a href="" class="sub_title">外套</a>
-                        <div class="sub_list">
-                            <a href="">日常</a>
-                            <a href="">汉风</a>
-                            <a href="">和风</a>
-                            <a href="">lolita</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="">装扮</a>
-                    <div class="banner_submenu">
-                        <a href="" class="sub_title">装扮</a>
-                        <div class="sub_list">
-                            <a href="">服装</a>
-                            <a href="">假发</a>
-                            <a href="">道具</a>
-                            <a href="">妆面</a>
-                        </div>
-
-                    </div>
-                </li>
-                <li><a href="">配件、包包</a>
-                    <div class="banner_submenu">
-                        <a href="" class="sub_title">配件</a>
-                        <div class="sub_list">
-                            <a href="">帽子</a>
-                            <a href="">围巾</a>
-                            <a href="">配饰</a>
-                            <a href="">手表</a>
-                            <a href="">首饰</a>
-                            <a href="">鞋子</a>
-                            <a href="">袜子</a>
-                        </div>
-                        <a href="" class="sub_title">包包</a>
-                        <div class="sub_list">
-                            <a href="">女包</a>
-                            <a href="">单肩包</a>
-                            <a href="">其它</a>
-                            <a href="">钱包</a>
-                            <a href="">帆布袋</a>
-                            <a href="">背包</a>
-                            <a href="">拉箱</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="">居家宅品、游戏专区</a>
-                    <div class="banner_submenu">
-                        <a href="" class="sub_title">居家宅品</a>
-                        <div class="sub_list">
-                            <a href="">手办</a>
-							<a href="">家纺品</a>
-							<a href="">眼镜布</a>
-							<a href="">毛巾</a>
-							<a href="">创意宅物</a>
-							<a href="">零食</a>
-							<a href="">节日特典</a>
-							<a href="">桌游</a>
-							<a href="">兵人</a>
-							<a href="">BJD</a>
-							<a href="">优惠券</a>
-							<a href="">金属贴</a>
-							<a href="">扭蛋/蛋盒</a>
-							<a href="">挂件</a>
-							<a href="">挂画海报</a>
-							<a href="">餐具</a>
-							<a href="">公仔</a>
-							<a href="">雨伞</a>
-							<a href="">DIY</a>
-							<a href="">扇子</a>
-							<a href="">抱枕</a>
-							<a href="">等身抱枕</a>
-							<a href="">护肤品</a>
-                        </div>
-                        <a href="" class="sub_title">游戏专区</a>
-                        <div class="sub_list">
-                            <a href="">AR专区</a>
-							<a href="">掌机配件</a>
-							<a href="">家用机配件</a>
-
-                        </div>
-                    </div>
-                </li>
-                <li><a href="">办公文具</a>
-                    <div class="banner_submenu">
-                        <a href="" class="sub_title">办公文具</a>
-                        <div class="sub_list">
-                            <a href="">笔记本</a>
-							<a href="">书签</a>
-							<a href="">明信片</a>
-							<a href="">文件夹</a>
-							<a href="">书籍</a>
-							<a href="">便签本</a>
-							<a href="">笔袋笔筒</a>
-							<a href="">卡套/卡贴</a>
-							<a href="">和纸胶带</a>
-							<a href="">笔墨</a>
-                        </div>
-
-                    </div>
-                </li>
-                <li><a href="">数码周边</a>
-                    <div class="banner_submenu">
-                        <a href="" class="sub_title">数码周边</a>
-                        <div class="sub_list">
-                            <a href="">移动电源</a>
-			                <a href="">手机壳</a>
-			                <a href="">票务</a>
-			                <a href="">耳机</a>
-			                <a href="">U盘</a>
-			                <a href="">鼠键</a>
-			                <a href="">交通卡</a>
-			                <a href="">Wacom系列</a>
-			                <a href="">屏幕保护膜</a>
-			                <a href="">自拍杆</a>
-			                <a href="">小家电</a>
-			                <a href="">鼠标垫</a>
-			                <a href="">金属贴</a>
-			                <a href="">数据线</a>
-
-                        </div>
-
-                    </div>
-                </li>
-            </ul>
-            <div class="banner_center">
-                <div class="wrapper">
-                    <a class="slide" href="./list.html?typename=08"><img src="http://b.cycangcdn.com/1490682986234.jpg" alt=""></a>
-                    <a class="slide" href="./list.html?typename=07"><img src="http://b.cycangcdn.com/1480302247472.jpg" alt=""></a>
-                    <a class="slide" href="./list.html?typename=02"><img src="http://b.cycangcdn.com/1516074720873.jpg" alt=""></a>
-                    <a class="slide" href="./list.html?typename=04"><img src="http://b.cycangcdn.com/1527842202152.jpg" alt=""></a>
-                    <a class="slide" href="./list.html?typename=05"><img src="http://b.cycangcdn.com/1480302222099.jpg" alt=""></a>
-                    <a class="slide" href="./list.html?typename=10"><img src="http://b.cycangcdn.com/1486106317267.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="banner_advertisement">
-                <a href="">
-                    <img src="http://www.cycang.com/Public/build/img/shop/index/sk_entry.png" alt="">
-                </a>
-                <a href="">
-                    <img src="http://www.cycang.com/Public/build/img/shop/index/tick_entry.png" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="recommend_cont">
-            <span class="recommend_bar"></span>
-            <div class="recommend_btn">
-                <div position="left"  class="rbtn btn_new active">
-                    <h3>新品推荐</h3>
-                    <a href="./list.html?typename=01">更多</a>
-                </div>
-                <span></span>
-                <div position="right"  class="rbtn btn_hot">
-                    <h3>热卖推荐</h3>
-                    <a href="./list.html?typename=01">更多</a>
-                </div>
-            </div>
-            <ul class="boxList" id="boxOne">
-            </ul>
-            <script id="box_one" type="text/html">
-                <%for(var i in list){ %>
-                <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>次元仓</title><link rel="stylesheet" href="./css/index.css"><link rel="stylesheet" href="https://at.alicdn.com/t/font_1394198_w2b4veaaf1.css"></head><script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script><body style="background-color: rgba(255, 255, 255, .1)"><div id="header"><nav class="header_cont"><div class="header_left"><span>吱，欢迎来到次元仓</span> <span id="username"><a href="./login.html">请登录</a> <a href="./register.html">免费注册</a></span></div><div class="header_right"><a href="#">我的订单</a> <a href="./shoppingCart.html"><i class="iconfont icon-gwc"></i> 购物车<b class="cartnum">0</b></a> <a href="#">收藏夹</a> <a href="#">联系客服</a> <a href="#" class="header_wb"><span class="header_wbcont"><i></i> <span>加关注</span></span></a></div></nav></div><div id="search"><div class="search_cont"><div class="search_l clear-fix"><a href="#"><img src="http://www.cycang.com/Public/build/img/shop/index/logo.png" alt=""></a></div><div class="search_c"><div class="search_cleft"><form action="#" method="get"><div class="search_box"><select name="" id=""><option value="">商品</option><option value="">店铺</option></select> <input class="search_text" type="text"></div><button class="search_btn">搜&nbsp;&nbsp;索</button></form><span class="search_hotword"><a href="#">lolita</a> <a href="#">Honest</a> <a href="#">画影</a> <a href="#">人</a> <a href="#">动漫</a> <a href="#">Honest</a> <a href="#">画影</a> <a href="#">人</a> <a href="#">动漫</a></span></div><div class="search_cright"></div></div><a class="search_r" href="http://cycang.com/act.php?c=appDownload"><img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt=""> <span>下载手机次元仓</span></a></div><div class="submenu_cont"><span class="sub_box_left">商品分类</span><ul class="sub_box_center"><li><a href="./list.html?typename=01">图书仓</a></li><li><a href="./list.html?typename=02">汉风仓</a></li><li><a href="./list.html?typename=03">手办仓</a></li><li><a href="./list.html?typename=04">首饰仓</a></li><li><a href="./list.html?typename=05">零食仓</a></li><li><a href="./list.html?typename=06">文具仓</a></li><li><a href="./list.html?typename=07">古风仓</a></li><li><a href="./list.html?typename=08">装扮仓</a></li><li><a href="./list.html?typename=9">周边仓</a></li><li><a href="./list.html?typename=10">服饰仓</a></li></ul><a href="./shoppingCart.html" class="sub_box_right"><span class="cartbox"><span class="cartbox_leftwall"></span> <i class="iconfont icon-gwc"></i> <span class="cartbox_txt">购物车</span> <em>(<b class="cartnum">0</b>)</em> <span class="cartbox_rightwall"></span></span></a></div></div><div id="content"><div class="banner_cont"><ul class="banner_list"><li><a href="">上衣、下装</a><div class="banner_submenu"><a href="" class="sub_title clear-fix">上衣</a><div class="sub_list"><a href="">日常</a> <a href="">泳衣</a> <a href="">汉风</a> <a href="">古风</a> <a href="">lolita</a> <a href="">T恤</a></div><a href="" class="sub_title">下装</a><div class="sub_list"><a href="">汉风</a> <a href="">古风</a> <a href="">lolita</a> <a href="">胖次</a> <a href="">南瓜裤</a> <a href="">日常</a></div></div></li><li><a href="">小裙子、外套</a><div class="banner_submenu"><a href="" class="sub_title">小裙子</a><div class="sub_list"><a href="">汉风</a> <a href="">古风</a> <a href="">和风</a> <a href="">lolita</a> <a href="">日常</a></div><a href="" class="sub_title">外套</a><div class="sub_list"><a href="">日常</a> <a href="">汉风</a> <a href="">和风</a> <a href="">lolita</a></div></div></li><li><a href="">装扮</a><div class="banner_submenu"><a href="" class="sub_title">装扮</a><div class="sub_list"><a href="">服装</a> <a href="">假发</a> <a href="">道具</a> <a href="">妆面</a></div></div></li><li><a href="">配件、包包</a><div class="banner_submenu"><a href="" class="sub_title">配件</a><div class="sub_list"><a href="">帽子</a> <a href="">围巾</a> <a href="">配饰</a> <a href="">手表</a> <a href="">首饰</a> <a href="">鞋子</a> <a href="">袜子</a></div><a href="" class="sub_title">包包</a><div class="sub_list"><a href="">女包</a> <a href="">单肩包</a> <a href="">其它</a> <a href="">钱包</a> <a href="">帆布袋</a> <a href="">背包</a> <a href="">拉箱</a></div></div></li><li><a href="">居家宅品、游戏专区</a><div class="banner_submenu"><a href="" class="sub_title">居家宅品</a><div class="sub_list"><a href="">手办</a> <a href="">家纺品</a> <a href="">眼镜布</a> <a href="">毛巾</a> <a href="">创意宅物</a> <a href="">零食</a> <a href="">节日特典</a> <a href="">桌游</a> <a href="">兵人</a> <a href="">BJD</a> <a href="">优惠券</a> <a href="">金属贴</a> <a href="">扭蛋/蛋盒</a> <a href="">挂件</a> <a href="">挂画海报</a> <a href="">餐具</a> <a href="">公仔</a> <a href="">雨伞</a> <a href="">DIY</a> <a href="">扇子</a> <a href="">抱枕</a> <a href="">等身抱枕</a> <a href="">护肤品</a></div><a href="" class="sub_title">游戏专区</a><div class="sub_list"><a href="">AR专区</a> <a href="">掌机配件</a> <a href="">家用机配件</a></div></div></li><li><a href="">办公文具</a><div class="banner_submenu"><a href="" class="sub_title">办公文具</a><div class="sub_list"><a href="">笔记本</a> <a href="">书签</a> <a href="">明信片</a> <a href="">文件夹</a> <a href="">书籍</a> <a href="">便签本</a> <a href="">笔袋笔筒</a> <a href="">卡套/卡贴</a> <a href="">和纸胶带</a> <a href="">笔墨</a></div></div></li><li><a href="">数码周边</a><div class="banner_submenu"><a href="" class="sub_title">数码周边</a><div class="sub_list"><a href="">移动电源</a> <a href="">手机壳</a> <a href="">票务</a> <a href="">耳机</a> <a href="">U盘</a> <a href="">鼠键</a> <a href="">交通卡</a> <a href="">Wacom系列</a> <a href="">屏幕保护膜</a> <a href="">自拍杆</a> <a href="">小家电</a> <a href="">鼠标垫</a> <a href="">金属贴</a> <a href="">数据线</a></div></div></li></ul><div class="banner_center"><div class="wrapper"><a class="slide" href="./list.html?typename=08"><img src="http://b.cycangcdn.com/1490682986234.jpg" alt=""></a><a class="slide" href="./list.html?typename=07"><img src="http://b.cycangcdn.com/1480302247472.jpg" alt=""></a><a class="slide" href="./list.html?typename=02"><img src="http://b.cycangcdn.com/1516074720873.jpg" alt=""></a><a class="slide" href="./list.html?typename=04"><img src="http://b.cycangcdn.com/1527842202152.jpg" alt=""></a><a class="slide" href="./list.html?typename=05"><img src="http://b.cycangcdn.com/1480302222099.jpg" alt=""></a><a class="slide" href="./list.html?typename=10"><img src="http://b.cycangcdn.com/1486106317267.jpg" alt=""></a></div></div><div class="banner_advertisement"><a href=""><img src="http://www.cycang.com/Public/build/img/shop/index/sk_entry.png" alt=""> </a><a href=""><img src="http://www.cycang.com/Public/build/img/shop/index/tick_entry.png" alt=""></a></div></div><div class="recommend_cont"><span class="recommend_bar"></span><div class="recommend_btn"><div position="left" class="rbtn btn_new active"><h3>新品推荐</h3><a href="./list.html?typename=01">更多</a></div><span></span><div position="right" class="rbtn btn_hot"><h3>热卖推荐</h3><a href="./list.html?typename=01">更多</a></div></div><ul class="boxList" id="boxOne"></ul><script id="box_one" type="text/html"> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                     data-img='<%=list[i].figure%>' data-id='<%=list[i].product_id%>'>
                     <a href='./details.html?id=<%=list[i].product_id%>'>
                     <dl>
                         <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                         <dd>
-                            <h3><%=list[i].name%></h3>
-                            <%var before=parseInt(list[i].origin_price)%>
-                            <%var now=parseInt(list[i].cover_price)%>
-                            <%if(before>0&&before>now){%>
-                            <div class="price_discount">
+                            <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                 <span>折扣价</span>
                                 <span>￥<%=list[i].cover_price%></span>
                                 <del>￥<%=list[i].origin_price%></del>
-                            </div>
-                            <%}else{%>
-                            <span>￥<%=list[i].cover_price%></span>
-                            <%}%>
-                                    </dd>
+                            </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-            <ul class="boxList" id="boxTwo" style="display:none">
-            </ul>
-            <script id="box_two" type="text/html">
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                    </li> <%}%> </script><ul class="boxList" id="boxTwo" style="display:none"></ul><script id="box_two" type="text/html"> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 装扮仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1490684231723.png" alt="">
-                    <span>装扮仓</span>
-                </div>
-                <a href="./list.html?typename=08" class="title_right">更多</a>
-                <a class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxZhuangban">
-            </ul>
-            <script id="box_zhuangban" type="text/html">
-                <a href="./list.html?typename=08" class="boxList_first">
+                    </li> <%}%> </script></div><!-- 装扮仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1490684231723.png" alt=""> <span>装扮仓</span></div><a href="./list.html?typename=08" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxZhuangban"></ul><script id="box_zhuangban" type="text/html"><a href="./list.html?typename=08" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1490682986234.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 古风仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1480325641299.png" alt="">
-                    <span>古风仓</span>
-                </div>
-                <a href="./list.html?typename=07" class="title_right">更多</a>
-                <a class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxGufeng">
-            </ul>
-            <script id="box_gufeng" type="text/html">
-                <a href="./list.html?typename=07" class="boxList_first">
+                    </li> <%}%> </script></div><!-- 古风仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1480325641299.png" alt=""> <span>古风仓</span></div><a href="./list.html?typename=07" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxGufeng"></ul><script id="box_gufeng" type="text/html"><a href="./list.html?typename=07" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1480302247472.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 汉风仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1490690388483.png" alt="">
-                    <span>汉风仓</span>
-                </div>
-                <a href="./list.html?typename=02" class="title_right">更多</a>
-                <a class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxHanfeng">
-            </ul>
-            <script id="box_hanfeng" type="text/html">
-                <a href="./list.html?typename=02" class="boxList_first">
+                    </li> <%}%> </script></div><!-- 汉风仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1490690388483.png" alt=""> <span>汉风仓</span></div><a href="./list.html?typename=02" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxHanfeng"></ul><script id="box_hanfeng" type="text/html"><a href="./list.html?typename=02" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1516074720873.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 首饰仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1480325586541.png" alt="">
-                    <span>首饰仓</span>
-                </div>
-                <a href="./list.html?typename=04" class="title_right">更多</a>
-                <a class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxShoushi">
-            </ul>
-            <script id="box_shoushi" type="text/html">
-                <a href="./list.html?typename=04" class="boxList_first">
+                    </li> <%}%> </script></div><!-- 首饰仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1480325586541.png" alt=""> <span>首饰仓</span></div><a href="./list.html?typename=04" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxShoushi"></ul><script id="box_shoushi" type="text/html"><a href="./list.html?typename=04" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1527842202152.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 零食仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1480325612323.png" alt="">
-                    <span>零食仓</span>
-                </div>
-                <a href="./list.html?typename=05" class="title_right">更多</a>
-                <a  class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxLingshi">
-            </ul>
-            <script id="box_lingshi" type="text/html">
-                <a href="./list.html?typename=05" class="boxList_first">
+                    </li> <%}%> </script></div><!-- 零食仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1480325612323.png" alt=""> <span>零食仓</span></div><a href="./list.html?typename=05" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxLingshi"></ul><script id="box_lingshi" type="text/html"><a href="./list.html?typename=05" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1480302222099.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 服饰仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1480325816038.png" alt="">
-                    <span>服饰仓</span>
-                </div>
-                <a href="./list.html?typename=10" class="title_right">更多</a>
-                <a  class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxFushi">
-            </ul>
-            <script id="box_fushi" type="text/html">
-                <a href="./list.html?typename=10" class="boxList_first">
+                    </li> <%}%> </script></div><!-- 服饰仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1480325816038.png" alt=""> <span>服饰仓</span></div><a href="./list.html?typename=10" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxFushi"></ul><script id="box_fushi" type="text/html"><a href="./list.html?typename=10" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1486106317267.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                             </dl>
                         </a>
-                    </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 周边仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1480325548444.png" alt="">
-                    <span>周边仓</span>
-                </div>
-                <a href="./list.html?typename=9" class="title_right">更多</a>
-                <a class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxZhoubian">
-            </ul>
-            <script id="box_zhoubian" type="text/html">
-                <a href="./list.html?typename=9" class="boxList_first">
+                    </li> <%}%> </script></div><!-- 周边仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1480325548444.png" alt=""> <span>周边仓</span></div><a href="./list.html?typename=9" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxZhoubian"></ul><script id="box_zhoubian" type="text/html"><a href="./list.html?typename=9" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1520303527494.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                         </dl>
                     </a>
-                </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 手办仓 -->
-        <div class="attire_cont">
-            <div class="attire_title">
-                <div class="title_left">
-                    <img src="http://b.cycangcdn.com/1480325578896.png" alt="">
-                    <span>手办仓</span>
-                </div>
-                <a href="./list.html?typename=03" class="title_right">更多</a>
-                <a class="title_center">换一批</a>
-            </div>
-            <ul class="boxList title_boxList" id="boxShouban">
-            </ul>
-            <script id="box_shouban" type="text/html">
-                <a href="./list.html?typename=03" class="boxList_first">
+                </li> <%}%> </script></div><!-- 手办仓 --><div class="attire_cont"><div class="attire_title"><div class="title_left"><img src="http://b.cycangcdn.com/1480325578896.png" alt=""> <span>手办仓</span></div><a href="./list.html?typename=03" class="title_right">更多</a> <a class="title_center">换一批</a></div><ul class="boxList title_boxList" id="boxShouban"></ul><script id="box_shouban" type="text/html"><a href="./list.html?typename=03" class="boxList_first">
                     <img src="http://b.cycangcdn.com/1483692054537.jpg" alt="">
-                </a>
-                <%for(var i in list){ %>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </a> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>'>
                         <dl>
                             <dt><img src='http://act.cycangcdn.com/comm_img/loading.jpg' alt=""></dt>
                             <dd>
-                                <h3><%=list[i].name%></h3>
-                                <%var before=parseInt(list[i].origin_price)%>
-                                <%var now=parseInt(list[i].cover_price)%>
-                                <%if(before>0&&before>now){%>
-                                <div class="price_discount">
+                                <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                     <span>折扣价</span>
                                     <span>￥<%=list[i].cover_price%></span>
                                     <del>￥<%=list[i].origin_price%></del>
-                                </div>
-                                <%}else{%>
-                                <span>￥<%=list[i].cover_price%></span>
-                                <%}%>
-                                    </dd>
+                                </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                         </dl>
                     </a>
-                </li>
-                <%}%>
-            </script>
-        </div>
-        <!-- 友情推荐 -->
-        <div class="friend_cont">
-            <a data-name="01" href="index.php?a=page&supplier_code=1801001" data-img="http://f.p.cycangcdn.com/1480304143900.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" ></a>
-            <a data-name="02" href="index.php?a=page&supplier_code=1104001"data-img="http://f.p.cycangcdn.com/1510647364116.jpg" class="item"><img                    
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" ></a>
-            <a  data-name="03"href="index.php?a=page&supplier_code=1101004"data-img="http://f.p.cycangcdn.com/1486372890662.jpg" class="item"><img                    
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" ></a>
-            <a data-name="04" href="index.php?a=page&supplier_code=2101001"data-img="http://f.p.cycangcdn.com/1480304250388.jpg" class="item"><img                   
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a  data-name="05"href="index.php?a=page&supplier_code=1201001"data-img="http://f.p.cycangcdn.com/1480477875838.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" ></a>
-            <a data-name="06" href="index.php?a=page&supplier_code=2101002"data-img="http://f.p.cycangcdn.com/1510818874232.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="" ></a>
-            <a  data-name="07"href="index.php?a=page&supplier_code=100004"data-img="http://f.p.cycangcdn.com/1480302113288.jpg" class="item"><img                    
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="08" href="index.php?a=page&supplier_code=300013"data-img="http://f.p.cycangcdn.com/1486610249632.jpg" class="item"><img                    
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a  data-name="09"href="index.php?a=page&supplier_code=1101037"data-img="http://f.p.cycangcdn.com/1480304356488.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a  data-name="10"href="index.php?a=page&supplier_code=1601007"data-img="http://f.p.cycangcdn.com/1480302679565.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="11" href="index.php?a=page&supplier_code=1101042"data-img="http://f.p.cycangcdn.com/1480304191928.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="12" href="index.php?a=page&supplier_code=802004"data-img="http://f.p.cycangcdn.com/1480649598649.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="13" href="index.php?a=page&supplier_code=1601008"data-img="http://f.p.cycangcdn.com/1480493800090.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="14" href="index.php?a=page&supplier_code=1606002"data-img="http://f.p.cycangcdn.com/1480304209532.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="15" href="index.php?a=page&supplier_code=1601009"data-img="http://f.p.cycangcdn.com/1480304312396.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="16" href="index.php?a=page&supplier_code=1000018" data-img="http://f.p.cycangcdn.com/1480403516418.jpg" class="item"><img 
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="17" href="index.php?a=page&supplier_code=1601020"data-img="http://f.p.cycangcdn.com/1490601883028.jpg" class="item"><img
-                    src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a>
-            <a data-name="18" href="index.php?a=page&supplier_code=1301002"data-img="http://f.p.cycangcdn.com/1494833782957.jpg" class="item">
-                <img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="">
-            </a>
-
-        </div>
-        <!-- 猜你喜欢 -->
-        <div class="guess_cont">
-            <div class="guess_title">
-                <h2>猜你喜欢</h2>
-                <h3>这些商品也一样给力哦</h3>
-            </div>
-
-            <ul class="boxList" id="boxGuess">
-                <script id="box_guess" type="text/html">
-                    <%for(var i in list){ %>
-                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                </li> <%}%> </script></div><!-- 友情推荐 --><div class="friend_cont"><a data-name="01" href="index.php?a=page&supplier_code=1801001" data-img="http://f.p.cycangcdn.com/1480304143900.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="02" href="index.php?a=page&supplier_code=1104001" data-img="http://f.p.cycangcdn.com/1510647364116.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="03" href="index.php?a=page&supplier_code=1101004" data-img="http://f.p.cycangcdn.com/1486372890662.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="04" href="index.php?a=page&supplier_code=2101001" data-img="http://f.p.cycangcdn.com/1480304250388.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="05" href="index.php?a=page&supplier_code=1201001" data-img="http://f.p.cycangcdn.com/1480477875838.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="06" href="index.php?a=page&supplier_code=2101002" data-img="http://f.p.cycangcdn.com/1510818874232.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="07" href="index.php?a=page&supplier_code=100004" data-img="http://f.p.cycangcdn.com/1480302113288.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="08" href="index.php?a=page&supplier_code=300013" data-img="http://f.p.cycangcdn.com/1486610249632.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="09" href="index.php?a=page&supplier_code=1101037" data-img="http://f.p.cycangcdn.com/1480304356488.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="10" href="index.php?a=page&supplier_code=1601007" data-img="http://f.p.cycangcdn.com/1480302679565.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="11" href="index.php?a=page&supplier_code=1101042" data-img="http://f.p.cycangcdn.com/1480304191928.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="12" href="index.php?a=page&supplier_code=802004" data-img="http://f.p.cycangcdn.com/1480649598649.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="13" href="index.php?a=page&supplier_code=1601008" data-img="http://f.p.cycangcdn.com/1480493800090.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="14" href="index.php?a=page&supplier_code=1606002" data-img="http://f.p.cycangcdn.com/1480304209532.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="15" href="index.php?a=page&supplier_code=1601009" data-img="http://f.p.cycangcdn.com/1480304312396.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="16" href="index.php?a=page&supplier_code=1000018" data-img="http://f.p.cycangcdn.com/1480403516418.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="17" href="index.php?a=page&supplier_code=1601020" data-img="http://f.p.cycangcdn.com/1490601883028.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a><a data-name="18" href="index.php?a=page&supplier_code=1301002" data-img="http://f.p.cycangcdn.com/1494833782957.jpg" class="item"><img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt=""></a></div><!-- 猜你喜欢 --><div class="guess_cont"><div class="guess_title"><h2>猜你喜欢</h2><h3>这些商品也一样给力哦</h3></div><ul class="boxList" id="boxGuess"><script id="box_guess" type="text/html"> <%for(var i in list){ %> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                             data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                             <a href='./details.html?id=<%=list[i].product_id%>'>
                             <dl>
                                 <dt><img src='<%=list[i].figure%>' alt=""></dt>
                                 <dd>
-                                    <h3><%=list[i].name%></h3>
-                                    <%var before=parseInt(list[i].origin_price)%>
-                                    <%var now=parseInt(list[i].cover_price)%>
-                                    <%if(before>0&&before>now){%>
-                                    <div class="price_discount">
+                                    <h3><%=list[i].name%></h3> <%var before=parseInt(list[i].origin_price)%> <%var now=parseInt(list[i].cover_price)%> <%if(before>0&&before>now){%> <div class="price_discount">
                                         <span>折扣价</span>
                                         <span>￥<%=list[i].cover_price%></span>
                                         <del>￥<%=list[i].origin_price%></del>
-                                    </div>
-                                    <%}else{%>
-                                    <span>￥<%=list[i].cover_price%></span>
-                                    <%}%>
-                                        </dd>
+                                    </div> <%}else{%> <span>￥<%=list[i].cover_price%></span> <%}%> </dd>
                         </dl>
                     </a>
-                </li>
-                <%}%>
-                </script>
-            </ul>
-        </div>
-        <div class="footer_cont clear-fix">
-            <div class="footer_ccont clear-fix">
-                <div class="footer_left">
-                    <dl>
-                        <dt>商务合作</dt>
-                        <dd><a href="">品牌进驻</a></dd>
-                        <dd><a href="">IP授权</a></dd>
-                        <dd><a href="">批发代销</a></dd>
-                        <dd><a href="">票务合作</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>联系方式</dt>
-                        <dd><a href="">官方邮箱：act@cycang.com</a></dd>
-                        <dd><a href="">推广合作：act@cycang.com</a></dd>
-                        <dd><a href="">媒体合作：act@cycang.com</a></dd>
-                        <dd><a href="">商务合作：cycswb@126.com</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>客服售后</dt>
-                        <dd><a href="">客服热线：400-667-1673</a></dd>
-                        <dd><a href="">客服QQ1：3112573893</a></dd>
-                        <dd><a href="">客服QQ2：2627466500</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>直播合作</dt>
-                        <dd><a href="">QQ：2201959143</a></dd>
-                    </dl>
-                </div>
-                <ul class="footer_right">
-                    <li>
-                        <a class="footer_li" href="http://cycang.com/act.php?c=appDownload">
-                            <img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt="">
-                            <p class="li_center">下载手机次元仓</p>
-                        </a>
-                    </li>
-                    <li>
-                        <i class="footer_weibo"></i>
-                        <p>微博搜索并关注<span class="li_center">@次元仓</span></p>
-                    </li>
-                    <li>
-                        <i class="footer_wechat"></i>
-                        <p>微信公众号搜索并关注<span class="li_center">次元仓</span></p>
-                    </li>
-
-                </ul>
-                <dl class="footer_friend">
-                    <dd>友情链接:</dd>
-                    <dd>
-                        <a href="http://www.meng2u.com" target="_blank">麦萌对手戏</a>
-                    </dd>
-                    <dd>
-                        <a href="https://www.bearead.com/" target="_blank">白熊阅读</a>
-                    </dd>
-                    <dd>
-                        <a href="http://www.icartoons.cn/portal/index.html" target="_blank">爱动漫</a>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <p class="copy_cont">
-            ICP © 2017 广州脑动网络科技有限公司 版权所有
-            <a href="">免责声明 </a>
-            （备案号：<a href="">粤ICP备15028368号</a>)
-        </p>
-        <a class="go_top"></a>
-        <div class="activity">
-            <div class="activity_cont"></div>
-            <div class="img_cont">
-                <a  href="./activity.html">
-                        <img src="https://m.360buyimg.com/babel/jfs/t1/45669/5/10439/450785/5d78cea8E9d1880aa/a78ddcd334923ea9.jpg.webp" alt="">
-                </a>
-                <div class="delete">X</div>
-            </div>
-        </div>
-    </div>
-</body>
-<script src="./javascripts/require.js"></script>
-<script>
-    require(["./javascripts/require.config"], function () {
+                </li> <%}%> </script></ul></div><div class="footer_cont clear-fix"><div class="footer_ccont clear-fix"><div class="footer_left"><dl><dt>商务合作</dt><dd><a href="">品牌进驻</a></dd><dd><a href="">IP授权</a></dd><dd><a href="">批发代销</a></dd><dd><a href="">票务合作</a></dd></dl><dl><dt>联系方式</dt><dd><a href="">官方邮箱：act@cycang.com</a></dd><dd><a href="">推广合作：act@cycang.com</a></dd><dd><a href="">媒体合作：act@cycang.com</a></dd><dd><a href="">商务合作：cycswb@126.com</a></dd></dl><dl><dt>客服售后</dt><dd><a href="">客服热线：400-667-1673</a></dd><dd><a href="">客服QQ1：3112573893</a></dd><dd><a href="">客服QQ2：2627466500</a></dd></dl><dl><dt>直播合作</dt><dd><a href="">QQ：2201959143</a></dd></dl></div><ul class="footer_right"><li><a class="footer_li" href="http://cycang.com/act.php?c=appDownload"><img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt=""><p class="li_center">下载手机次元仓</p></a></li><li><i class="footer_weibo"></i><p>微博搜索并关注<span class="li_center">@次元仓</span></p></li><li><i class="footer_wechat"></i><p>微信公众号搜索并关注<span class="li_center">次元仓</span></p></li></ul><dl class="footer_friend"><dd>友情链接:</dd><dd><a href="http://www.meng2u.com" target="_blank">麦萌对手戏</a></dd><dd><a href="https://www.bearead.com/" target="_blank">白熊阅读</a></dd><dd><a href="http://www.icartoons.cn/portal/index.html" target="_blank">爱动漫</a></dd></dl></div></div><p class="copy_cont">ICP © 2017 广州脑动网络科技有限公司 版权所有 <a href="">免责声明 </a>（备案号：<a href="">粤ICP备15028368号</a>)</p><a class="go_top"></a><div class="activity"><div class="activity_cont"></div><div class="img_cont"><a href="./activity.html"><img src="https://m.360buyimg.com/babel/jfs/t1/45669/5/10439/450785/5d78cea8E9d1880aa/a78ddcd334923ea9.jpg.webp" alt=""></a><div class="delete">X</div></div></div></div></body><script src="./javascripts/require.js"></script><script>require(["./javascripts/require.config"], function () {
         require(["index_main"]);
-    });
-</script>
-
-</html>
+    });</script></html>

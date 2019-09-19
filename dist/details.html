@@ -1,82 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>详情页</title>
-    <link rel="stylesheet" href="./css/details.css">
-</head>
-<script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
-<body>
-    <div id="header">
-        <nav class="header_cont">
-            <div class="header_left">
-                <a href="./login.html">登录</a>
-                <a href="./register.html">注册</a>
-            </div>
-            <div class="header_right">
-                <a href="">联系客服</a>
-                <a href="./shoppingCart.html">购物车</a>
-                <a href="">我的订单</a>
-                <a href="">我的收藏</a>
-            </div>
-        </nav>
-    </div>
-    <div id="search">
-        <div class="search_cont">
-            <div class="search_l clear-fix">
-                <a href="./index.html">
-                    <img src="http://www.cycang.com/Public/build/img/shop/logo.jpg" alt="">
-                </a>
-            </div>
-            <div class="search_c">
-                <div class="search_cleft">
-                    <form action="#" method="get">
-                        <div class="search_box">
-                            <select name="" id="">
-                                <option value="">商品</option>
-                                <option value="">店铺</option>
-                            </select>
-                            <input class="search_text" type="text">
-                        </div>
-                        <button class="search_btn">搜索</button>
-                    </form>
-
-                </div>
-            </div>
-            <div class="search_r">
-                <a href="./shoppingCart.html">
-                    <span class="cart_icon"></span>
-                    <span>我的购物车</span>
-                    <b class="cartNum">0</b>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div id="navList">
-        <ul class="navList_cont">
-            <li>
-                <a href="./index.html">
-                    首页
-                </a>
-            </li>
-            <li><a href="./list.html?typename=01">图书仓</a></li>
-                <li><a href="./list.html?typename=02">汉风仓</a></li>
-                <li><a href="./list.html?typename=03">手办仓</a></li>
-                <li><a href="./list.html?typename=04">首饰仓</a></li>
-                <li><a href="./list.html?typename=05">零食仓</a></li>
-                <li><a href="./list.html?typename=06">文具仓</a></li>
-                <li><a href="./list.html?typename=07">古风仓</a></li>
-                <li><a href="./list.html?typename=08">装扮仓</a></li>
-                <li><a href="./list.html?typename=9">周边仓</a></li>
-                <li><a href="./list.html?typename=10">服饰仓</a></li>
-        </ul>
-    </div>
-    <div id="detailCont">
-    <script id="contents" type="text/html">
-    <div class="bread_cont">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>详情页</title><link rel="stylesheet" href="./css/details.css"></head><script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script><body><div id="header"><nav class="header_cont"><div class="header_left"><a href="./login.html">登录</a> <a href="./register.html">注册</a></div><div class="header_right"><a href="">联系客服</a> <a href="./shoppingCart.html">购物车</a> <a href="">我的订单</a> <a href="">我的收藏</a></div></nav></div><div id="search"><div class="search_cont"><div class="search_l clear-fix"><a href="./index.html"><img src="http://www.cycang.com/Public/build/img/shop/logo.jpg" alt=""></a></div><div class="search_c"><div class="search_cleft"><form action="#" method="get"><div class="search_box"><select name="" id=""><option value="">商品</option><option value="">店铺</option></select> <input class="search_text" type="text"></div><button class="search_btn">搜索</button></form></div></div><div class="search_r"><a href="./shoppingCart.html"><span class="cart_icon"></span> <span>我的购物车</span> <b class="cartNum">0</b></a></div></div></div><div id="navList"><ul class="navList_cont"><li><a href="./index.html">首页</a></li><li><a href="./list.html?typename=01">图书仓</a></li><li><a href="./list.html?typename=02">汉风仓</a></li><li><a href="./list.html?typename=03">手办仓</a></li><li><a href="./list.html?typename=04">首饰仓</a></li><li><a href="./list.html?typename=05">零食仓</a></li><li><a href="./list.html?typename=06">文具仓</a></li><li><a href="./list.html?typename=07">古风仓</a></li><li><a href="./list.html?typename=08">装扮仓</a></li><li><a href="./list.html?typename=9">周边仓</a></li><li><a href="./list.html?typename=10">服饰仓</a></li></ul></div><div id="detailCont"><script id="contents" type="text/html"><div class="bread_cont">
         <a href="./index.html">
             全部&nbsp;>
         </a>
@@ -177,37 +99,8 @@
             </div>
         </div>
     </div>
-</div>
-</script>
-</div>
-    <div class="details_cont">
-        <div class="cont_tit clear-fix">
-            <span>商品详情</span>
-            <p>
-                <span></span>
-                <span>下载次元仓移动版</span>
-                <span></span>
-            </p>
-        </div>
-        <div class="cont" id="cont2">
-            <script type="text/html" id="detailsCont2">
-                <p class="title"><%=data.name%></p>
-                <img src="<%=data.img%>" alt="">
-            </script>
-        </div>
-        
-    </div>
-    <div class="banner_cont" style="overflow: hidden">
-        <div class="prev"></div>
-        <div class="next"></div>
-        <p class="title">
-            <span>购买了该商品的顾客还买了：</span>
-        </p>
-        <div class="cont banner_Cont">
-            <ul class="wrapper clear-fix" id="banner">
-                <script type="text/html" id="buyMore">
-                    <%for(var i in list){%>
-                <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+</div></script></div><div class="details_cont"><div class="cont_tit clear-fix"><span>商品详情</span><p><span></span> <span>下载次元仓移动版</span> <span></span></p></div><div class="cont" id="cont2"><script type="text/html" id="detailsCont2"><p class="title"><%=data.name%></p>
+                <img src="<%=data.img%>" alt=""></script></div></div><div class="banner_cont" style="overflow: hidden"><div class="prev"></div><div class="next"></div><p class="title"><span>购买了该商品的顾客还买了：</span></p><div class="cont banner_Cont"><ul class="wrapper clear-fix" id="banner"><script type="text/html" id="buyMore"> <%for(var i in list){%> <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                     data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                     <a href='./details.html?id=<%=list[i].product_id%>'>
                         <img src='<%=list[i].figure%>' alt="">
@@ -216,71 +109,6 @@
                                 <p><%=list[i].name%></p>
                         </div>
                     </a>
-                </li>
-                <%}%>
-            </script>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer_cont clear-fix">
-        <div class="footer_ccont clear-fix">
-            <div class="footer_left">
-                <dl>
-                    <dt>商务合作</dt>
-                    <dd><a href="">品牌进驻</a></dd>
-                    <dd><a href="">IP授权</a></dd>
-                    <dd><a href="">批发代销</a></dd>
-                    <dd><a href="">票务合作</a></dd>
-                </dl>
-                <dl>
-                    <dt>联系方式</dt>
-                    <dd><a href="">官方邮箱：act@cycang.com</a></dd>
-                    <dd><a href="">推广合作：act@cycang.com</a></dd>
-                    <dd><a href="">媒体合作：act@cycang.com</a></dd>
-                    <dd><a href="">商务合作：cycswb@126.com</a></dd>
-                </dl>
-                <dl>
-                    <dt>客服售后</dt>
-                    <dd><a href="">客服热线：400-667-1673</a></dd>
-                    <dd><a href="">客服QQ1：3112573893</a></dd>
-                    <dd><a href="">客服QQ2：2627466500</a></dd>
-                </dl>
-                <dl>
-                    <dt>直播合作</dt>
-                    <dd><a href="">QQ：2201959143</a></dd>
-                </dl>
-            </div>
-            <ul class="footer_right">
-                <li>
-                    <a class="footer_li" href="http://cycang.com/act.php?c=appDownload">
-                        <img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt="">
-                        <p class="li_center">下载手机次元仓</p>
-                    </a>
-                </li>
-                <li>
-                    <i class="footer_weibo"></i>
-                    <p>微博搜索并关注<span class="li_center">@次元仓</span></p>
-                </li>
-                <li>
-                    <i class="footer_wechat"></i>
-                    <p>微信公众号搜索并关注<span class="li_center">次元仓</span></p>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-    <p class="copy_cont">
-        ICP © 2017 广州脑动网络科技有限公司 版权所有
-        <a href="">免责声明 </a>
-        （备案号：<a href="">粤ICP备15028368号</a>)
-    </p>
-</body>
-<script src="./javascripts/require.js"></script>
-<script>
-    require(["./javascripts/require.config"], function () {
+                </li> <%}%> </script></ul></div></div><div class="footer_cont clear-fix"><div class="footer_ccont clear-fix"><div class="footer_left"><dl><dt>商务合作</dt><dd><a href="">品牌进驻</a></dd><dd><a href="">IP授权</a></dd><dd><a href="">批发代销</a></dd><dd><a href="">票务合作</a></dd></dl><dl><dt>联系方式</dt><dd><a href="">官方邮箱：act@cycang.com</a></dd><dd><a href="">推广合作：act@cycang.com</a></dd><dd><a href="">媒体合作：act@cycang.com</a></dd><dd><a href="">商务合作：cycswb@126.com</a></dd></dl><dl><dt>客服售后</dt><dd><a href="">客服热线：400-667-1673</a></dd><dd><a href="">客服QQ1：3112573893</a></dd><dd><a href="">客服QQ2：2627466500</a></dd></dl><dl><dt>直播合作</dt><dd><a href="">QQ：2201959143</a></dd></dl></div><ul class="footer_right"><li><a class="footer_li" href="http://cycang.com/act.php?c=appDownload"><img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt=""><p class="li_center">下载手机次元仓</p></a></li><li><i class="footer_weibo"></i><p>微博搜索并关注<span class="li_center">@次元仓</span></p></li><li><i class="footer_wechat"></i><p>微信公众号搜索并关注<span class="li_center">次元仓</span></p></li></ul></div></div><p class="copy_cont">ICP © 2017 广州脑动网络科技有限公司 版权所有 <a href="">免责声明 </a>（备案号：<a href="">粤ICP备15028368号</a>)</p></body><script src="./javascripts/require.js"></script><script>require(["./javascripts/require.config"], function () {
         require(["details_main"]);
-    });
-</script>
-</html>
-<!-- http://act.cycangcdn.com/comm_img/loading.jpg -->
+    });</script></html><!-- http://act.cycangcdn.com/comm_img/loading.jpg -->

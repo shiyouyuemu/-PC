@@ -496,6 +496,11 @@
                         color: #fff;
                         background: #ed3f3f;
                         margin-left: 20px;
+                        cursor:pointer;
+                    }
+                    #goBuy.invalid{
+                        background: #CCC;
+                        cursor: not-allowed;
                     }
                 }
             }

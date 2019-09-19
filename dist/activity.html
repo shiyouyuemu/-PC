@@ -1,102 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>坚果节</title>
-    <link rel="stylesheet" href="./css/activity.css">
-</head>
-<script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
-
-<body>
-    <div id="header">
-        <nav class="header_cont">
-            <div class="header_left" id="username">
-                <a href="./login.html">登录</a>
-                <a href="./register.html">注册</a>
-            </div>
-            <div class="header_right">
-                <a href="">联系客服</a>
-                <a href="./shoppingCart.html">购物车</a>
-                <a href="">我的订单</a>
-                <a href="">我的收藏</a>
-            </div>
-        </nav>
-    </div>
-    <div id="search">
-        <div class="search_cont">
-            <div class="search_l clear-fix">
-                <a href="./index.html">
-                    <img src="http://www.cycang.com/Public/build/img/shop/logo.jpg" alt="">
-                </a>
-            </div>
-            <div class="search_c">
-                <div class="search_cleft">
-                    <form action="#" method="get">
-                        <div class="search_box">
-                            <select name="" id="">
-                                <option value="">商品</option>
-                                <option value="">店铺</option>
-                            </select>
-                            <input class="search_text" type="text">
-                        </div>
-                        <button class="search_btn">搜索</button>
-                    </form>
-
-                </div>
-            </div>
-            <div class="search_r">
-                <a href="./shoppingCart.html">
-                    <span class="cart_icon"></span>
-                    <span>我的购物车</span>
-                    <b class="cartNum">0</b>
-                </a>
-            </div>
-        </div>
-
-
-    </div>
-    <div id="navList">
-        <ul class="navList_cont">
-            <li>
-                <a href="./index.html">
-                    首页
-                </a>
-            </li>
-            <li><a href="./list.html?typename=01">图书仓</a></li>
-            <li><a href="./list.html?typename=02">汉风仓</a></li>
-            <li><a href="./list.html?typename=03">手办仓</a></li>
-            <li><a href="./list.html?typename=04">首饰仓</a></li>
-            <li><a href="./list.html?typename=05">零食仓</a></li>
-            <li><a href="./list.html?typename=06">文具仓</a></li>
-            <li><a href="./list.html?typename=07">古风仓</a></li>
-            <li><a href="./list.html?typename=08">装扮仓</a></li>
-            <li><a href="./list.html?typename=9">周边仓</a></li>
-            <li><a href="./list.html?typename=10">服饰仓</a></li>
-        </ul>
-    </div>
-    <div id="activity">
-        <div class="activity_cont">
-            <div class="activity_title">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/45669/5/10439/450785/5d78cea8E9d1880aa/a78ddcd334923ea9.jpg.webp"
-                    alt="">
-            </div>
-            <div class="baokuan ">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/71837/14/10084/56089/5d78cebfEf472f0bd/bd065934da3c0677.jpg.webp"
-                    alt="">
-            </div>
-            <div class="baokuan_three">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/79157/31/10082/272853/5d78cec6E3d0eb0dc/a394da3da03aae02.jpg.webp"
-                    alt="">
-            </div>
-            <div class="act_banner baokuan_banner">
-                <div class="banner_cont">
-                    <ul class="wrapper clear-fix" id="baokuan_banner">
-                        <script type="text/html" id="baokuan_temp">
-                            <%for(var i in list){%>
-                            <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>坚果节</title><link rel="stylesheet" href="./css/activity.css"></head><script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script><body><div id="header"><nav class="header_cont"><div class="header_left" id="username"><a href="./login.html">登录</a> <a href="./register.html">注册</a></div><div class="header_right"><a href="">联系客服</a> <a href="./shoppingCart.html">购物车</a> <a href="">我的订单</a> <a href="">我的收藏</a></div></nav></div><div id="search"><div class="search_cont"><div class="search_l clear-fix"><a href="./index.html"><img src="http://www.cycang.com/Public/build/img/shop/logo.jpg" alt=""></a></div><div class="search_c"><div class="search_cleft"><form action="#" method="get"><div class="search_box"><select name="" id=""><option value="">商品</option><option value="">店铺</option></select> <input class="search_text" type="text"></div><button class="search_btn">搜索</button></form></div></div><div class="search_r"><a href="./shoppingCart.html"><span class="cart_icon"></span> <span>我的购物车</span> <b class="cartNum">0</b></a></div></div></div><div id="navList"><ul class="navList_cont"><li><a href="./index.html">首页</a></li><li><a href="./list.html?typename=01">图书仓</a></li><li><a href="./list.html?typename=02">汉风仓</a></li><li><a href="./list.html?typename=03">手办仓</a></li><li><a href="./list.html?typename=04">首饰仓</a></li><li><a href="./list.html?typename=05">零食仓</a></li><li><a href="./list.html?typename=06">文具仓</a></li><li><a href="./list.html?typename=07">古风仓</a></li><li><a href="./list.html?typename=08">装扮仓</a></li><li><a href="./list.html?typename=9">周边仓</a></li><li><a href="./list.html?typename=10">服饰仓</a></li></ul></div><div id="activity"><div class="activity_cont"><div class="activity_title"><img src="https://m.360buyimg.com/babel/jfs/t1/45669/5/10439/450785/5d78cea8E9d1880aa/a78ddcd334923ea9.jpg.webp" alt=""></div><div class="baokuan"><img src="https://m.360buyimg.com/babel/jfs/t1/71837/14/10084/56089/5d78cebfEf472f0bd/bd065934da3c0677.jpg.webp" alt=""></div><div class="baokuan_three"><img src="https://m.360buyimg.com/babel/jfs/t1/79157/31/10082/272853/5d78cec6E3d0eb0dc/a394da3da03aae02.jpg.webp" alt=""></div><div class="act_banner baokuan_banner"><div class="banner_cont"><ul class="wrapper clear-fix" id="baokuan_banner"><script type="text/html" id="baokuan_temp"> <%for(var i in list){%> <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                                 data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                 <a href='./details.html?id=<%=list[i].product_id%>'>
                                     <img src='<%=list[i].figure%>' alt="">
@@ -105,40 +7,7 @@
                                         <p><%=list[i].name%></p>
                                     </div>
                                 </a>
-                            </li>
-                            <%}%>
-                        </script>
-                    </ul>
-                </div>
-                <div class="prev"></div>
-                <div class="next"></div>
-            </div>
-            <div class="act_tab baokuan_tab">
-                <ul class="tab_title">
-                    <li class="tab_btn" child_type="01">
-                        超值推荐
-                        <span class="active"></span>
-                    </li>
-                    <li class="tab_btn" child_type="02">
-                        坚果炒货
-                        <span></span>
-                    </li>
-                    <li class="tab_btn" child_type="03">
-                        肉干肉蒲
-                        <span></span>
-                    </li>
-                    <li class="tab_btn" child_type="04">
-                        休闲零食
-                        <span></span>
-                    </li>
-                    <li class="tab_btn" child_type="05">
-                        糖果巧克力
-                        <span></span>
-                    </li>
-                </ul>
-                <script type="text/html" id="baokuanTemp">
-                    <%for(var i in list){%>
-                    <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            </li> <%}%> </script></ul></div><div class="prev"></div><div class="next"></div></div><div class="act_tab baokuan_tab"><ul class="tab_title"><li class="tab_btn" child_type="01">超值推荐 <span class="active"></span></li><li class="tab_btn" child_type="02">坚果炒货 <span></span></li><li class="tab_btn" child_type="03">肉干肉蒲 <span></span></li><li class="tab_btn" child_type="04">休闲零食 <span></span></li><li class="tab_btn" child_type="05">糖果巧克力 <span></span></li></ul><script type="text/html" id="baokuanTemp"> <%for(var i in list){%> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                         data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                             <a href='./details.html?id=<%=list[i].product_id%>' class="clear-fix">
                                 <dl>
@@ -155,26 +24,7 @@
                                     </dd>
                                 </dl>
                             </a>
-                        </li>
-                        <%}%>
-                </script>
-                <ul class="tab_list clear-fix" id="baokuanCont">
-                </ul>
-            </div>
-            <div class="jingpin">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/75169/29/10060/46873/5d78cf94E32885293/25edcbcb0e784ba0.jpg.webp"
-                    alt="">
-            </div>
-            <div class="jingpin_two">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/63509/33/9911/329380/5d78cf9bEd7bd6531/b1e819d7d2114511.jpg.webp"
-                    alt="">
-            </div>
-            <div class="act_banner jingpin_banner">
-                <div class="banner_cont">
-                    <ul class="wrapper clear-fix" id="jingpin_banner">
-                        <script type="text/html" id="jingpin_temp">
-                            <%for(var i in list){%>
-                            <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                        </li> <%}%> </script><ul class="tab_list clear-fix" id="baokuanCont"></ul></div><div class="jingpin"><img src="https://m.360buyimg.com/babel/jfs/t1/75169/29/10060/46873/5d78cf94E32885293/25edcbcb0e784ba0.jpg.webp" alt=""></div><div class="jingpin_two"><img src="https://m.360buyimg.com/babel/jfs/t1/63509/33/9911/329380/5d78cf9bEd7bd6531/b1e819d7d2114511.jpg.webp" alt=""></div><div class="act_banner jingpin_banner"><div class="banner_cont"><ul class="wrapper clear-fix" id="jingpin_banner"><script type="text/html" id="jingpin_temp"> <%for(var i in list){%> <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                                 data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                 <a href='./details.html?id=<%=list[i].product_id%>'>
                                     <img src='<%=list[i].figure%>' alt="">
@@ -183,17 +33,7 @@
                                         <p><%=list[i].name%></p>
                                     </div>
                                 </a>
-                            </li>
-                            <%}%>
-                        </script>
-                    </ul>
-                </div>
-                <div class="prev"></div>
-                <div class="next"></div>
-            </div>
-            <script type="text/html" id="noTabTemp">
-                <%for(var i in list){%>
-                <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            </li> <%}%> </script></ul></div><div class="prev"></div><div class="next"></div></div><script type="text/html" id="noTabTemp"> <%for(var i in list){%> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                     data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                         <a href='./details.html?id=<%=list[i].product_id%>' class="clear-fix">
                             <dl>
@@ -210,45 +50,7 @@
                                 </dd>
                             </dl>
                         </a>
-                    </li>
-                    <%}%>
-            </script>
-            <ul class="tab_list clear-fix" id="noTab">
-            </ul>
-            <div class="manjian_two">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/62221/38/10056/336232/5d78cfb0E65aac290/7a2dcf35ef3883f6.jpg.webp"
-                    alt="">
-            </div>
-            <div class="manjian">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/75541/5/10016/18495/5d78cfdbE4bb8e695/6db7fb1fc7ab6f87.gif"
-                    alt="">
-            </div>
-            <div class="act_tab manjian_tab">
-                    <ul class="tab_title">
-                        <li class="tab_btn tab_02 active" child_type="01">
-                            超值推荐
-                            <span class="active"></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="02">
-                            坚果炒货
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="03">
-                            肉干肉蒲
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="04">
-                            休闲零食
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="05">
-                            糖果巧克力
-                            <span></span>
-                        </li>
-                    </ul>
-                    <script type="text/html" id="manjianTemp">
-                        <%for(var i in list){%>
-                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                    </li> <%}%> </script><ul class="tab_list clear-fix" id="noTab"></ul><div class="manjian_two"><img src="https://m.360buyimg.com/babel/jfs/t1/62221/38/10056/336232/5d78cfb0E65aac290/7a2dcf35ef3883f6.jpg.webp" alt=""></div><div class="manjian"><img src="https://m.360buyimg.com/babel/jfs/t1/75541/5/10016/18495/5d78cfdbE4bb8e695/6db7fb1fc7ab6f87.gif" alt=""></div><div class="act_tab manjian_tab"><ul class="tab_title"><li class="tab_btn tab_02 active" child_type="01">超值推荐 <span class="active"></span></li><li class="tab_btn tab_02" child_type="02">坚果炒货 <span></span></li><li class="tab_btn tab_02" child_type="03">肉干肉蒲 <span></span></li><li class="tab_btn tab_02" child_type="04">休闲零食 <span></span></li><li class="tab_btn tab_02" child_type="05">糖果巧克力 <span></span></li></ul><script type="text/html" id="manjianTemp"> <%for(var i in list){%> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                             data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                 <a href='./details.html?id=<%=list[i].product_id%>' class="clear-fix">
                                     <dl>
@@ -265,24 +67,7 @@
                                         </dd>
                                     </dl>
                                 </a>
-                            </li>
-                            <%}%>
-                    </script>
-                    <ul class="tab_list clear-fix" id="manjianCont">
-                    </ul>
-            </div>
-            <div class="chaozhi">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/66778/13/9851/48020/5d78d022E92538d86/278cbe29ac20754f.jpg.webp" alt="">
-            </div>
-            <div class="chaozhi_two">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/45107/19/10325/231030/5d78d06bE3786278a/d45955f846cc6837.jpg.webp" alt="">
-            </div>
-            <div class="act_banner chaozhi_banner">
-                    <div class="banner_cont">
-                        <ul class="wrapper clear-fix" id="chaozhi_banner">
-                            <script type="text/html" id="chaozhi_temp">
-                                <%for(var i in list){%>
-                                <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            </li> <%}%> </script><ul class="tab_list clear-fix" id="manjianCont"></ul></div><div class="chaozhi"><img src="https://m.360buyimg.com/babel/jfs/t1/66778/13/9851/48020/5d78d022E92538d86/278cbe29ac20754f.jpg.webp" alt=""></div><div class="chaozhi_two"><img src="https://m.360buyimg.com/babel/jfs/t1/45107/19/10325/231030/5d78d06bE3786278a/d45955f846cc6837.jpg.webp" alt=""></div><div class="act_banner chaozhi_banner"><div class="banner_cont"><ul class="wrapper clear-fix" id="chaozhi_banner"><script type="text/html" id="chaozhi_temp"> <%for(var i in list){%> <li class="slide item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                                     data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                     <a href='./details.html?id=<%=list[i].product_id%>'>
                                         <img src='<%=list[i].figure%>' alt="">
@@ -291,40 +76,7 @@
                                             <p><%=list[i].name%></p>
                                         </div>
                                     </a>
-                                </li>
-                                <%}%>
-                            </script>
-                        </ul>
-                    </div>
-                    <div class="prev"></div>
-                    <div class="next"></div>
-            </div>
-            <div class="act_tab chaozhi_tab">
-                    <ul class="tab_title">
-                        <li class="tab_btn" child_type="01">
-                            超值推荐
-                            <span class="active"></span>
-                        </li>
-                        <li class="tab_btn" child_type="02">
-                            坚果炒货
-                            <span></span>
-                        </li>
-                        <li class="tab_btn" child_type="03">
-                            肉干肉蒲
-                            <span></span>
-                        </li>
-                        <li class="tab_btn" child_type="04">
-                            休闲零食
-                            <span></span>
-                        </li>
-                        <li class="tab_btn" child_type="05">
-                            糖果巧克力
-                            <span></span>
-                        </li>
-                    </ul>
-                    <script type="text/html" id="chaozhiTemp">
-                        <%for(var i in list){%>
-                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                                </li> <%}%> </script></ul></div><div class="prev"></div><div class="next"></div></div><div class="act_tab chaozhi_tab"><ul class="tab_title"><li class="tab_btn" child_type="01">超值推荐 <span class="active"></span></li><li class="tab_btn" child_type="02">坚果炒货 <span></span></li><li class="tab_btn" child_type="03">肉干肉蒲 <span></span></li><li class="tab_btn" child_type="04">休闲零食 <span></span></li><li class="tab_btn" child_type="05">糖果巧克力 <span></span></li></ul><script type="text/html" id="chaozhiTemp"> <%for(var i in list){%> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                             data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                 <a href='./details.html?id=<%=list[i].product_id%>' class="clear-fix">
                                     <dl>
@@ -341,41 +93,7 @@
                                         </dd>
                                     </dl>
                                 </a>
-                            </li>
-                            <%}%>
-                    </script>
-                    <ul class="tab_list clear-fix" id="chaozhiCont">
-                    </ul>
-            </div>
-            <div class="dazhe">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/66857/7/10083/18541/5d78d07dEe662e94d/d3a3538f7e3e500b.gif" alt="">
-            </div>
-            <div class="act_tab dazhe_tab">
-                    <ul class="tab_title">
-                        <li class="tab_btn tab_02 active" num="5" child_type="01">
-                            超值推荐
-                            <span class="active"></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="02">
-                            坚果炒货
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="03">
-                            肉干肉蒲
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="04">
-                            休闲零食
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" num="20" child_type="05">
-                            糖果巧克力
-                            <span></span>
-                        </li>
-                    </ul>
-                    <script type="text/html" id="dazheTemp">
-                        <%for(var i in list){%>
-                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            </li> <%}%> </script><ul class="tab_list clear-fix" id="chaozhiCont"></ul></div><div class="dazhe"><img src="https://m.360buyimg.com/babel/jfs/t1/66857/7/10083/18541/5d78d07dEe662e94d/d3a3538f7e3e500b.gif" alt=""></div><div class="act_tab dazhe_tab"><ul class="tab_title"><li class="tab_btn tab_02 active" num="5" child_type="01">超值推荐 <span class="active"></span></li><li class="tab_btn tab_02" child_type="02">坚果炒货 <span></span></li><li class="tab_btn tab_02" child_type="03">肉干肉蒲 <span></span></li><li class="tab_btn tab_02" child_type="04">休闲零食 <span></span></li><li class="tab_btn tab_02" num="20" child_type="05">糖果巧克力 <span></span></li></ul><script type="text/html" id="dazheTemp"> <%for(var i in list){%> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                             data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                 <a href='./details.html?id=<%=list[i].product_id%>' class="clear-fix">
                                     <dl>
@@ -392,41 +110,7 @@
                                         </dd>
                                     </dl>
                                 </a>
-                            </li>
-                            <%}%>
-                    </script>
-                    <ul class="tab_list clear-fix" id="dazheCont">
-                    </ul>
-            </div>
-            <div class="guess dazhe">
-                <img src="https://m.360buyimg.com/babel/jfs/t1/82424/24/9845/39763/5d78cf00E1dfa7987/d45b5f13f50cd5ad.jpg.webp" alt="">
-            </div>
-            <div class="act_tab guess_tab">
-                    <ul class="tab_title">
-                        <li class="tab_btn tab_02 active" child_type="01">
-                            超值推荐
-                            <span class="active"></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="02">
-                            坚果炒货
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="03">
-                            肉干肉蒲
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="04">
-                            休闲零食
-                            <span></span>
-                        </li>
-                        <li class="tab_btn tab_02" child_type="05">
-                            糖果巧克力
-                            <span></span>
-                        </li>
-                    </ul>
-                    <script type="text/html" id="guessTemp">
-                        <%for(var i in list){%>
-                        <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
+                            </li> <%}%> </script><ul class="tab_list clear-fix" id="dazheCont"></ul></div><div class="guess dazhe"><img src="https://m.360buyimg.com/babel/jfs/t1/82424/24/9845/39763/5d78cf00E1dfa7987/d45b5f13f50cd5ad.jpg.webp" alt=""></div><div class="act_tab guess_tab"><ul class="tab_title"><li class="tab_btn tab_02 active" child_type="01">超值推荐 <span class="active"></span></li><li class="tab_btn tab_02" child_type="02">坚果炒货 <span></span></li><li class="tab_btn tab_02" child_type="03">肉干肉蒲 <span></span></li><li class="tab_btn tab_02" child_type="04">休闲零食 <span></span></li><li class="tab_btn tab_02" child_type="05">糖果巧克力 <span></span></li></ul><script type="text/html" id="guessTemp"> <%for(var i in list){%> <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
                             data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                 <a href='./details.html?id=<%=list[i].product_id%>' class="clear-fix">
                                     <dl>
@@ -443,72 +127,6 @@
                                         </dd>
                                     </dl>
                                 </a>
-                            </li>
-                            <%}%>
-                    </script>
-                    <ul class="tab_list clear-fix" id="guessCont">
-                    </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer_cont clear-fix">
-        <div class="footer_ccont clear-fix">
-            <div class="footer_left">
-                <dl>
-                    <dt>商务合作</dt>
-                    <dd><a href="">品牌进驻</a></dd>
-                    <dd><a href="">IP授权</a></dd>
-                    <dd><a href="">批发代销</a></dd>
-                    <dd><a href="">票务合作</a></dd>
-                </dl>
-                <dl>
-                    <dt>联系方式</dt>
-                    <dd><a href="">官方邮箱：act@cycang.com</a></dd>
-                    <dd><a href="">推广合作：act@cycang.com</a></dd>
-                    <dd><a href="">媒体合作：act@cycang.com</a></dd>
-                    <dd><a href="">商务合作：cycswb@126.com</a></dd>
-                </dl>
-                <dl>
-                    <dt>客服售后</dt>
-                    <dd><a href="">客服热线：400-667-1673</a></dd>
-                    <dd><a href="">客服QQ1：3112573893</a></dd>
-                    <dd><a href="">客服QQ2：2627466500</a></dd>
-                </dl>
-                <dl>
-                    <dt>直播合作</dt>
-                    <dd><a href="">QQ：2201959143</a></dd>
-                </dl>
-            </div>
-            <ul class="footer_right">
-                <li>
-                    <a class="footer_li" href="http://cycang.com/act.php?c=appDownload">
-                        <img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt="">
-                        <p class="li_center">下载手机次元仓</p>
-                    </a>
-                </li>
-                <li>
-                    <i class="footer_weibo"></i>
-                    <p>微博搜索并关注<span class="li_center">@次元仓</span></p>
-                </li>
-                <li>
-                    <i class="footer_wechat"></i>
-                    <p>微信公众号搜索并关注<span class="li_center">次元仓</span></p>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-    <p class="copy_cont">
-        ICP © 2017 广州脑动网络科技有限公司 版权所有
-        <a href="">免责声明 </a>
-        （备案号：<a href="">粤ICP备15028368号</a>)
-    </p>
-</body>
-<script src="./javascripts/require.js"></script>
-<script>
-    require(["./javascripts/require.config"], function () {
+                            </li> <%}%> </script><ul class="tab_list clear-fix" id="guessCont"></ul></div></div></div><div class="footer_cont clear-fix"><div class="footer_ccont clear-fix"><div class="footer_left"><dl><dt>商务合作</dt><dd><a href="">品牌进驻</a></dd><dd><a href="">IP授权</a></dd><dd><a href="">批发代销</a></dd><dd><a href="">票务合作</a></dd></dl><dl><dt>联系方式</dt><dd><a href="">官方邮箱：act@cycang.com</a></dd><dd><a href="">推广合作：act@cycang.com</a></dd><dd><a href="">媒体合作：act@cycang.com</a></dd><dd><a href="">商务合作：cycswb@126.com</a></dd></dl><dl><dt>客服售后</dt><dd><a href="">客服热线：400-667-1673</a></dd><dd><a href="">客服QQ1：3112573893</a></dd><dd><a href="">客服QQ2：2627466500</a></dd></dl><dl><dt>直播合作</dt><dd><a href="">QQ：2201959143</a></dd></dl></div><ul class="footer_right"><li><a class="footer_li" href="http://cycang.com/act.php?c=appDownload"><img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt=""><p class="li_center">下载手机次元仓</p></a></li><li><i class="footer_weibo"></i><p>微博搜索并关注<span class="li_center">@次元仓</span></p></li><li><i class="footer_wechat"></i><p>微信公众号搜索并关注<span class="li_center">次元仓</span></p></li></ul></div></div><p class="copy_cont">ICP © 2017 广州脑动网络科技有限公司 版权所有 <a href="">免责声明 </a>（备案号：<a href="">粤ICP备15028368号</a>)</p></body><script src="./javascripts/require.js"></script><script>require(["./javascripts/require.config"], function () {
         require(["activity_main"]);
-    });
-</script>
-
-</html>
+    });</script></html>

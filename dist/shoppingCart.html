@@ -1,103 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>购物车</title>
-    <link rel="stylesheet" href="./css/shoppingCart.css">
-</head>
-<script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script>
-
-<body>
-    <div id="header">
-        <nav class="header_cont">
-            <div class="header_left" id="username">
-                <a href="./login.html">登录</a>
-                <a href="./register.html">注册</a>
-            </div>
-            <div class="header_right">
-                <a href="">联系客服</a>
-                <a href="./shoppingCart.html">购物车</a>
-                <a href="">我的订单</a>
-                <a href="">我的收藏</a>
-            </div>
-        </nav>
-    </div>
-    <div id="search">
-        <div class="search_cont">
-            <div class="search_l clear-fix">
-                <a href="./index.html">
-                    <img src="http://www.cycang.com/Public/build/img/shop/logo.jpg" alt="">
-                </a>
-            </div>
-            <div class="search_c">
-                <div class="search_cleft">
-                    <form action="#" method="get">
-                        <div class="search_box">
-                            <select name="" id="">
-                                <option value="">商品</option>
-                                <option value="">店铺</option>
-                            </select>
-                            <input class="search_text" type="text">
-                        </div>
-                        <button class="search_btn">搜索</button>
-                    </form>
-
-                </div>
-            </div>
-            <div class="search_r">
-                <a href="./shoppingCart.html">
-                    <span class="cart_icon"></span>
-                    <span>我的购物车</span>
-                    <b class="cartNum">0</b>
-                </a>
-            </div>
-        </div>
-
-
-    </div>
-    <div id="navList">
-        <ul class="navList_cont">
-            <li>
-                <a href="./index.html">
-                    首页
-                </a>
-            </li>
-            <li><a href="./list.html?typename=01">图书仓</a></li>
-            <li><a href="./list.html?typename=02">汉风仓</a></li>
-            <li><a href="./list.html?typename=03">手办仓</a></li>
-            <li><a href="./list.html?typename=04">首饰仓</a></li>
-            <li><a href="./list.html?typename=05">零食仓</a></li>
-            <li><a href="./list.html?typename=06">文具仓</a></li>
-            <li><a href="./list.html?typename=07">古风仓</a></li>
-            <li><a href="./list.html?typename=08">装扮仓</a></li>
-            <li><a href="./list.html?typename=9">周边仓</a></li>
-            <li><a href="./list.html?typename=10">服饰仓</a></li>
-        </ul>
-    </div>
-    <div id="wrapper">
-        <div class="wrapper_ele" style="display:none">
-            <div class="wrapper_cont clear-fix">
-                <img src="http://www.cycang.com/Public/build/img/shop/list_empty.png" alt="">
-                <div class="cont_right">
-                    <p>购物车里神马都木有，解开封印买买买解b(￣▽￣)d</p>
-                    <a href="./index.html">去逛逛></a>
-                </div>
-            </div>
-            <div class="wrapper_last">
-                <h2>
-                    <hr>
-                    大家都在看
-                    <hr>
-                </h2>
-                <div class="btnCont">
-                    <div class="wrapper_list">
-                        <div class="wrapper">
-                            <script type="text/html" id="banner_temp">
-                                <%for(var i in list){%>
-                                <dl class="slide item" data-name='<%=list[i].name%>'
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>购物车</title><link rel="stylesheet" href="./css/shoppingCart.css"></head><script src="https://cdn.bootcss.com/template_js/0.7.1-1/template.js"></script><body><div id="header"><nav class="header_cont"><div class="header_left" id="username"><a href="./login.html">登录</a> <a href="./register.html">注册</a></div><div class="header_right"><a href="">联系客服</a> <a href="./shoppingCart.html">购物车</a> <a href="">我的订单</a> <a href="">我的收藏</a></div></nav></div><div id="search"><div class="search_cont"><div class="search_l clear-fix"><a href="./index.html"><img src="http://www.cycang.com/Public/build/img/shop/logo.jpg" alt=""></a></div><div class="search_c"><div class="search_cleft"><form action="#" method="get"><div class="search_box"><select name="" id=""><option value="">商品</option><option value="">店铺</option></select> <input class="search_text" type="text"></div><button class="search_btn">搜索</button></form></div></div><div class="search_r"><a href="./shoppingCart.html"><span class="cart_icon"></span> <span>我的购物车</span> <b class="cartNum">0</b></a></div></div></div><div id="navList"><ul class="navList_cont"><li><a href="./index.html">首页</a></li><li><a href="./list.html?typename=01">图书仓</a></li><li><a href="./list.html?typename=02">汉风仓</a></li><li><a href="./list.html?typename=03">手办仓</a></li><li><a href="./list.html?typename=04">首饰仓</a></li><li><a href="./list.html?typename=05">零食仓</a></li><li><a href="./list.html?typename=06">文具仓</a></li><li><a href="./list.html?typename=07">古风仓</a></li><li><a href="./list.html?typename=08">装扮仓</a></li><li><a href="./list.html?typename=9">周边仓</a></li><li><a href="./list.html?typename=10">服饰仓</a></li></ul></div><div id="wrapper"><div class="wrapper_ele" style="display:none"><div class="wrapper_cont clear-fix"><img src="http://www.cycang.com/Public/build/img/shop/list_empty.png" alt=""><div class="cont_right"><p>购物车里神马都木有，解开封印买买买解b(￣▽￣)d</p><a href="./index.html">去逛逛></a></div></div><div class="wrapper_last"><h2><hr>大家都在看<hr></h2><div class="btnCont"><div class="wrapper_list"><div class="wrapper"><script type="text/html" id="banner_temp"> <%for(var i in list){%> <dl class="slide item" data-name='<%=list[i].name%>'
                                     data-price='<%=list[i].cover_price%>' data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
                                     <a href='./details.html?id=<%=list[i].product_id%>'>
                                         <dt>
@@ -108,19 +9,7 @@
                                                 <p>￥<%=list[i].cover_price%></p>
                                         </dd>
                                     </a>
-                                </dl>
-                                <%}%>
-                            </script>
-                        </div>
-                    </div>
-                    <a class="prev"></a>
-                    <a class="next"></a>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper_settlement">
-            <script id="cartCont" type="text/html">
-                <div class="set_cont">
+                                </dl> <%}%> </script></div></div><a class="prev"></a> <a class="next"></a></div></div></div><div class="wrapper_settlement"><script id="cartCont" type="text/html"><div class="set_cont">
                     <div class="set_logo clear-fix">
                         <div class="logo">
                             <img src="http://s1.cycangcdn.com/pc/img/cart/cart.png" alt="">
@@ -180,25 +69,11 @@
                                             </a>
                                         </div>
                                         <div class="table_type_right">
-                                            小计：￥
-                                            <%var sum=0%>
-                                            <%for(var i in data.data){%>
-                                            <%sum+=parseFloat(data.data[i].price)*parseInt(data.data[i].cont)%>
-                                            <%}%>
-                                            <span class="price"><%=sum%></span>
-                                            运费：
-                                            <%var fsum=0%>
-                                            <%for(var i in data.data){%>
-                                            <%if(68>parseFloat(data.data[i].price)*parseInt(data.data[i].cont)){%>
-                                            <%fsum+=10%>
-                                            <%}%>
-                                            <%}%>
-                                            <span class="freight"><%=fsum%></span>
+                                            小计：￥ <%var sum=0%> <%for(var i in data.data){%> <%sum+=parseFloat(data.data[i].price)*parseInt(data.data[i].cont)%> <%}%> <span class="price"><%=sum%></span>
+                                            运费： <%var fsum=0%> <%for(var i in data.data){%> <%if(68>parseFloat(data.data[i].price)*parseInt(data.data[i].cont)){%> <%fsum+=10%> <%}%> <%}%> <span class="freight"><%=fsum%></span>
                                         </div>
                                     </div>
-                                    <div class="table_wrap">
-                                        <%for(var item in data.data){%>
-                                        <div class="table_item clear-fix item"data-name='<%=data.data[item].name%>' data-price='<%=data.data[item].price%>'
+                                    <div class="table_wrap"> <%for(var item in data.data){%> <div class="table_item clear-fix item"data-name='<%=data.data[item].name%>' data-price='<%=data.data[item].price%>'
                                             data-img='<%=data.data[item].img%>'data-id='<%=data.data[item].id%>'>
                                             <div class="table_allbtn table_td table_th_3">
                                                 <div class="allbtn_cont">
@@ -236,9 +111,7 @@
                                                 <span class="table_del">删除</span>
                                             </div>
                                         
-                                        </div>
-                                        <%}%>
-                                    </div>
+                                        </div> <%}%> </div>
                                 </div>
                                 
                             </div>
@@ -269,75 +142,10 @@
                             <div class="setup_right">
                                 应付总额：
                                 <span class="commodity_price">￥888.00</span>
-                                <a href="">去结算</a>
+                                <a id="goBuy">去结算</a>
                             </div>
                         </div>
                     </section>
-                </div>
-            </script>
-        </div>
-    </div>
-
-
-    <div class="footer_cont clear-fix">
-        <div class="footer_ccont clear-fix">
-            <div class="footer_left">
-                <dl>
-                    <dt>商务合作</dt>
-                    <dd><a href="">品牌进驻</a></dd>
-                    <dd><a href="">IP授权</a></dd>
-                    <dd><a href="">批发代销</a></dd>
-                    <dd><a href="">票务合作</a></dd>
-                </dl>
-                <dl>
-                    <dt>联系方式</dt>
-                    <dd><a href="">官方邮箱：act@cycang.com</a></dd>
-                    <dd><a href="">推广合作：act@cycang.com</a></dd>
-                    <dd><a href="">媒体合作：act@cycang.com</a></dd>
-                    <dd><a href="">商务合作：cycswb@126.com</a></dd>
-                </dl>
-                <dl>
-                    <dt>客服售后</dt>
-                    <dd><a href="">客服热线：400-667-1673</a></dd>
-                    <dd><a href="">客服QQ1：3112573893</a></dd>
-                    <dd><a href="">客服QQ2：2627466500</a></dd>
-                </dl>
-                <dl>
-                    <dt>直播合作</dt>
-                    <dd><a href="">QQ：2201959143</a></dd>
-                </dl>
-            </div>
-            <ul class="footer_right">
-                <li>
-                    <a class="footer_li" href="http://cycang.com/act.php?c=appDownload">
-                        <img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt="">
-                        <p class="li_center">下载手机次元仓</p>
-                    </a>
-                </li>
-                <li>
-                    <i class="footer_weibo"></i>
-                    <p>微博搜索并关注<span class="li_center">@次元仓</span></p>
-                </li>
-                <li>
-                    <i class="footer_wechat"></i>
-                    <p>微信公众号搜索并关注<span class="li_center">次元仓</span></p>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-    <p class="copy_cont">
-        ICP © 2017 广州脑动网络科技有限公司 版权所有
-        <a href="">免责声明 </a>
-        （备案号：<a href="">粤ICP备15028368号</a>)
-    </p>
-</body>
-<script src="./javascripts/require.js"></script>
-<script>
-    require(["./javascripts/require.config"], function () {
+                </div></script></div></div><div class="footer_cont clear-fix"><div class="footer_ccont clear-fix"><div class="footer_left"><dl><dt>商务合作</dt><dd><a href="">品牌进驻</a></dd><dd><a href="">IP授权</a></dd><dd><a href="">批发代销</a></dd><dd><a href="">票务合作</a></dd></dl><dl><dt>联系方式</dt><dd><a href="">官方邮箱：act@cycang.com</a></dd><dd><a href="">推广合作：act@cycang.com</a></dd><dd><a href="">媒体合作：act@cycang.com</a></dd><dd><a href="">商务合作：cycswb@126.com</a></dd></dl><dl><dt>客服售后</dt><dd><a href="">客服热线：400-667-1673</a></dd><dd><a href="">客服QQ1：3112573893</a></dd><dd><a href="">客服QQ2：2627466500</a></dd></dl><dl><dt>直播合作</dt><dd><a href="">QQ：2201959143</a></dd></dl></div><ul class="footer_right"><li><a class="footer_li" href="http://cycang.com/act.php?c=appDownload"><img src="http://www.cycang.com/Public/build/img/shop/qr.png" alt=""><p class="li_center">下载手机次元仓</p></a></li><li><i class="footer_weibo"></i><p>微博搜索并关注<span class="li_center">@次元仓</span></p></li><li><i class="footer_wechat"></i><p>微信公众号搜索并关注<span class="li_center">次元仓</span></p></li></ul></div></div><p class="copy_cont">ICP © 2017 广州脑动网络科技有限公司 版权所有 <a href="">免责声明 </a>（备案号：<a href="">粤ICP备15028368号</a>)</p></body><script src="./javascripts/require.js"></script><script>require(["./javascripts/require.config"], function () {
         require(["shoppingCart_main"]);
-    });
-</script>
-
-</html>
-<!-- http://act.cycangcdn.com/comm_img/loading.jpg -->
+    });</script></html><!-- http://act.cycangcdn.com/comm_img/loading.jpg -->

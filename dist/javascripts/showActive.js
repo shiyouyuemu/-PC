@@ -1,27 +1,2 @@
-(function (factory) {
-    if (typeof define == "function" && define.amd) {
-        define(["jquery"], factory);
-    } else {
-        factory(jQuery);
-    }
-})(function ($) {
-    $.fn.showActive = function (options) {
-        new ShowActive().init(options);
-    }
-
-    function ShowActive() {}
-    $.extend(ShowActive.prototype,{
-        init:function(options){
-            options?this.options=options:"";
-            this.options.cont?this.cont=this.options.cont:"";
-            this.options.btn?this.btn=this.options.btn:"";
-            this.bindEvent();
-        },
-        bindEvent:function(){
-            $(this.btn).on("click",function(){
-                $(this.cont).hide();
-            }.bind(this));
-        }
-    });
-
-})
+"use strict";!function(n){"function"==typeof define&&define.amd?define(["jquery"],n):n(jQuery)}(function(n){function t(){}n.fn.showActive=function(n){(new t).init(n)},n.extend(t.prototype,{init:function(n){n&&(this.options=n),this.options.cont&&(this.cont=this.options.cont),this.options.btn&&(this.btn=this.options.btn),this.bindEvent()},bindEvent:function(){n(this.btn).on("click",function(){n(this.cont).hide()}.bind(this))}})});
+//# sourceMappingURL=showActive.js.map
