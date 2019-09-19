@@ -19,7 +19,7 @@
             if(str==""){
                 localStorage.removeItem(window.name)
             }else{
-                tname=str.split("=")[0].split("?")[1];
+                var tname=str.split("=")[0].split("?")[1];
                 if(tname=="typename"){
                     localStorage.removeItem(window.name)
                 }
