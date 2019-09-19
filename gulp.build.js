@@ -46,7 +46,8 @@ async function javascript(){
       await gulp.src([paths.javascript + "*.js"])
       .pipe(sourcemaps.init())
       .pipe(babel({
-            presets : ["@babel/env"]
+            presets : ["@babel/env"],
+            compact: false
       }))
       .pipe(uglify())
       .pipe(sourcemaps.write("."))

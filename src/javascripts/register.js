@@ -26,7 +26,7 @@
             let ifOk = $(this.cont).attr("ifOk");
             let ifCom=$(this.cont).attr("ifCom");
             if (ifOk=="true"&&ifCom=="false") {
-                let src = "/lophp/ciyuancang/server/register.php";
+                let src = "./server/register.php";
                 $.ajax({
                     url:src,
                     type: "get",

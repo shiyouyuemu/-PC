@@ -25,7 +25,7 @@
         log: function () {
             let ifOk = $(this.cont).attr("ifOk");
             if (ifOk==="true") {
-                let src = "/lophp"+"/ciyuancang/server/login.php";
+                let src = "./server/login.php";
                 $.ajax({
                     url:src,
                     type: "get",
