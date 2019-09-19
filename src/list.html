@@ -80,8 +80,8 @@
             <script type="text/html" id="temp">
                 <%for(var i in list){ %>
             <li class="item" data-name='<%=list[i].name%>' data-price='<%=list[i].cover_price%>'
-                data-img='<%=list[i].figure%>'>
-                <a href="./details.html">
+                data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
+                <a href='./details.html?id=<%=list[i].product_id%>'>
                     <img src="http://act.cycangcdn.com/comm_img/loading.jpg" alt="">
                     <div>
                         <p><%=list[i].name%></p>

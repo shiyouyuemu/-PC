@@ -69,7 +69,11 @@
             });
         },
         addCart: function (_) {
-            var obj = localStorage.getItem("details");
+            let str=window.location.search;
+            var tvalue=str.split("=")[1];
+            var tname=str.split("=")[0].split("?")[1];
+            var obj=null;
+            tname=="id"?obj = localStorage.getItem("details"+tvalue):"";
             obj = JSON.parse(obj);
             obj.cont = _.cont;
             var ifPush = true;

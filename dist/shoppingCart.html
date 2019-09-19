@@ -98,8 +98,8 @@
                             <script type="text/html" id="banner_temp">
                                 <%for(var i in list){%>
                                 <dl class="slide item" data-name='<%=list[i].name%>'
-                                    data-price='<%=list[i].cover_price%>' data-img='<%=list[i].figure%>'>
-                                    <a href="./details.html">
+                                    data-price='<%=list[i].cover_price%>' data-img='<%=list[i].figure%>'data-id='<%=list[i].product_id%>'>
+                                    <a href='./details.html?id=<%=list[i].product_id%>'>
                                         <dt>
                                             <img src="<%=list[i].figure%>" alt="">
                                         </dt>

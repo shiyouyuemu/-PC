@@ -24,7 +24,11 @@
                 price:that.attr("data-price"),
                 img:that.attr("data-img")
             }
-           localStorage.setItem("details",JSON.stringify(data));
+            let str=window.location.search;
+            var tvalue=str.split("=")[1];
+            var tname=str.split("=")[0].split("?")[1];
+            tname=="id"?localStorage.removeItem("details"+tvalue):"";
+           localStorage.setItem("details"+that.attr("data-id"),JSON.stringify(data));
         }
     });
 })

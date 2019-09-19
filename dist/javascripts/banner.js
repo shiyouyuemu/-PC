@@ -22,7 +22,7 @@
                   options.type ? this.type = options.type : this.type = "hide";
                   options.wrapper ? this.wrapper = options.wrapper : this.wrapper = ".wrapper";
                   options.changeNum?this.changeNum=parseInt(options.changeNum):this.changeNum=1;
-                  options.num?this.num=parseInt(options.num):this.num=1;
+                  options.num?this.num=parseInt(options.num):this.num=0;
                   this.slides = this.cont.find(options.slides);
                   this.type=="change"?this.createLF():"";
                   this.slides = this.cont.find(options.slides);
