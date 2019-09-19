@@ -547,8 +547,7 @@ body {
       height: 2px;
       width: 50%;
       background: #ed3f3f;
-      position: absolute;
-      transition: all 0.5s; }
+      position: absolute; }
     body .recommend_cont .recommend_btn {
       width: 100%;
       height: 92px; }

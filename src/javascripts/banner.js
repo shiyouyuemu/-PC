@@ -21,6 +21,7 @@
                   options.dot ? this.dot = true : this.dot = false;
                   options.type ? this.type = options.type : this.type = "hide";
                   options.wrapper ? this.wrapper = options.wrapper : this.wrapper = ".wrapper";
+                  options.speed?this.speed=options.speed:this.speed=3000;
                   options.changeNum?this.changeNum=parseInt(options.changeNum):this.changeNum=1;
                   options.num?this.num=parseInt(options.num):this.num=0;
                   this.slides = this.cont.find(options.slides);
@@ -121,7 +122,7 @@
                   clearInterval(this.playTimer);
                   this.playTimer = setInterval(function () {
                         this.changeIndex("next");
-                  }.bind(this), 3000);
+                  }.bind(this), this.speed);
             },
             createDot: function () {
                   var length = $(this.slides).length;
@@ -144,6 +145,11 @@
                   var first=$(this.wrapper,this.cont).html();
                   $(this.wrapper,this.cont).append(first);
                   $(this.wrapper,this.cont).prepend(first);
+                  setTimeout(function () {
+                        $("body").sendSelf({
+                            item: ".item"
+                        });
+                    }, 1000);
             }
       });
 })

@@ -30,16 +30,16 @@
             });
             var position=$(this).attr("position");
             if(position=="left"){
-                $(_.bar).css({
+                $(_.bar).animate({
                     left:"0"
-                });
+                },1000);
                 $(_.item,_.that).first().css({
                     display:"block"
                 });
             }else{
-                $(_.bar).css({
+                $(_.bar).animate({
                     left:"50%"
-                });
+                },1000);
                 $(_.item,_.that).last().css({
                     display:"block"
                 });

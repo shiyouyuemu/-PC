@@ -28,7 +28,7 @@
     <div id="search">
         <div class="search_cont">
             <div class="search_l clear-fix">
-                <a href="#">
+                <a href="./index.html">
                     <img src="http://www.cycang.com/Public/build/img/shop/logo.jpg" alt="">
                 </a>
             </div>
@@ -198,7 +198,8 @@
                                     </div>
                                     <div class="table_wrap">
                                         <%for(var item in data.data){%>
-                                        <div class="table_item clear-fix">
+                                        <div class="table_item clear-fix item"data-name='<%=data.data[i].name%>' data-price='<%=data.data[i].price%>'
+                                            data-img='<%=data.data[i].img%>'data-id='<%=data.data[i].id%>'>
                                             <div class="table_allbtn table_td table_th_3">
                                                 <div class="allbtn_cont">
                                                     <i class="on ifChoose choose" ifChoose="true">
@@ -208,10 +209,10 @@
                                                 </div>
                                             </div>
                                             <div class="table_td table_th_37">
-                                                <a href="">
+                                                <a href='./details.html?id=<%=data.data[i].id%>'>
                                                     <img src="<%=data.data[item].img%>" alt="">
                                                 </a>
-                                                <a href="" class="title_name"><%=data.data[item].name%></a>
+                                                <a href='./details.html?id=<%=data.data[i].id%>' class="title_name"><%=data.data[item].name%></a>
                                             </div>
                                             <div class="table_td table_th_10 table_text">
                                                 <p><%=data.data[item].price%></p>
@@ -234,6 +235,7 @@
                                             <div class="table_td table_th_10 table_text">
                                                 <span class="table_del">删除</span>
                                             </div>
+                                        
                                         </div>
                                         <%}%>
                                     </div>

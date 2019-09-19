@@ -15,6 +15,15 @@
             this.that = that;
             this.options = options;
             this.autolog();
+            var str=window.location.search;
+            if(str==""){
+                localStorage.removeItem(window.name)
+            }else{
+                tname=str.split("=")[0].split("?")[1];
+                if(tname=="typename"){
+                    localStorage.removeItem(window.name)
+                }
+            }
         },
         autolog: function () { 
             var login_cookie=null;

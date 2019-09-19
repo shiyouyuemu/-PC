@@ -21,7 +21,12 @@ define([
             num:".num_num",
             btn:".num_btn",
             addcont:".num_btn"
-        })
+        });
+        setTimeout(function () {
+            $("body").sendSelf({
+                item: ".item"
+            });
+        }, 1000);
     }else{
         $(".wrapper_ele").css({
             display:"block"

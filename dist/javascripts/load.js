@@ -20,10 +20,9 @@
             options.cont2?this.cont2=options.cont2:"";
             options.template2?this.templates2=options.template2:"";
             this.load();
-            // $(window).on("beforeunload",function(){
-            //     this.ls!="cartItem"?localStorage.removeItem(this.ls):"";
-            //     localStorage.setItem("nowid",window.location.href);
-            // }.bind(this));
+            $(window).on("beforeunload",function(){
+                this.ls!=window.name&&this.ls!="cartItem"?localStorage.removeItem(this.ls):"";
+            }.bind(this));
         },
         load:function(){
             var data=localStorage.getItem(this.ls);

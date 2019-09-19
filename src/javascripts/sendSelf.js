@@ -22,12 +22,10 @@
             var data={
                 name:that.attr("data-name"),
                 price:that.attr("data-price"),
-                img:that.attr("data-img")
+                img:that.attr("data-img"),
+                id:that.attr("data-id")
             }
-            let str=window.location.search;
-            var tvalue=str.split("=")[1];
-            var tname=str.split("=")[0].split("?")[1];
-            tname=="id"?localStorage.removeItem("details"+tvalue):"";
+            window.name="details"+that.attr("data-id");
            localStorage.setItem("details"+that.attr("data-id"),JSON.stringify(data));
         }
     });
