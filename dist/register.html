@@ -22,7 +22,7 @@
     </div>
     <div class="register_cont">
         <div class="register_ccont">
-            <ul class="register_list" ifCom="false">
+            <ul class="register_list" ifCom="true">
                 <li>
                     <label for="" class="clear-fix">
 
@@ -118,6 +118,8 @@
             // 验证成功进行后续操作''
             if (vaptchaObj.getToken() === null) {
                 $(".register_list").attr("ifCom",true);
+            }else{
+                $(".register_list").attr("ifCom",false);
             }
         });
     });

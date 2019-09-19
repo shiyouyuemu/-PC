@@ -7,7 +7,8 @@ define([
         account:"#login_acc",
         password:"#login_pwd",
         verification:"#login_ver",
-        randomVerification:"#login_random"
+        randomVerification:"#login_random",
+        cont:"#login"
     });
     $("#login").login({
         account:"#login_acc",

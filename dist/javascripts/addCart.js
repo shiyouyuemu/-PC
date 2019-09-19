@@ -112,13 +112,15 @@
             var sum = 0; //物品费用
             var fsum = 0; //运费
             var cont = 0; //物品数量
+            this.smallNum=0;
             for (var i = 0; i < array.length; i++) {
                 if ($(".ifChoose", array[i]).attr("ifChoose") == "true") {
-                    sum += parseInt($(".table_sum", array[i]).text());
+                    sum += parseFloat($(".table_sum", array[i]).text());
                     cont += parseInt($(".num_num", array[i]).val());
-                    if (parseInt($(".table_sum", array[i]).text()) < 68) {
+                    if (parseFloat($(".table_sum", array[i]).text()) < 68) {
                         fsum += 10;
                     }
+                    this.smallNum++;
                 }
 
             }
@@ -130,12 +132,15 @@
             if (sum == 0) {
                 $(".allbtn_cont i", gparent).attr("ifChoose", "false");
                 $(".allbtn_cont i", gparent).removeClass("on");
-            } else {
+            } else  if(array.length==this.smallNum){
                 $(".table_type .allbtn_cont i", gparent).attr("ifChoose", "true");
                 $(".table_type .allbtn_cont i", gparent).addClass("on");
+            }else{
+                $(".table_type .allbtn_cont i", gparent).attr("ifChoose", "false");
+                $(".table_type .allbtn_cont i", gparent).removeClass("on");
             }
-            $("#price", gparent).text(sum);
-            $("#freight", gparent).text(fsum);
+            $(".price", gparent).text(sum);
+            $(".freight", gparent).text(fsum);
         },
         addColor: function (_, obj, gparent) {
             obj ? obj = obj : obj = this;
@@ -173,22 +178,30 @@
             var sum = 0;
             var fsum = 0;
             var cont = 0;
+            this.bigNum=0;
             for (var i = 0; i < array.length; i++) {
-                if ($(".table_type .ifChoose", array[i]).attr("ifChoose") == "true") {
-                    sum += parseInt($("#price", array[i]).text());
-                    if ($("#freight", array[i]).text() != "本次包邮") {
-                        fsum += parseInt($("#freight", array[i]).text());
+                if ($(".allbtn_cont i", array[i]).attr("ifChoose") == "true") {
+                    this.bigNum++;
+                }
+                if ($(".table_type_right .price", array[i]).text() != "0") {
+                    sum += parseFloat($(".price", array[i]).text());
+                    if ($(".table_type_right .freight", array[i]).text() != "本次包邮") {
+                        fsum += parseFloat($(".freight", array[i]).text());
                     }
                     cont += parseInt($(array[i]).attr("cont"));
                 }
             }
+            console.log(this.bigNum)
             $(".commodity_price").text(sum + fsum);
             if (sum == 0) {
                 $(".allbtn_cont i", "body").attr("ifChoose", "false");
                 $(".allbtn_cont i", "body").removeClass("on");
-            } else {
-                $(".allChoose").attr("ifChoose", "true");
-                $(".allChoose").addClass("on");
+            } else if(array.length==this.bigNum){
+               $(".allChoose").attr("ifChoose", "true");
+               $(".allChoose").addClass("on");
+            }else{
+                $(".allChoose").attr("ifChoose", "false");
+               $(".allChoose").removeClass("on");
             }
             $("#commodity_cont").text(cont);
             var obj = localStorage.getItem("cartItem") ? JSON.parse(localStorage.getItem("cartItem")) :{data:[],cont:0};

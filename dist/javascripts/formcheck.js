@@ -50,7 +50,14 @@
                //_.verCheck(_);
             }):"";
             this.cont?$(this.cont).on("click",function(){
+                _.options.account?_.accCheck.bind($(_.acc,_.that)[0])(_):"";
+                _.options.repassword?_.rpwdCheck.bind($(_.rpwd,_.that)[0])(_):"";
+                _.options.verification?_.verCheck(_):"";
+                _.options.password?_.pwdCheck.bind($(_.pwd,_.that)[0])(_):"";
+                _.options.agree?_.agrCheck(_):"";
                 _.changeIfOk(_);
+                _.randomVerification(_);
+                _.options.verification?_.verCheck(_):"";
             }):"";
         },
         accCheck:function(_){
@@ -68,7 +75,7 @@
                 _.ifOk[0]=1;
                 $("#atxt").length!=0?$("#atxt").remove():"";
             }
-            _.changeIfOk(_);
+            //_.changeIfOk(_);
         },
         pwdCheck:function(_){
             var k=0;
@@ -96,7 +103,7 @@
                 _.ifOk[1]=1;
                 $("#ptxt").length!=0?$("#ptxt").remove():"";
             }
-            _.changeIfOk(_);
+            //_.changeIfOk(_);
         },
         rpwdCheck:function(_){
             var pwd=$(_.pwd).val();
@@ -114,7 +121,7 @@
                 _.ifOk[2]=0;
                 $("#rtxt").length!=0?"":$(_.rpwd).parentsUntil("li").append($("<span id='rtxt' style='color:red;font-size:12px; position:absolute;bottom:-14px;background:none; right:0;'>两次密码不相同</span>"));
             }
-            _.changeIfOk(_);
+           // _.changeIfOk(_);
         },
         verCheck:function(_){
             var ver=$(_.ver);
@@ -138,6 +145,7 @@
                 _.ifOk[4]=1;
             }else{
                 _.ifOk[4]=0;
+                alert("请同意相关协议后再注册！");
             }
         },
         randomVerification:function(_){
@@ -163,6 +171,9 @@
                 $(_.that).attr("ifOk",true);
             }else{
                 $(_.that).attr("ifOk",false);
+                if($(".register_list").attr("ifCom")=="true"){
+                    alert("请先通过人机验证！");
+                }
             }
             
         }

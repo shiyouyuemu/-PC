@@ -183,23 +183,23 @@
                                             小计：￥
                                             <%var sum=0%>
                                             <%for(var i in data.data){%>
-                                            <%sum+=parseInt(data.data[i].price)*parseInt(data.data[i].cont)%>
+                                            <%sum+=parseFloat(data.data[i].price)*parseInt(data.data[i].cont)%>
                                             <%}%>
-                                            <span id="price"><%=sum%></span>
+                                            <span class="price"><%=sum%></span>
                                             运费：
                                             <%var fsum=0%>
                                             <%for(var i in data.data){%>
-                                            <%if(68>parseInt(data.data[i].price)*parseInt(data.data[i].cont)){%>
+                                            <%if(68>parseFloat(data.data[i].price)*parseInt(data.data[i].cont)){%>
                                             <%fsum+=10%>
                                             <%}%>
                                             <%}%>
-                                            <span id="freight"><%=fsum%></span>
+                                            <span class="freight"><%=fsum%></span>
                                         </div>
                                     </div>
                                     <div class="table_wrap">
                                         <%for(var item in data.data){%>
-                                        <div class="table_item clear-fix item"data-name='<%=data.data[i].name%>' data-price='<%=data.data[i].price%>'
-                                            data-img='<%=data.data[i].img%>'data-id='<%=data.data[i].id%>'>
+                                        <div class="table_item clear-fix item"data-name='<%=data.data[item].name%>' data-price='<%=data.data[item].price%>'
+                                            data-img='<%=data.data[item].img%>'data-id='<%=data.data[item].id%>'>
                                             <div class="table_allbtn table_td table_th_3">
                                                 <div class="allbtn_cont">
                                                     <i class="on ifChoose choose" ifChoose="true">
@@ -209,10 +209,10 @@
                                                 </div>
                                             </div>
                                             <div class="table_td table_th_37">
-                                                <a href='./details.html?id=<%=data.data[i].id%>'>
+                                                <a href='./details.html?id=<%=data.data[item].id%>'>
                                                     <img src="<%=data.data[item].img%>" alt="">
                                                 </a>
-                                                <a href='./details.html?id=<%=data.data[i].id%>' class="title_name"><%=data.data[item].name%></a>
+                                                <a href='./details.html?id=<%=data.data[item].id%>' class="title_name"><%=data.data[item].name%></a>
                                             </div>
                                             <div class="table_td table_th_10 table_text">
                                                 <p><%=data.data[item].price%></p>
@@ -230,7 +230,7 @@
                                             </div>
                                             <div class="table_td table_th_10 table_text">
                                                 <span
-                                                    class="table_sum"><%=parseInt(data.data[item].price)*parseInt(data.data[item].cont)%></span>
+                                                    class="table_sum"><%=parseFloat(data.data[item].price)*parseInt(data.data[item].cont)%></span>
                                             </div>
                                             <div class="table_td table_th_10 table_text">
                                                 <span class="table_del">删除</span>
